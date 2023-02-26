@@ -2,7 +2,7 @@ An overview of iOS mastodon apps
 
 ## [Mastodon](https://joinmastodon.org/apps)
 
-Official Mastodon app, on the [App Store](https://apps.apple.com/us/app/mastodon-for-iphone/id1571998974)
+Official Mastodon app, free on the [App Store](https://apps.apple.com/us/app/mastodon-for-iphone/id1571998974)
 
 Source on [Github](https://github.com/mastodon/mastodon-ios)
 
@@ -14,7 +14,7 @@ Quirks: uses "reblog" instead of "boost"
 
 ## [MetaText](https://metabolist.org/)
 
-On the [App Store](https://apps.apple.com/us/app/metatext/id1523996615)
+Free on the [App Store](https://apps.apple.com/us/app/metatext/id1523996615)
 
 Source on [Github](https://github.com/metabolist/metatext) (archived)
 
@@ -36,7 +36,7 @@ Favorite features: Excellent appearance. Good hashtag completion.
 
 ## [Mammoth](https://getmammoth.app/)
 
-Free on the [App Store](https://apps.apple.com/us/app/mammoth-for-mastodon/id1667573899F)
+Free on the [App Store](https://apps.apple.com/us/app/mammoth-for-mastodon/id1667573899)
 
 On [@mammoth@moth.social](https://moth.social/@mammoth)
 
