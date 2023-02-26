@@ -27,3 +27,11 @@ Source on [Github](https://github.com/Dimillian/IceCubesApp)
 Excellent appearance. Good hashtag completion.
 
 On [Mastodon](https://mastodon.social/@dimillian)
+
+## [Mammoth](https://getmammoth.app/)
+
+On the [App Store](https://apps.apple.com/us/app/mammoth-for-mastodon/id1667573899)
+
+On [Mastodon](https://moth.social/@mammoth)
+
+Uniquely, has a couple of built-in games, including chess
