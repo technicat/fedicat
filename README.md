@@ -30,6 +30,8 @@ Free on the [App Store](https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6
 
 Source on [Github](https://github.com/Dimillian/IceCubesApp)
 
+Articles on [Medium](https://dimillian.medium.com/the-making-of-ice-cubes-an-open-source-swiftui-mastodon-client-45ebea5cf6b6) and [Daring Fireball](https://daringfireball.net/2023/01/ice_cubes_app_store_limbo)
+
 Favorite features: Excellent appearance. Good hashtag completion.
 
 [@dimillian@mastodon.social](https://mastodon.social/@dimillian)
