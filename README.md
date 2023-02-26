@@ -22,9 +22,9 @@ Free on the [App Store](https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6
 
 Articles on [Medium](https://dimillian.medium.com/the-making-of-ice-cubes-an-open-source-swiftui-mastodon-client-45ebea5cf6b6) and [Daring Fireball](https://daringfireball.net/2023/01/ice_cubes_app_store_limbo).
 
-Features: Excellent appearance. Good hashtag completion.
+Features: Excellent appearance, full-width screen use for posts. Good hashtag completion.
 
-Quirks: Single-line entry field for alt-text entry.
+Quirks: Single-line entry field for alt-text entry. Avatar icons are square (I feel they should be round for visual distinction)
 
 ## [Mammoth](https://getmammoth.app/) by [@mammoth@moth.social](https://moth.social/@mammoth)
 
