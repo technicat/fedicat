@@ -1,4 +1,4 @@
-An overview of iOS mastodon apps
+An overview of Mastodon apps (starting with the ones I regularly use)
 
 ## [Mastodon](https://joinmastodon.org/apps)
 
