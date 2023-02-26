@@ -6,7 +6,11 @@ Official Mastodon app, on the [App Store](https://apps.apple.com/us/app/mastodon
 
 Source on [Github](https://github.com/mastodon/mastodon-ios)
 
-On [Mastodon](https://mastodon.social/@Mastodon)
+[@mastodon@mastodo.social](https://mastodon.social/@Mastodon)
+
+Favorite features: fairly complete profile editing, including adding links
+
+Quirks: uses "reblog" instead of "boost"
 
 ## [MetaText](https://metabolist.org/)
 
@@ -14,24 +18,26 @@ On the [App Store](https://apps.apple.com/us/app/metatext/id1523996615)
 
 Source on [Github](https://github.com/metabolist/metatext) (archived)
 
-On [Mastodon](https://mastodon.social/@metabolist)
+[@metabolist@mastodon.social](https://mastodon.social/@metabolist)
 
-Good alt-text entry interface with a Detect Text (character recognition) feature.
+Favorite features: Good alt-text entry interface with a Detect Text (character recognition) feature
+
+Quirks: No obvious indication in the feed that an image has alt-text
 
 ## Ice Cubes
 
-On the [App Store](https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6444915884)
+Free on the [App Store](https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6444915884)
 
 Source on [Github](https://github.com/Dimillian/IceCubesApp)
 
-Excellent appearance. Good hashtag completion.
+Favorite features: Excellent appearance. Good hashtag completion.
 
-On [Mastodon](https://mastodon.social/@dimillian)
+[@dimillian@mastodon.social](https://mastodon.social/@dimillian)
 
 ## [Mammoth](https://getmammoth.app/)
 
-On the [App Store](https://apps.apple.com/us/app/mammoth-for-mastodon/id1667573899)
+Free on the [App Store](https://apps.apple.com/us/app/mammoth-for-mastodon/id1667573899F)
 
-On [Mastodon](https://moth.social/@mammoth)
+On [@mammoth@moth.social](https://moth.social/@mammoth)
 
-Uniquely, has a couple of built-in games, including chess
+Favorite features: A couple of built-in games, including chess
