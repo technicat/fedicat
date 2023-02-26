@@ -8,7 +8,7 @@ Source on [Github](https://github.com/mastodon/mastodon-ios)
 
 [@mastodon@mastodo.social](https://mastodon.social/@Mastodon)
 
-Favorite features: fairly complete profile editing, including adding links
+Favorite features: fairly complete profile editing, including adding links. I use this app whenever I want to edit my profile.
 
 Quirks: uses "reblog" instead of "boost"
 
@@ -20,7 +20,7 @@ Source on [Github](https://github.com/metabolist/metatext) (archived)
 
 [@metabolist@mastodon.social](https://mastodon.social/@metabolist)
 
-Favorite features: Good alt-text entry interface with a Detect Text (character recognition) feature
+Favorite features: Good alt-text entry interface with large multiline field that you can't ignore and offers a Detect Text (character recognition) feature. When sharing a link to this app it prepends an extracted description for the link, so I use this app as a share target for links and photos.
 
 Quirks: No obvious indication in the feed that an image has alt-text
 
@@ -32,9 +32,11 @@ Source on [Github](https://github.com/Dimillian/IceCubesApp)
 
 Articles on [Medium](https://dimillian.medium.com/the-making-of-ice-cubes-an-open-source-swiftui-mastodon-client-45ebea5cf6b6) and [Daring Fireball](https://daringfireball.net/2023/01/ice_cubes_app_store_limbo)
 
+[@dimillian@mastodon.social](https://mastodon.social/@dimillian)
+
 Favorite features: Excellent appearance. Good hashtag completion.
 
-[@dimillian@mastodon.social](https://mastodon.social/@dimillian)
+Quirks: Single-line entry field for alt-text entry.
 
 ## [Mammoth](https://getmammoth.app/)
 
