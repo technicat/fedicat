@@ -2,7 +2,7 @@ An overview of Mastodon apps (starting with the ones I regularly use)
 
 ## [Mastodon](https://joinmastodon.org/apps) by [@mastodon@mastodo.social](https://mastodon.social/@Mastodon)
 
-Official Mastodon app, free on the [App Store](https://apps.apple.com/us/app/mastodon-for-iphone/id1571998974), source on [Github](https://github.com/mastodon/mastodon-ios)
+Official Mastodon app, free on the [App Store](https://apps.apple.com/us/app/mastodon-for-iphone/id1571998974), Swift code on [Github](https://github.com/mastodon/mastodon-ios)
 
 Features: fairly complete profile editing, including adding links. I use this app whenever I want to edit my profile.
 
