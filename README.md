@@ -44,4 +44,4 @@ Free on the [App Store](https://apps.apple.com/us/app/mammoth-for-mastodon/id166
 
 On [@mammoth@moth.social](https://moth.social/@mammoth)
 
-Favorite features: A couple of built-in games, including chess
+Favorite features: A couple of built-in games, including chess. Fairly complete profile editing. Nice community (list of instances) browser.
