@@ -32,7 +32,7 @@ Free on the [App Store](https://apps.apple.com/us/app/mammoth-for-mastodon/id166
 
 Features: A couple of built-in games, including chess. Fairly complete profile editing. Nice community (list of instances) browser.
 
-## Tooot
+## [Tooot](https://tooot.app/)
 
 Free on the [App Store](https://apps.apple.com/us/app/tooot-fediverse-and-mastodon/id1549772269), react native code on [Github](https://github.com/tooot-app/app)
 
