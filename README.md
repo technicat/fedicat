@@ -14,6 +14,8 @@ On the [App Store](https://apps.apple.com/us/app/metatext/id1523996615)
 
 Source on [Github](https://github.com/metabolist/metatext) (archived)
 
+On [Mastodon](https://mastodon.social/@metabolist)
+
 Good alt-text entry interface with a Detect Text (character recognition) feature.
 
 ## Ice Cubes
