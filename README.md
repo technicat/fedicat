@@ -32,7 +32,7 @@ Free on the [App Store](https://apps.apple.com/us/app/mammoth-for-mastodon/id166
 
 Features: A couple of built-in games, including chess. Fairly complete profile editing. Nice community (list of instances) browser.
 
-Quirks: Have to go through menu to operate on post, no quick favorite or boost.
+Quirks: Have to go through menu to operate on post, no quick favorite or boost, unnecessary sound effects (that I can hear on my connected speakers)
 
 ## [Tooot](https://tooot.app/)
 
