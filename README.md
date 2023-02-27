@@ -46,4 +46,4 @@ Quirks: Can't remove an account.
 
 Subscription on the [App Store](https://apps.apple.com/us/app/ivory-for-mastodon-by-tapbots/id6444602274) with free trial.
 
-Quirks: Prompts if you really want to boost (unnecessary hindrance to boosting freely).
+Quirks: Prompts if you really want to boost (unnecessary hindrance to boosting freely). Alt-text entry is not available when using as a share target for images.
