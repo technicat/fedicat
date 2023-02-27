@@ -39,3 +39,11 @@ Quirks: Have to go through menu to operate on post, no quick favorite or boost, 
 Free on the [App Store](https://apps.apple.com/us/app/tooot-fediverse-and-mastodon/id1549772269), react native code on [Github](https://github.com/tooot-app/app).
 
 Features: Boost/reply filters in feed, access to local/federated/trending feeds.
+
+Quirks: Can't remove an account.
+
+## [Ivory](https://tapbots.com/ivory/) by [@tapbots@tapbots.social](https://tapbots.social/@tapbots)
+
+Subscription on the [App Store](https://apps.apple.com/us/app/ivory-for-mastodon-by-tapbots/id6444602274) with free trial.
+
+Quirks: Prompts if you really want to boost (unnecessary hindrance to boosting freely).
