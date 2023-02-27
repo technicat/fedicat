@@ -1,6 +1,6 @@
 An overview of Mastodon apps (starting with the ones I regularly use)
 
-## [Mastodon](https://joinmastodon.org/apps) by [@mastodon@mastodo.social](https://mastodon.social/@Mastodon)
+## [Mastodon](https://joinmastodon.org/apps) by [@mastodon@mastodon.social](https://mastodon.social/@Mastodon)
 
 Official Mastodon app, free on the [App Store](https://apps.apple.com/us/app/mastodon-for-iphone/id1571998974), Swift code on [Github](https://github.com/mastodon/mastodon-ios)
 
