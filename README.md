@@ -50,8 +50,12 @@ Features: Latest followers avatar list in profile. Clear labeling of private men
 
 Quirks: Prompts if you really want to boost (unnecessary hindrance to boosting freely). Alt-text entry is not available when using as a share target for images. Profile tab is in the center instead of on the right as is conventional with social media apps.
 
-## [Tootle](https://apps.apple.com/us/app/tootle-for-mastodon/id1236013466) by [@tootleapp@mastodon.cloud](https://mastodon.cloud/@tootleapp)
+## Tootle by [@tootleapp@mastodon.cloud](https://mastodon.cloud/@tootleapp)
 
 Free on the [App Store](https://apps.apple.com/us/app/tootle-for-mastodon/id1236013466).
 
 Quirs: Hasn't been updated since 2020.
+
+## [Mastoot](https://mastoot.app/) by [@libei@mastodon.social](https://mastodon.social/@libei)
+
+Free on the [App Store](https://apps.apple.com/us/app/mastoot/id1501485410).
