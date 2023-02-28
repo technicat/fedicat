@@ -70,9 +70,9 @@ Features: Allows login option between private or external browser.
 
 Quirks: Square avatars with no rounded corners.
 
----
+## Not Activately Updated
 
-## Roma
+### Roma
 
 Free on the [App Store](https://apps.apple.com/us/app/roma-for-pleroma-and-mastodon/id1445328699)
 
@@ -80,19 +80,19 @@ Features: Advertised to be compatible with Pleroma and other ActivityPub service
 
 Quirks: Hasn't been updated since 2019. Website roma.rocks is gone.
 
-## [Mercury](https://onmercury.app/)
+### [Mercury](https://onmercury.app/)
 
 Free on the [App Store](https://apps.apple.com/us/app/mercury-for-mastodon/id1486749200)
 
 Quirks: No obvious way to remove an account. Like Ivory, has profile tab in the center and search on the far right. Rounded square avatars. Hasn't been updated since March 2021.
 
-## Tootle by [@tootleapp@mastodon.cloud](https://mastodon.cloud/@tootleapp)
+### Tootle by [@tootleapp@mastodon.cloud](https://mastodon.cloud/@tootleapp)
 
 Free on the [App Store](https://apps.apple.com/us/app/tootle-for-mastodon/id1236013466).
 
 Quirks: Hasn't been updated since 2020.
 
-## B4X for Pleroma & Mastodon by [Anywhere Software](https://www.b4x.com/android/forum/threads/b4x-b4x-pleroma-open-source-client-for-mastodon-pleroma-social-networks.124214/#content)
+### B4X for Pleroma & Mastodon by [Anywhere Software](https://www.b4x.com/android/forum/threads/b4x-b4x-pleroma-open-source-client-for-mastodon-pleroma-social-networks.124214/#content)
 
 Free on the [App Store](https://apps.apple.com/us/app/b4x-for-pleroma-mastodon/id1538396871). B4X project on [Github](https://github.com/AnywhereSoftware/B4X-Pleroma)
 
