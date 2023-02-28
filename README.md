@@ -98,5 +98,13 @@ Free on the [App Store](https://apps.apple.com/us/app/b4x-for-pleroma-mastodon/i
 
 Quirks: In-app browser login. Hasn't been updated since 2021.
 
+### Oyakodon for Mastodon
+
+Free on the [App Store](https://apps.apple.com/us/app/oyakodon-for-mastodon/id1229174544)
+
+Features: cool name
+
+Quirks: Unable to get past the instance entry page. Hasn't been updated since 2018.
+
 
 
