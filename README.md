@@ -68,4 +68,4 @@ Quirks: The profile tab on the far right is labeled ... which normally would bri
 
 Free on the [App Store](https://apps.apple.com/us/app/mercury-for-mastodon/id1486749200)
 
-Quirks: No obvious way to remove an account. Hasn't been updated since March 2021.
+Quirks: No obvious way to remove an account. Like Ivory, has profile tab in the center and search on the far right. Hasn't been updated since March 2021.
