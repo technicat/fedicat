@@ -30,6 +30,8 @@ Quirks: Single-line entry field for alt-text entry. Avatar icons are square (I f
 
 Free on the [App Store](https://apps.apple.com/us/app/mammoth-for-mastodon/id1667573899)
 
+Reviewed by [TechCrunch](https://techcrunch.com/2023/02/27/mammoth-is-a-free-mastodon-app-for-ios-that-makes-it-easier-to-get-started/)
+
 Features: A couple of built-in games, including chess. Fairly complete profile editing. Nice community (list of instances) browser.
 
 Quirks: Have to go through menu to operate on post, no quick favorite or boost, unnecessary sound effects (that I can hear on my connected speakers)
@@ -61,3 +63,9 @@ Quirks: Hasn't been updated since 2020.
 Free on the [App Store](https://apps.apple.com/us/app/mastoot/id1501485410).
 
 Quirks: The profile tab on the far right is labeled ... which normally would bring you to another list of tab links.
+
+## [Mercury](https://onmercury.app/)
+
+Free on the [App Store](https://apps.apple.com/us/app/mercury-for-mastodon/id1486749200)
+
+Quirks: No obvious way to remove an account. Hasn't been updated since March 2021.
