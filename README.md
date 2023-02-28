@@ -70,7 +70,7 @@ Features: Allows login option between private or external browser.
 
 Quirks: Square avatars with no rounded corners.
 
-## Not Activately Updated
+## Not Recently Updated
 
 ### Roma
 
