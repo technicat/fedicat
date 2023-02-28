@@ -62,6 +62,16 @@ Free on the [App Store](https://apps.apple.com/us/app/tootoise/id1465090190)
 
 Quirks: No obvious way to remove an account. No guidance on entering instance name for login/signup. Rounded square avatars, paw icon (tortoise foot?) for posting, odd icons that look like pumpkin head dolls for Local and Profile
 
+## iMast
+
+Free on the [App Store](https://apps.apple.com/us/app/imast/id1229461703)
+
+Features: Allows login option between private or external browser.
+
+Quirks: Square avatars with no rounded corners.
+
+---
+
 ## Roma
 
 Free on the [App Store](https://apps.apple.com/us/app/roma-for-pleroma-and-mastodon/id1445328699)
@@ -82,11 +92,11 @@ Free on the [App Store](https://apps.apple.com/us/app/tootle-for-mastodon/id1236
 
 Quirks: Hasn't been updated since 2020.
 
-## iMast
+## B4X for Pleroma & Mastodon by [Anywhere Software](https://www.b4x.com/android/forum/threads/b4x-b4x-pleroma-open-source-client-for-mastodon-pleroma-social-networks.124214/#content)
 
-Free on the [App Store[(https://apps.apple.com/us/app/imast/id1229461703)
+Free on the [App Store](https://apps.apple.com/us/app/b4x-for-pleroma-mastodon/id1538396871). B4X project on [Github](https://github.com/AnywhereSoftware/B4X-Pleroma)
 
-Features: Allows login option between private or external browser.
+Quirks: Hasn't been updated since 2021.
 
-Quirks: Square avatars with no rounded corners.
+
 
