@@ -96,7 +96,7 @@ Quirks: Hasn't been updated since 2020.
 
 Free on the [App Store](https://apps.apple.com/us/app/b4x-for-pleroma-mastodon/id1538396871). B4X project on [Github](https://github.com/AnywhereSoftware/B4X-Pleroma)
 
-Quirks: Hasn't been updated since 2021.
+Quirks: In-app browser login. Hasn't been updated since 2021.
 
 
 
