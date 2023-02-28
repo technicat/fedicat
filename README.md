@@ -46,6 +46,10 @@ Quirks: Can't remove an account.
 
 Subscription on the [App Store](https://apps.apple.com/us/app/ivory-for-mastodon-by-tapbots/id6444602274) with free trial.
 
-Features: Latest followers avatar list in profile.
+Features: Latest followers avatar list in profile. Clear labeling of private mentions.
 
 Quirks: Prompts if you really want to boost (unnecessary hindrance to boosting freely). Alt-text entry is not available when using as a share target for images. Profile tab is in the center instead of on the right as is conventional with social media apps.
+
+## [Tootle](https://apps.apple.com/us/app/tootle-for-mastodon/id1236013466) by [@tootleapp@mastodon.cloud](https://mastodon.cloud/@tootleapp)
+
+Free on the [App Store](https://apps.apple.com/us/app/tootle-for-mastodon/id1236013466), hasn't been updated since 2020.
