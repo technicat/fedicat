@@ -34,7 +34,7 @@ Features: A couple of built-in games, including chess. Fairly complete profile e
 
 Quirks: Have to go through menu to operate on post, no quick favorite or boost, unnecessary sound effects (that I can hear on my connected speakers)
 
-## [Tooot](https://tooot.app/)
+## [Tooot](https://tooot.app/) by [xmflsct](https://xmflsct.com/)
 
 Free on the [App Store](https://apps.apple.com/us/app/tooot-fediverse-and-mastodon/id1549772269), react native code on [Github](https://github.com/tooot-app/app).
 
