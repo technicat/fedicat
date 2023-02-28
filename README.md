@@ -52,4 +52,6 @@ Quirks: Prompts if you really want to boost (unnecessary hindrance to boosting f
 
 ## [Tootle](https://apps.apple.com/us/app/tootle-for-mastodon/id1236013466) by [@tootleapp@mastodon.cloud](https://mastodon.cloud/@tootleapp)
 
-Free on the [App Store](https://apps.apple.com/us/app/tootle-for-mastodon/id1236013466), hasn't been updated since 2020.
+Free on the [App Store](https://apps.apple.com/us/app/tootle-for-mastodon/id1236013466).
+
+Quirs: Hasn't been updated since 2020.
