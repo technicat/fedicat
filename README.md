@@ -1,4 +1,4 @@
-An overview of Mastodon apps (starting with the ones I regularly use)
+An overview of Mastodon apps I've tried on my iPhone.
 
 ## [Mastodon](https://joinmastodon.org/apps) by [@mastodon@mastodon.social](https://mastodon.social/@Mastodon)
 
