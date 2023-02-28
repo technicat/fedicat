@@ -54,8 +54,10 @@ Quirks: Prompts if you really want to boost (unnecessary hindrance to boosting f
 
 Free on the [App Store](https://apps.apple.com/us/app/tootle-for-mastodon/id1236013466).
 
-Quirs: Hasn't been updated since 2020.
+Quirks: Hasn't been updated since 2020.
 
 ## [Mastoot](https://mastoot.app/) by [@libei@mastodon.social](https://mastodon.social/@libei)
 
 Free on the [App Store](https://apps.apple.com/us/app/mastoot/id1501485410).
+
+Quirks: The profile tab on the far right is labeled ... which normally would bring you to another list of tab links.
