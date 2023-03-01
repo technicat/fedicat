@@ -105,3 +105,9 @@ Features: Nice simple clean design.
 Free on the [App Store](https://apps.apple.com/in/app/stella-for-mastodon-twitter/id921372048)
 
 Quirks: Keeps the instance front page at the top of the feed (or maybe that's a feature).
+
+## Toot by [@tootapp@mastodon.social](https://mastodon.social/@tootapp)
+
+Purchase on the [App Store](https://apps.apple.com/us/app/toot-for-mastodon/id1229021451)
+
+Quirks: Support links on the App Store page and mastodon profile are broken
