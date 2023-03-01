@@ -70,6 +70,12 @@ Features: Allows login option between private or external browser.
 
 Quirks: Square avatars with no rounded corners.
 
+## [TootDesk](https://toot.thedesk.top/)
+
+Free on the [App Store](https://apps.apple.com/us/app/tootdesk/id1591748028), react native code on [GitHub](https://github.com/cutls/TootDesk)
+
+Quirks: Bottom bar is more like the typical top bar, displays the username/instance in the center and icons in the corner for posting and alerts.
+
 ## Not Recently Updated
 
 ### Roma
