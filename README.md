@@ -78,6 +78,14 @@ Free on the [App Store](https://apps.apple.com/us/app/tootdesk/id1591748028), re
 
 Quirks: Bottom bar is more like the typical top bar, displays the username/instance in the center and icons in the corner for posting and alerts.
 
+## [Tusker](https://vaccor.space/tusker/) by [Vaccor](https://vaccor.space/)
+
+Free on the [App Store](https://apps.apple.com/us/app/tusker/id1498334597), Swift code on [ShadowFacts](https://git.shadowfacts.net/shadowfacts/Tusker)
+
+Features: List of popular instances provided at login.
+
+Quirks: Square avatars.
+
 ## Not Recently Updated
 
 ### Roma
