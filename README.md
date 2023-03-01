@@ -24,7 +24,7 @@ Free on the [App Store](https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6
 
 Articles on [Medium](https://dimillian.medium.com/the-making-of-ice-cubes-an-open-source-swiftui-mastodon-client-45ebea5cf6b6) and [Daring Fireball](https://daringfireball.net/2023/01/ice_cubes_app_store_limbo).
 
-Features: Excellent appearance (this and Ivory are the best looking of the bunch), full-width screen use for posts. Good hashtag completion. Very frequent updates.
+Features: Excellent appearance (this and Ivory are the best looking of the bunch), full-width screen use for posts. Good hashtag completion. Most complete profile view, including links and featured hashtags. Very frequent updates.
 
 Quirks: Single-line entry field for alt-text entry. Avatar icons are rounded square (I feel they should be round for visual distinction)
 
@@ -48,7 +48,7 @@ Quirks: Can't remove an account.
 
 Subscription on the [App Store](https://apps.apple.com/us/app/ivory-for-mastodon-by-tapbots/id6444602274) with free trial.
 
-Features: Latest followers avatar list in profile. Clear labeling of private mentions.
+Features: Latest followers avatar list in profile. Clear labeling of private mentions. Extracts description when used as a link share target (although the formatting in Metatext is better).
 
 Quirks: Prompts if you really want to boost (unnecessary hindrance to boosting freely). Alt-text entry is not available when using as a share target for images. Profile tab is in the center instead of on the right as is conventional with social media apps.
 
