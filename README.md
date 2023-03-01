@@ -1,6 +1,6 @@
 An overview of Mastodon apps I've tried on my iPhone, focusing on details of particular interest to me (e.g. icon design, tab placements...). If I add more platforms, I'll split them into separate files.
 
-The official Mastodon site also has a comprehensive [list](https://joinmastodon.org/apps).
+The official Mastodon site also has a [list](https://joinmastodon.org/apps).
 
 ## [Mastodon](https://joinmastodon.org/apps) by [@mastodon@mastodon.social](https://mastodon.social/@Mastodon)
 
