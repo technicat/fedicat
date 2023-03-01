@@ -88,8 +88,14 @@ Quirks: Square avatars.
 
 ## [Tootter]
 
-On the [App Store](https://apps.apple.com/us/app/tootter-for-mastodon/id1629293955)
+Free on the [App Store](https://apps.apple.com/us/app/tootter-for-mastodon/id1629293955)
 
 Features: Instance browser.
 
 Quirks: Cannot select an instance from the instance browser. Very bright color scheme, like something out of the 90s.
+
+## [TwidereX](https://x.twidere.com/)
+
+Free on the [App Store](https://apps.apple.com/us/app/twidere-x/id1530314034), Swift code on [GitHub](https://github.com/TwidereProject/TwidereX-iOS)
+
+Features: Nice simple clean design.
