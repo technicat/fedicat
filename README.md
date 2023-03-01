@@ -99,3 +99,9 @@ Quirks: Cannot select an instance from the instance browser. Very bright color s
 Free on the [App Store](https://apps.apple.com/us/app/twidere-x/id1530314034), Swift code on [GitHub](https://github.com/TwidereProject/TwidereX-iOS)
 
 Features: Nice simple clean design.
+
+## [Stella](https://www.stella-app.net/)
+
+Free on the [App Store](https://apps.apple.com/in/app/stella-for-mastodon-twitter/id921372048)
+
+Quirks: Keeps the instance front page at the top of the feed (or maybe that's a feature).
