@@ -85,3 +85,11 @@ Free on the [App Store](https://apps.apple.com/us/app/tusker/id1498334597), Swif
 Features: List of popular instances provided at login.
 
 Quirks: Square avatars.
+
+## [Tootter]
+
+On the [App Store](https://apps.apple.com/us/app/tootter-for-mastodon/id1629293955)
+
+Features: Instance browser.
+
+Quirks: Cannot select an instance from the instance browser. Very bright color scheme, like something out of the 90s.
