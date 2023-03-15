@@ -1,4 +1,4 @@
-An overview of Mastodon apps I've tried on my iPhone, focusing on details of particular interest to me (e.g. icon design, tab placements...). These apps have all been updated in the past year. Apps that seem to be no longer under development are in a [separate list](iosold.md).
+An overview of Mastodon apps I've tried on my iPhone, focusing on aspects that interest me and my design prefences (e.g. icon design, tab placements...). These apps have all been updated in the past year. Apps that seem to be no longer under development are in a [separate list](iosold.md).
 
 Also check out the official Mastodon [list](https://joinmastodon.org/apps).
 
@@ -13,6 +13,10 @@ Quirks: uses "reblog" instead of "boost"
 ## [Manny](https://actuallyzach.com/manny) by [@TaylorLineman@mastodon.social](@mastodon.social/@TaylorLineman)
 
 Free on the [App Store](https://apps.apple.com/us/app/manny-for-mastodon/id1668409667)
+
+Features: Cute appearance, elaborate app icon. Good-looking and simple sign-on screen. Interesting use of gray-shaded background (and slightly rounded corners) for boosts.
+
+Quirks: Square avatars, account tab is not on far right, boost button has a non-obvous icon, uses "reblog" instead of "boost", non-boosted posts could use some more left side margin.
 
 ## [MetaText](https://metabolist.org/) by [@metabolist@mastodon.social](https://mastodon.social/@metabolist)
 
