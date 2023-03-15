@@ -10,6 +10,10 @@ Features: fairly complete profile editing, including adding links. I use this ap
 
 Quirks: uses "reblog" instead of "boost"
 
+## [Manny](https://actuallyzach.com/manny) by [@TaylorLineman@mastodon.social](@mastodon.social/@TaylorLineman)
+
+Free on the [App Store](https://apps.apple.com/us/app/manny-for-mastodon/id1668409667)
+
 ## [MetaText](https://metabolist.org/) by [@metabolist@mastodon.social](https://mastodon.social/@metabolist)
 
 Free on the [App Store](https://apps.apple.com/us/app/metatext/id1523996615), Swift code on [Github](https://github.com/metabolist/metatext) (archived)
