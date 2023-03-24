@@ -1,4 +1,4 @@
-Swift packages for developeing iOS Mastodon apps
+Swift packages for developing iOS Mastodon apps
 
 ## [TootSDK](https://github.com/TootSDK/TootSDK)
 
