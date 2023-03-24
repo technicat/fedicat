@@ -12,7 +12,7 @@ Quirks: uses "reblog" instead of "boost"
 
 ## [Woolly](https://mastodon.social/@woollyapp) by [Matteo Villa](https://mvilla.it/)
 
-Free on the [App Store](https://apps.apple.com/us/app/woolly-for-mastodon/id6444360628)
+Subscription on the on the [App Store](https://apps.apple.com/us/app/woolly-for-mastodon/id6444360628) with free trial.
 
 Features: Clean design, conventional layout.
 
