@@ -10,6 +10,12 @@ Features: fairly complete profile editing, including adding links. I use this ap
 
 Quirks: uses "reblog" instead of "boost"
 
+## [Woolly](https://mastodon.social/@woollyapp) by [Matteo Villa](https://mvilla.it/)
+
+Free on the [App Store](https://apps.apple.com/us/app/woolly-for-mastodon/id6444360628)
+
+Features: Clean design, conventional layout.
+
 ## [Manny](https://actuallyzach.com/manny) by [@TaylorLineman@mastodon.social](@mastodon.social/@TaylorLineman)
 
 Free on the [App Store](https://apps.apple.com/us/app/manny-for-mastodon/id1668409667)
