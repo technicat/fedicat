@@ -2,6 +2,10 @@ An overview of Mastodon apps I've tried on my iPhone, focusing on aspects that i
 
 Also check out the official Mastodon [list](https://joinmastodon.org/apps).
 
+## Light by [Revoo](https://revoo.studio/)
+
+Free on the [App Store](https://apps.apple.com/jp/app/ligt-for-mastodon/id1669105131) with premium subscriptions.
+
 ## Ice Cubes by [@dimillian@mastodon.social](https://mastodon.social/@dimillian)
 
 Free on the [App Store](https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6444915884), Swift code on [Github](https://github.com/Dimillian/IceCubesApp).
