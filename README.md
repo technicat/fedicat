@@ -68,8 +68,7 @@ Free on the [App Store](https://apps.apple.com/us/app/metatext/id1523996615), Sw
 
 Features: Good alt-text entry interface with large multiline field that you can't ignore and offers a Detect Text (character recognition) feature. When sharing a link to this app it prepends an extracted description for the link, so I use this app as a share target for links and photos.
 
-Quirks: No obvious indication in the feed that an image has alt-text, inconvenient path to profile (have to go through menu).
-
+Quirks: No obvious indication in the feed that an image has alt-text, inconvenient path to profile (have to go through menu), doesn't display sensitive content warning.
 
 ## [Stella](https://www.stella-app.net/)
 
