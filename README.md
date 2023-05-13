@@ -2,10 +2,6 @@ An overview of Mastodon apps I've tried on my iPhone, focusing on aspects that i
 
 Also check out the official Mastodon [list](https://joinmastodon.org/apps).
 
-## Light by [Revoo](https://revoo.studio/)
-
-Free on the [App Store](https://apps.apple.com/jp/app/ligt-for-mastodon/id1669105131) with premium subscriptions.
-
 ## Ice Cubes by [@dimillian@mastodon.social](https://mastodon.social/@dimillian)
 
 Free on the [App Store](https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6444915884), Swift code on [Github](https://github.com/Dimillian/IceCubesApp).
@@ -31,6 +27,10 @@ Subscription on the [App Store](https://apps.apple.com/us/app/ivory-for-mastodon
 Features: Latest followers avatar list in profile. Clear labeling of private mentions. Extracts description when used as a link share target (although the formatting in Metatext is better).
 
 Quirks: Prompts if you really want to boost (unnecessary hindrance to boosting freely). Alt-text entry is not available when using as a share target for images. Profile tab is in the center instead of on the right as is conventional with social media apps.
+
+## Light by [Revoo](https://revoo.studio/)
+
+Free on the [App Store](https://apps.apple.com/jp/app/ligt-for-mastodon/id1669105131) with premium subscriptions.
 
 ## [Mammoth](https://getmammoth.app/) by [@mammoth@moth.social](https://moth.social/@mammoth)
 
@@ -70,11 +70,16 @@ Features: Good alt-text entry interface with large multiline field that you can'
 
 Quirks: No obvious indication in the feed that an image has alt-text, inconvenient path to profile (have to go through menu), doesn't display sensitive content warning.
 
+## [Mona](https://mastodon.social/@monaapp)
+
+On the [App Store](https://apps.apple.com/us/app/mona-for-mastodon/id1659154653). Subscription required for more than browsing.
+
 ## [Stella](https://www.stella-app.net/)
 
 Free on the [App Store](https://apps.apple.com/in/app/stella-for-mastodon-twitter/id921372048)
 
 Quirks: Keeps the instance front page at the top of the feed (or maybe that's a feature).
+
 
 ## Toot by [@tootapp@mastodon.social](https://mastodon.social/@tootapp)
 
@@ -102,7 +107,6 @@ Quirks: Bottom bar is more like the typical top bar, displays the username/insta
 Free on the [App Store](https://apps.apple.com/us/app/tootoise/id1465090190)
 
 Quirks: No obvious way to remove an account. No guidance on entering instance name for login/signup. Rounded square avatars, paw icon (tortoise foot?) for posting, odd icons that look like pumpkin head dolls for Local and Profile
-
 
 ## Tootter
 
