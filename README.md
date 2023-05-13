@@ -70,7 +70,7 @@ Features: Good alt-text entry interface with large multiline field that you can'
 
 Quirks: No obvious indication in the feed that an image has alt-text, inconvenient path to profile (have to go through menu), doesn't display sensitive content warning.
 
-## [Mona](https://mastodon.social/@monaapp)
+## Mona by [@monaapp@mastodon.social](https://mastodon.social/@monaapp)
 
 On the [App Store](https://apps.apple.com/us/app/mona-for-mastodon/id1659154653). Subscription required for more than browsing.
 
