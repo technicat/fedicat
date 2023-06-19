@@ -74,7 +74,7 @@ Quirks: No obvious indication in the feed that an image has alt-text, inconvenie
 
 On the [App Store](https://apps.apple.com/us/app/mona-for-mastodon/id1659154653). Subscription required for more than browsing.
 
-## [Radiant](https://radiant.social/)
+## [Radiant](https://radiant.social/) by [@jknlsn@hachyderm.io](https://hachyderm.io/@jknlsn)
 
 Free on the [App Store](https://apps.apple.com/app/id6444323022) with subscription for push notifications and multiple accounts.
 
