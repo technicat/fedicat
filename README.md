@@ -74,6 +74,12 @@ Quirks: No obvious indication in the feed that an image has alt-text, inconvenie
 
 On the [App Store](https://apps.apple.com/us/app/mona-for-mastodon/id1659154653). Subscription required for more than browsing.
 
+## [Radiant](https://radiant.social/)
+
+Free on the [App Store](https://apps.apple.com/app/id6444323022) with subscription for push notifications and multiple accounts.
+
+Quirks: Feeds could use more margins. Isn't iPad-native.
+
 ## [Stella](https://www.stella-app.net/)
 
 Free on the [App Store](https://apps.apple.com/in/app/stella-for-mastodon-twitter/id921372048)
