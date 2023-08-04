@@ -68,7 +68,7 @@ Free on the [App Store](https://apps.apple.com/us/app/metatext/id1523996615), Sw
 
 Features: Good alt-text entry interface with large multiline field that you can't ignore and offers a Detect Text (character recognition) feature. When sharing a link to this app it prepends an extracted description for the link, so I use this app as a share target for links and photos.
 
-Quirks: No obvious indication in the feed that an image has alt-text, inconvenient path to profile (have to go through menu), doesn't display sensitive content warning.
+Quirks: No obvious indication in the feed that an image has alt-text, inconvenient path to profile (have to go through menu), doesn't display sensitive content warning. No longer actively maintained but [feditext](https://github.com/feditext/feditext) is a fork in progress.
 
 ## Mona by [@monaapp@mastodon.social](https://mastodon.social/@monaapp)
 
@@ -121,6 +121,14 @@ Free on the [App Store](https://apps.apple.com/us/app/tootter-for-mastodon/id162
 Features: Instance browser.
 
 Quirks: Cannot select an instance from the instance browser. Very bright color scheme, like something out of the 90s. Website is inaccessible.
+
+## [Trunks](https://trunks.social/)
+
+Free on the [App Store](https://apps.apple.com/us/app/trunks-for-mastodon/id6444749479).
+
+Features: Distinctive, gently-hued appearance.
+
+Quirks: Website is unwieldy, disables back button.
 
 ## [Tusker](https://vaccor.space/tusker/) by [Vaccor](https://vaccor.space/)
 
