@@ -1,4 +1,4 @@
-An overview of Mastodon apps I've tried on my iPhone, with first impressions focusing on aspects that interest me and my design prefences (e.g. icon design, tab placements...). These apps have all been updated in the past year. Apps that seem to be no longer under development are in a [separate list](iosold.md).
+An overview of Mastodon apps I've tried on my iPhone, with first impressions focusing on aspects that interest me and my design preferences (e.g. icon design, tab placements...). These apps have all been updated in the past year. Apps that seem to be no longer under development are in a [separate list](iosold.md).
 
 Also check out the official Mastodon [list](https://joinmastodon.org/apps).
 
