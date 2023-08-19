@@ -2,6 +2,14 @@ An overview of Mastodon apps I've tried on my iPhone, with first impressions foc
 
 Also check out the official Mastodon [list](https://joinmastodon.org/apps).
 
+## [Feather](https://covelline.com/feather/mastodon/) by [@feather@covelline.social](https://covelline.social/@feather)
+
+Free on the [App Store](https://apps.apple.com/sa/app/feather-for-mastodon/id6446263061) with google ads displayed at the bottom.
+
+Features: Clean look.
+
+Quirks: A bit rough, e.g. the search tab button displays the user name.
+
 ## Ice Cubes by [@dimillian@mastodon.social](https://mastodon.social/@dimillian)
 
 Free on the [App Store](https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6444915884), Swift code on [Github](https://github.com/Dimillian/IceCubesApp).
@@ -80,18 +88,19 @@ Free on the [App Store](https://apps.apple.com/app/id6444323022) with subscripti
 
 Quirks: Feeds could use more margins. Isn't iPad-native.
 
-## [Sora SNS](https://www.mszpro.com/) by [me@sns.mszpro.com](https://sns.mszpro.com/@me)
+## [Sora SNS](https://www.mszpro.com/) by [@me@sns.mszpro.com](https://sns.mszpro.com/@me)
 
-Free on the [App Store](https://apps.apple.com/us/app/sorasns-for-mastodon-misskey/id6450969760) with subscriptions (including lifetime) to remove ads and enable features.
+Free on the [App Store](https://apps.apple.com/us/app/sorasns-for-mastodon-misskey/id6450969760) with subscriptions (including lifetime) to remove ads and enable features, including tuning the feed.
 
-Quirks: Predictive feed, which is a feature, depending how you feel about feed algorithms.
+Features: Predictive feed.
+
+Quirks: Predictive feed.
 
 ## [Stella](https://www.stella-app.net/)
 
 Free on the [App Store](https://apps.apple.com/in/app/stella-for-mastodon-twitter/id921372048)
 
 Quirks: Keeps the instance front page at the top of the feed (or maybe that's a feature).
-
 
 ## Toot by [@tootapp@mastodon.social](https://mastodon.social/@tootapp)
 
