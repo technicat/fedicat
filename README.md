@@ -80,6 +80,12 @@ Free on the [App Store](https://apps.apple.com/app/id6444323022) with subscripti
 
 Quirks: Feeds could use more margins. Isn't iPad-native.
 
+## [Sora SNS](https://www.mszpro.com/) by [me@sns.mszpro.com](https://sns.mszpro.com/@me)
+
+Free on the [App Store](https://apps.apple.com/us/app/sorasns-for-mastodon-misskey/id6450969760) with subscriptions (including lifetime) to remove ads and enable features.
+
+Quirks: Predictive feed, which is a feature, depending how you feel about feed algorithms.
+
 ## [Stella](https://www.stella-app.net/)
 
 Free on the [App Store](https://apps.apple.com/in/app/stella-for-mastodon-twitter/id921372048)
@@ -100,7 +106,6 @@ Free on the [App Store](https://apps.apple.com/us/app/tooot-fediverse-and-mastod
 Features: Boost/reply filters in feed, access to local/federated/trending feeds.
 
 Quirks: Can't remove an account.
-
 
 ## [TootDesk](https://toot.thedesk.top/)
 
