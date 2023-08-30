@@ -1,3 +1,5 @@
+# Swift Mastodon/Fediverse packages
+
 Swift packages for developing iOS Mastodon apps
 
 ## [TootSDK](https://github.com/TootSDK/TootSDK)
