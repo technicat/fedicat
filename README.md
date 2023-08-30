@@ -1,1 +1,1 @@
-This repo started out as just a list of all the [Mastodon iOS apps](iosapps.md) I've found, but now I've renamed it to use as the github home base for my [fediverse app](https://fedicat.com/) in progress.
+This repo started out as just a list of all the [Mastodon iOS apps](iosapps.md) I've found, but now I've renamed it to use as the github public home base for my [fediverse app](https://fedicat.com/) in progress.
