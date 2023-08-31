@@ -4,7 +4,7 @@
 
 Source on [github](https://github.com/elk-zone/elk)
 
-Features: clean look, light theme, multicolumn support of multiple accounts
+Features: clean look, light theme
 
 Cons: in alpha
 
