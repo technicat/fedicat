@@ -8,9 +8,9 @@ Also check out the official Mastodon [list](https://joinmastodon.org/apps).
 
 Free on the [App Store](https://apps.apple.com/sa/app/feather-for-mastodon/id6446263061) with google ads displayed at the bottom.
 
-Features: Clean look.
+Features: Clean look. Tab bar editor.
 
-Quirks: A bit rough, e.g. the search tab button displays the user name.
+Quirks: A bit rough, e.g. the tab bar displays my username under each icon.
 
 ## Ice Cubes by [@dimillian@mastodon.social](https://mastodon.social/@dimillian)
 
@@ -87,6 +87,8 @@ On the [App Store](https://apps.apple.com/us/app/mona-for-mastodon/id1659154653)
 ## [Radiant](https://radiant.social/) by [@jknlsn@hachyderm.io](https://hachyderm.io/@jknlsn)
 
 Free on the [App Store](https://apps.apple.com/app/id6444323022) with subscription for push notifications and multiple accounts.
+
+Features: extracts metadata from uploaded photo for alt text.
 
 Quirks: Feeds could use more margins. Isn't iPad-native.
 
