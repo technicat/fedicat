@@ -18,7 +18,7 @@ Free on the [App Store](https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6
 
 Articles on [Medium](https://dimillian.medium.com/the-making-of-ice-cubes-an-open-source-swiftui-mastodon-client-45ebea5cf6b6) and [Daring Fireball](https://daringfireball.net/2023/01/ice_cubes_app_store_limbo).
 
-Features: Excellent appearance (this and Ivory are the best looking of the bunch), full-width screen use for posts. Good hashtag completion. Most complete profile view, including links and featured hashtags. Very frequent updates. iPad-specific interface.
+Features: Excellent appearance (this and Ivory are the best looking of the bunch), full-width screen use for posts. Good hashtag completion. Most complete profile view, including links and featured hashtags. Very frequent updates. iPad-specific interface. Feed selection in top menu.
 
 Quirks: Single-line entry field for alt-text entry. Avatar icons are rounded square (I feel they should be round for visual distinction). iPad columns are cramped.
 
@@ -46,7 +46,7 @@ Free on the [App Store](https://apps.apple.com/jp/app/ligt-for-mastodon/id166910
 
 Free on the [App Store](https://apps.apple.com/us/app/mammoth-for-mastodon/id1667573899), planned subscription according to this review on [TechCrunch](https://techcrunch.com/2023/02/27/mammoth-is-a-free-mastodon-app-for-ios-that-makes-it-easier-to-get-started/)
 
-Features: A couple of built-in games, including chess. Fairly complete profile editing. Nice community (list of instances) browser (although missing universeodon.com). iPad-specific interface.
+Features: A couple of built-in games, including chess. Fairly complete profile editing. Nice community (list of instances) browser (although missing universeodon.com). iPad-specific interface.  Top left menu selection of feeds including lists.
 
 Quirks: Have to go through menu to operate on post, no quick favorite or boost, unnecessary sound effects (that I can hear on my connected speakers). Shows up as a link share target but that just launches the app.
 
@@ -54,7 +54,7 @@ Quirks: Have to go through menu to operate on post, no quick favorite or boost, 
 
 Free on the [App Store](https://apps.apple.com/us/app/manny-for-mastodon/id1668409667)
 
-Features: Cute appearance, elaborate app icon. Good-looking and simple sign-on screen. Interesting use of gray-shaded background (and slightly rounded corners) for boosts.
+Features: Cute appearance, elaborate app icon. Good-looking and simple sign-on screen. Interesting use of gray-shaded background (and slightly rounded corners) for boosts. Top left menu selection of feeds including lists and followed tags.
 
 Quirks: Square avatars, account tab is not on far right, boost button has a non-obvous icon, uses "reblog" instead of "boost", non-boosted posts could use some more left side margin. Doesn't show up as a link share target.
 
