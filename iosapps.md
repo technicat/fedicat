@@ -38,9 +38,11 @@ Features: Latest followers avatar list in profile. Clear labeling of private men
 
 Quirks: Prompts if you really want to boost (unnecessary hindrance to boosting freely). Alt-text entry is not available when using as a share target for images. Profile tab is in the center instead of on the right as is conventional with social media apps.
 
-## Light by [Revoo](https://revoo.studio/)
+## Ligt by [Revoo](https://revoo.studio/)
 
 Free on the [App Store](https://apps.apple.com/jp/app/ligt-for-mastodon/id1669105131) with premium subscriptions.
+
+Features: autocomplete instance list with detailed descriptions and rules
 
 ## [Mammoth](https://getmammoth.app/) by [@mammoth@moth.social](https://moth.social/@mammoth)
 
