@@ -72,6 +72,14 @@ Free on the [App Store](https://apps.apple.com/us/app/mastoot/id1501485410).
 
 Quirks: The profile tab on the far right is labeled ... which normally would bring you to another list of tab links.
 
+## Mastweet
+
+Free on the [App Store](https://apps.apple.com/it/app/mastweet-for-mastodon-social/id6457201547) with in-app purchases.
+
+Features: clean design.
+
+Quirks: Not clear what features are enabled by in-app purchases. List support is not visible.
+
 ## [MetaText](https://metabolist.org/) by [@metabolist@mastodon.social](https://mastodon.social/@metabolist)
 
 Free on the [App Store](https://apps.apple.com/us/app/metatext/id1523996615), Swift code on [Github](https://github.com/metabolist/metatext) (archived)
