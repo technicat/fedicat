@@ -4,6 +4,14 @@ An overview of Mastodon apps I've tried on my iPhone, with first impressions foc
 
 Also check out the official Mastodon [list](https://joinmastodon.org/apps).
 
+## [Dudu](https://covelline.com/feather/mastodon/) by [@feather@covelline.social](https://covelline.social/@feather)
+
+Free on the [App Store](https://apps.apple.com/us/app/%E5%98%9F%E5%98%9F%E9%95%BF%E6%AF%9B%E8%B1%A1/id1531987827). Flutter code on [github](https://github.com/duduapp/dudu).
+
+Features: Clean look. Account switcher. Instance description displayed in login screen (although only a few pre-supplied instances).
+
+Quirks: Limited timelines, no lists, primary language is Chinese (if you can read Chinese, check out the more detailed Chinese App Store [page](https://apps.apple.com/cn/app/%E5%98%9F%E5%98%9F%E9%95%BF%E6%AF%9B%E8%B1%A1/id1531987827).
+
 ## [Feather](https://covelline.com/feather/mastodon/) by [@feather@covelline.social](https://covelline.social/@feather)
 
 Free on the [App Store](https://apps.apple.com/sa/app/feather-for-mastodon/id6446263061) with google ads displayed at the bottom.
