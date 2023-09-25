@@ -4,7 +4,7 @@ An overview of Mastodon apps I've tried on my iPhone, with first impressions foc
 
 Also check out the official Mastodon [list](https://joinmastodon.org/apps).
 
-## [Dudu](https://covelline.com/feather/mastodon/) by [@feather@covelline.social](https://covelline.social/@feather)
+## [Dudu](http://dudu.today/)
 
 Free on the [App Store](https://apps.apple.com/us/app/%E5%98%9F%E5%98%9F%E9%95%BF%E6%AF%9B%E8%B1%A1/id1531987827). Flutter code on [github](https://github.com/duduapp/dudu).
 
