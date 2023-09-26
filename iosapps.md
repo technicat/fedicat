@@ -26,7 +26,7 @@ Free on the [App Store](https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6
 
 Articles on [Medium](https://dimillian.medium.com/the-making-of-ice-cubes-an-open-source-swiftui-mastodon-client-45ebea5cf6b6) and [Daring Fireball](https://daringfireball.net/2023/01/ice_cubes_app_store_limbo).
 
-Features: Excellent appearance (this and Ivory are the best looking of the bunch), full-width screen use for posts. Good hashtag completion. Most complete profile view, including links and featured hashtags. Very frequent updates. iPad-specific interface. Feed selection in top menu.
+Features: Excellent appearance (this and Ivory are the best looking of the bunch), full-width screen use for posts. Good hashtag completion. Most complete profile view, including links and featured hashtags. Very frequent updates. iPad-specific interface. Feed selection in top menu. Account switcher.
 
 Quirks: Single-line entry field for alt-text entry. Avatar icons are rounded square (I feel they should be round for visual distinction). iPad columns are cramped.
 
@@ -72,7 +72,7 @@ Quirks: Square avatars, account tab is not on far right, boost button has a non-
 
 Official Mastodon app, free on the [App Store](https://apps.apple.com/us/app/mastodon-for-iphone/id1571998974), Swift code on [Github](https://github.com/mastodon/mastodon-ios)
 
-Features: fairly complete profile editing, including adding links. I use this app whenever I want to edit my profile.
+Features: fairly complete profile editing, including adding links. I use this app whenever I want to edit my profile. Account switcher.
 
 Quirks: uses "reblog" instead of "boost"
 
@@ -94,7 +94,7 @@ Quirks: Not clear what features are enabled by in-app purchases. List support is
 
 Free on the [App Store](https://apps.apple.com/us/app/metatext/id1523996615), Swift code on [Github](https://github.com/metabolist/metatext) (archived)
 
-Features: Good alt-text entry interface with large multiline field that you can't ignore and offers a Detect Text (character recognition) feature. When sharing a link to this app it prepends an extracted description for the link, so I use this app as a share target for links and photos.
+Features: Good alt-text entry interface with large multiline field that you can't ignore and offers a Detect Text (character recognition) feature. When sharing a link to this app it prepends an extracted description for the link, so I use this app as a share target for links and photos. Account switcher.
 
 Quirks: No obvious indication in the feed that an image has alt-text, inconvenient path to profile (have to go through menu), doesn't display sensitive content warning. No longer actively maintained but [feditext](https://github.com/feditext/feditext) is a fork in progress.
 
