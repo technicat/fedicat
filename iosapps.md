@@ -58,7 +58,7 @@ Free on the [App Store](https://apps.apple.com/us/app/mammoth-for-mastodon/id166
 
 Features: A couple of built-in games, including chess. Fairly complete profile editing. Nice community (list of instances) browser (although missing universeodon.com). iPad-specific interface.  Top left menu selection of feeds including lists.
 
-Quirks: Have to go through menu to operate on post, no quick favorite or boost, unnecessary sound effects (that I can hear on my connected speakers). Shows up as a link share target but that just launches the app.
+Quirks: Have to go through menu to operate on post, no quick favorite or boost, unnecessary sound effects (that I can hear on my connected speakers). Shows up as a link share target but that just launches the app. Account switcher is buried inside Settings/Extras
 
 ## [Manny](https://actuallyzach.com/manny) by [@TaylorLineman@mastodon.social](@mastodon.social/@TaylorLineman)
 
