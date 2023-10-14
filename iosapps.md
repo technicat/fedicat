@@ -180,7 +180,9 @@ Quirks: Square avatars.
 
 Free on the [App Store](https://apps.apple.com/us/app/twidere-x/id1530314034), Swift code on [GitHub](https://github.com/TwidereProject/TwidereX-iOS)
 
-Features: Nice simple clean design.
+Features: Nice simple clean design. Also a twitter client.
+
+Quirks: Also a twitter client.
 
 ## [Woolly](https://mastodon.social/@woollyapp) by [Matteo Villa](https://mvilla.it/)
 
