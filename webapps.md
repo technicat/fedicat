@@ -15,3 +15,9 @@ Official Mastodon front end, impelemented in React.js, is in the main repo [Gith
 Features: fully featured, multicolumn Advanced setting makes good use of screen space to show everything (feed, notifications...) at once
 
 Quirks: latest update seems to freeze and lose focus often
+
+## Mastodon Bird UI by [@rolle@mementomori.social](https://mementomori.social/@rolle_
+
+Twitter-inspired CSS theme for Mastodon.
+
+Demo on [mementomori.social](https://mementomori.social/explore), source on [github](https://github.com/ronilaukkarinen/mastodon-bird-ui)
