@@ -21,3 +21,7 @@ Quirks: latest update seems to freeze and lose focus often
 Twitter-inspired CSS theme for Mastodon.
 
 Demo on [mementomori.social](https://mementomori.social/explore), source on [github](https://github.com/ronilaukkarinen/mastodon-bird-ui)
+
+## [Phanpy.social](https://phanpy.social/) by [@cheeaun@mastodon.social](https://mastodon.social/@cheeaun)
+
+Minimalistic web client, =source on [githbub](https://github.com/cheeaun/phanpy)
