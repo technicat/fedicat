@@ -160,7 +160,7 @@ Features: Instance browser.
 
 Quirks: Cannot select an instance from the instance browser. Very bright color scheme, like something out of the 90s. Website is inaccessible.
 
-## [Trunks](https://trunks.social/)
+## [Trunks](https://trunks.social/) by [@trunksapp@mstdn.social](https://mstdn.social/@trunksapp)
 
 Free on the [App Store](https://apps.apple.com/us/app/trunks-for-mastodon/id6444749479).
 
