@@ -14,7 +14,7 @@ Quirks: Limited timelines, no lists, primary language is Chinese (if you can rea
 
 ## [Feather](https://covelline.com/feather/mastodon/) by [@feather@covelline.social](https://covelline.social/@feather)
 
-Free on the [App Store](https://apps.apple.com/sa/app/feather-for-mastodon/id6446263061) with google ads displayed at the bottom.
+Free on the [App Store](https://apps.apple.com/sa/app/feather-for-mastodon/id6446263061) with google ads displayed at the bottom. Subscription required to remove ads and receive push notifications.
 
 Features: Clean look. Tab bar editor.
 
