@@ -40,7 +40,7 @@ Quirks: Square avatars with no rounded corners.
 
 ## [Ivory](https://tapbots.com/ivory/) by [@tapbots@tapbots.social](https://tapbots.social/@tapbots)
 
-Subscription on the [App Store](https://apps.apple.com/us/app/ivory-for-mastodon-by-tapbots/id6444602274) with free trial.
+Subscription on the [App Store](https://apps.apple.com/us/app/ivory-for-mastodon-by-tapbots/id6444602274) required for anything beyond browsing.
 
 Features: Latest followers avatar list in profile. Clear labeling of private mentions. Extracts description when used as a link share target (although the formatting in Metatext is better).  iPad-specific interface.
 
@@ -100,7 +100,7 @@ Quirks: No obvious indication in the feed that an image has alt-text, inconvenie
 
 ## Mona by [@monaapp@mastodon.social](https://mastodon.social/@monaapp)
 
-On the [App Store](https://apps.apple.com/us/app/mona-for-mastodon/id1659154653). Subscription required for more than browsing.
+On the [App Store](https://apps.apple.com/us/app/mona-for-mastodon/id1659154653). Subscription required for more than browsing and posting text-only.
 
 Features: communities browser allows viewing local and federated feeds on other instances
 
