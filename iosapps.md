@@ -4,6 +4,10 @@ An overview of Mastodon apps I've tried on my iPhone, with first impressions foc
 
 Also check out the official Mastodon [list](https://joinmastodon.org/apps).
 
+## [Dawn](https://noppe.dev/dawn) by [@noppefoxwolf@mstdn.jp](https://mstdn.jp/@noppefoxwolf)
+
+Paid on the [App Store](https://apps.apple.com/ca/app/dawn-for-mastodon/id1668645019).
+
 ## [Dudu](http://dudu.today/)
 
 Free on the [App Store](https://apps.apple.com/us/app/%E5%98%9F%E5%98%9F%E9%95%BF%E6%AF%9B%E8%B1%A1/id1531987827). Flutter code on [github](https://github.com/duduapp/dudu).
