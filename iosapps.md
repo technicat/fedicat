@@ -2,8 +2,6 @@
 
 An overview of Mastodon apps I've found on the App Store, including first impressions of the free ones (one of these days I'll fork over a few dollars and try the rest), focusing on aspects that interest me and my design preferences. These apps have all been updated in the past year. Apps that seem to be no longer under development are in a [separate list](iosold.md).
 
-Also check out the official Mastodon [list](https://joinmastodon.org/apps).
-
 ## [Dawn](https://noppe.dev/dawn) by [@noppefoxwolf@mstdn.jp](https://mstdn.jp/@noppefoxwolf)
 
 Paid on the [App Store](https://apps.apple.com/ca/app/dawn-for-mastodon/id1668645019).
