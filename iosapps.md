@@ -28,7 +28,7 @@ Free on the [App Store](https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6
 
 Articles on [Medium](https://dimillian.medium.com/the-making-of-ice-cubes-an-open-source-swiftui-mastodon-client-45ebea5cf6b6) and [Daring Fireball](https://daringfireball.net/2023/01/ice_cubes_app_store_limbo).
 
-Features: Excellent appearance (this and Ivory are the best looking of the bunch), full-width screen use for posts. Good hashtag completion. Most complete profile view, including links and featured hashtags. Very frequent updates. iPad-specific interface. Feed selection in top menu. Account switcher.
+Features: Excellent appearance (this and Ivory are the best looking of the bunch), full-width screen use for posts. Themes. Good hashtag completion. Most complete profile view, including links and featured hashtags. Very frequent updates. iPad-specific interface. Feed selection in top menu. Account switcher.
 
 Quirks: Single-line entry field for alt-text entry. Avatar icons are rounded square (I feel they should be round for visual distinction). iPad columns are cramped.
 
