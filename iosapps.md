@@ -68,7 +68,7 @@ Free on the [App Store](https://apps.apple.com/us/app/manny-for-mastodon/id16684
 
 Features: Cute appearance, elaborate app icon. Good-looking and simple sign-on screen. Interesting use of gray-shaded background (and slightly rounded corners) for boosts. Top left menu selection of feeds including lists and followed tags. Supports switching among accounts (although adding an account is a bit glitchy, easy to accidentally duplicate, and not clear how to remove an account).
 
-Quirks: Square avatars, account tab is not on far right, boost button has a non-obvous icon, uses "reblog" instead of "boost", non-boosted posts could use some more left side margin. Doesn't show up as a link share target.
+Quirks: Square avatars, account tab is not on far right, boost button has a non-obvous icon, uses "reblog" instead of "boost", non-boosted posts could use some more left side margin. Doesn't show up as a link share target. Replies icon doesn't show count (but likes and boosts do).
 
 ## [Mastodon](https://joinmastodon.org/apps) by [@mastodon@mastodon.social](https://mastodon.social/@Mastodon)
 
