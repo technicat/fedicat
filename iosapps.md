@@ -58,7 +58,7 @@ Features: autocomplete instance list with detailed descriptions and rules
 
 Free on the [App Store](https://apps.apple.com/us/app/mammoth-for-mastodon/id1667573899), planned subscription according to this review on [TechCrunch](https://techcrunch.com/2023/02/27/mammoth-is-a-free-mastodon-app-for-ios-that-makes-it-easier-to-get-started/)
 
-Features: A couple of built-in games, including chess. Fairly complete profile editing. Nice community (list of instances) browser (although missing universeodon.com). iPad-specific interface.  Top left menu selection of feeds including lists.
+Features: A couple of built-in games, including chess. Fairly complete profile editing. Nice community (list of instances) browser (although missing universeodon.com). iPad-specific interface. Top left menu selection of feeds including lists. Quote posts.
 
 Quirks: Have to go through menu to operate on post, no quick favorite or boost, unnecessary sound effects (that I can hear on my connected speakers). Shows up as a link share target but that just launches the app. Account switcher is buried inside Settings/Extras.
 
@@ -82,7 +82,7 @@ Quirks: uses "reblog" instead of "boost"
 
 Free on the [App Store](https://apps.apple.com/us/app/mastoot/id1501485410).
 
-Quirks: The profile tab on the far right is labeled ... which normally would bring you to another list of tab links.
+Quirks: The profile tab on the far right is labeled ... which normally would bring you to another list of tab links. No list support.
 
 ## Mastweet
 
