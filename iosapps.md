@@ -106,6 +106,12 @@ On the [App Store](https://apps.apple.com/us/app/mona-for-mastodon/id1659154653)
 
 Features: communities browser allows viewing local and federated feeds on other instances
 
+## [Pipilo](https://www.craft.me/s/YFawOVHfVzGfml) by [@pipilo@indieapps.space](https://indieapps.space/@pipilo)
+
+On the [App Store](https://apps.apple.com/pl/app/pipilo/id1584544719). Subscription required for features beyond browsing. Built with TootSDK
+
+Features: horizontal timeline scrolling
+
 ## [Radiant](https://radiant.social/) by [@jknlsn@hachyderm.io](https://hachyderm.io/@jknlsn)
 
 Free on the [App Store](https://apps.apple.com/app/id6444323022) with subscription for push notifications and multiple accounts.
