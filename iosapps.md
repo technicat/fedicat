@@ -22,6 +22,10 @@ Features: Clean look. Tab bar editor.
 
 Quirks: A bit rough, e.g. the tab bar displays my username under each icon.
 
+## Herd by [@CityOfTheMoon@mastodon.social](https://mastodon.social/@CityOfTheMoon)
+
+Paid on the [App Store](https://apps.apple.com/us/app/herd-for-mastodon/id6447533834)
+
 ## [Ice Cubes](https://mastodon.online/@IceCubesApp) by [@dimillian@mastodon.social](https://mastodon.social/@dimillian)
 
 Free on the [App Store](https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6444915884), Swift code on [Github](https://github.com/Dimillian/IceCubesApp).
