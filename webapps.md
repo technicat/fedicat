@@ -12,7 +12,7 @@ Cons: in alpha
 
 Official Mastodon front end, impelemented in React.js, is in the main repo [Github](https://github.com/mastodon/mastodon)
 
-Features: fully featured, multicolumn Advanced setting makes good use of screen space to show everything (feed, notifications...) at once
+Features: fully featured, multicolumn Advanced setting makes good use of screen space to show everything (feed, notifications...) at once. Only web app I know of that lets you edit profile fields.
 
 Quirks: latest update seems to freeze and lose focus often
 
@@ -24,4 +24,10 @@ Demo on [mementomori.social](https://mementomori.social/explore), source on [git
 
 ## [Phanpy.social](https://phanpy.social/) by [@cheeaun@mastodon.social](https://mastodon.social/@cheeaun)
 
-Minimalistic web client, =source on [githbub](https://github.com/cheeaun/phanpy)
+Minimalistic web client, source on [githbub](https://github.com/cheeaun/phanpy)
+
+Features clean buttonless look, easy to switch among multiple accounts, separate row for boosts in timeline.
+
+## [Trunks](https://trunks.social/) by [@trunksapp@mstdn.social](https://mstdn.social/@trunksapp)
+
+Features: Optional multi-column displayh.
