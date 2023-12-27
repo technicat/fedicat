@@ -96,6 +96,14 @@ Features: clean design.
 
 Quirks: Not clear what features are enabled by in-app purchases. List support is not visible.
 
+## [Masty](https://masty.nikolajjsj.com/)
+
+Free on the [App Store](https://apps.apple.com/us/app/masty-for-mastodon/id6474093104).
+
+Features: multiple account support
+
+Quirks: Seems to be stuck in dark mode.
+
 ## [MetaText](https://metabolist.org/) by [@metabolist@mastodon.social](https://mastodon.social/@metabolist)
 
 Free on the [App Store](https://apps.apple.com/us/app/metatext/id1523996615), Swift code on [Github](https://github.com/metabolist/metatext) (archived)
