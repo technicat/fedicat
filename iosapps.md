@@ -1,4 +1,4 @@
-# iOS Apps in the App Store
+# iOS Apps in the App Store or in Development
 
 An overview of Mastodon apps I've found on the App Store, including first impressions of the free ones (one of these days I'll fork over a few dollars and try the rest), focusing on aspects that interest me and my design preferences. These apps have all been updated in the past year. Apps that seem to be no longer under development are in a [separate list](iosold.md).
 
@@ -21,6 +21,14 @@ Free on the [App Store](https://apps.apple.com/sa/app/feather-for-mastodon/id644
 Features: Clean look. Tab bar editor.
 
 Quirks: A bit rough, e.g. the tab bar displays my username under each icon.
+
+## [Fedicat](https://fedicat.com/) by [@technicat@iosdev.space](https://iosdev.space/@technicat)
+
+Limited availability on [Testflight](https://testflight.apple.com/join/b6GatWTY).
+
+Features: Emphasis on immediate display of alt-text and easy switching among multiple accounts. Multi-platform support by [Tootsdk](https://github.com/tootsdk/tootsdk).
+
+Quirks: Missing key features such as push notifications, share-to target, and translations.
 
 ## Herd by [@CityOfTheMoon@mastodon.social](https://mastodon.social/@CityOfTheMoon)
 
@@ -122,7 +130,7 @@ Features: communities browser allows viewing local and federated feeds on other 
 
 On the [App Store](https://apps.apple.com/pl/app/pipilo/id1584544719). Subscription required for features beyond browsing. Built with TootSDK
 
-Features: horizontal timeline scrolling
+Features: Horizontal timeline scrolling. Multi-platform support by [Tootsdk](https://github.com/tootsdk/tootsdk).
 
 ## [Radiant](https://radiant.social/) by [@jknlsn@hachyderm.io](https://hachyderm.io/@jknlsn)
 
@@ -179,6 +187,14 @@ Free on the [App Store](https://apps.apple.com/us/app/tootter-for-mastodon/id162
 Features: Instance browser.
 
 Quirks: Cannot select an instance from the instance browser. Very bright color scheme, like something out of the 90s. Website is inaccessible.
+
+## TootyGraph by [@Tootygraph@togl.me](https://togl.me/@tootygraph)
+
+Swift code on [GitHub](https://github.com/samscam/tootygraph).
+
+Features: Image-centric display, particularly suitable for photo-sharing a la Pixelfed. Multi-platform support by [Tootsdk](https://github.com/tootsdk/tootsdk).
+
+Quirks: Early development.
 
 ## [Trunks](https://trunks.social/) by [@trunksapp@mstdn.social](https://mstdn.social/@trunksapp)
 
