@@ -82,6 +82,12 @@ Features: Cute appearance, elaborate app icon. Good-looking and simple sign-on s
 
 Quirks: Square avatars, account tab is not on far right, boost button has a non-obvous icon, uses "reblog" instead of "boost", non-boosted posts could use some more left side margin. Doesn't show up as a link share target. Replies icon doesn't show count (but likes and boosts do).
 
+## [Maser](https://maser.mobi/) by [@maserapp@mastodon.social](https://mastodon.social/@maserapp)
+
+Free on the [App Store](https://apps.apple.com/us/app/maser-for-mastodon/id6472905306), subscription required for multiple accounts.
+
+Features: News feed
+
 ## [Mastodon](https://joinmastodon.org/apps) by [@mastodon@mastodon.social](https://mastodon.social/@Mastodon)
 
 Official Mastodon app, free on the [App Store](https://apps.apple.com/us/app/mastodon-for-iphone/id1571998974), Swift code on [Github](https://github.com/mastodon/mastodon-ios)
