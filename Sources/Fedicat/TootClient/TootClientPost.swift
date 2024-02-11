@@ -12,4 +12,8 @@ extension TootClient {
       return post
     }
   }
+
+  public func refresh(_ post: Post) async throws -> Post {
+    try await getPost(id: post.id)
+  }
 }
