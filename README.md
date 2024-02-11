@@ -1,1 +1,1 @@
-This repo started out as just a list of all the [Mastodon iOS apps](iosapps.md) I've found, but now it's also the github public home base for my [fediverse app](https://fedicat.com/) in progress and a Swift package with some possibly useful reusable code.
+This repo started out as just a list of all the [Mastodon iOS apps](iosapps.md) I've found, but now it's also the github public home base for my [fediverse app](https://fedicat.com/) in progress and a Swift package with some possibly useful reusable code, formatted with swift-format.
