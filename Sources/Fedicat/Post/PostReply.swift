@@ -11,8 +11,4 @@ extension Post {
     repliesCount > 0
   }
 
-  public var hasContext: Bool {
-    isReply || hasReplies
-  }
-
 }
