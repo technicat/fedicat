@@ -1,6 +1,5 @@
 import TootSDK
 
-// todo - split into getLocal and getGlobal?
 extension TootClient {
 
   public func getProfileDirectory(
@@ -11,6 +10,32 @@ extension TootClient {
   ) async throws -> [Account] {
     try await getProfileDirectory(
       params: ProfileDirectoryParams(order: order, local: local),
+      offset: offset,
+      limit: limit
+    )
+  }
+
+  public func getLocalDirectory(
+    order: ProfileDirectoryParams.Order? = nil,
+    offset: Int? = nil,
+    limit: Int? = nil
+  ) async throws -> [Account] {
+    try await getProfileDirectory(
+      order: order,
+      local: true,
+      offset: offset,
+      limit: limit
+    )
+  }
+
+  public func getGlobalDirectory(
+    order: ProfileDirectoryParams.Order? = nil,
+    offset: Int? = nil,
+    limit: Int? = nil
+  ) async throws -> [Account] {
+    try await getProfileDirectory(
+      order: order,
+      local: false,
       offset: offset,
       limit: limit
     )
