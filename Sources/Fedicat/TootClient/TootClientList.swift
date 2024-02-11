@@ -48,4 +48,8 @@ extension TootClient {
       params: params)
   }
 
+  public func getLists(containing account: Account) async throws -> [List] {
+    try await getListsContainingAccount(id: account.id)
+  }
+
 }
