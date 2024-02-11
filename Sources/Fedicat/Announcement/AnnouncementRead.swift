@@ -2,7 +2,7 @@ import TootSDK
 
 extension Announcement {
 
-  var isRead: Bool {
+  public var isRead: Bool {
     read ?? false
   }
 }
