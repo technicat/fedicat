@@ -2,12 +2,12 @@ import TootSDK
 
 extension TootClient {
 
-  public func setNoteForAccount(
-    by id: String,
-    comment: String
+  public func setNote(
+    for account: Account,
+    _ comment: String
   ) async throws -> Relationship {
     try await setNoteForAccount(
-      by: id,
+      by: account.id,
       params: SetNoteForAccountParams(comment: comment))
   }
 }
