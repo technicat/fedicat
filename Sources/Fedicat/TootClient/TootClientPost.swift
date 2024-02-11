@@ -16,4 +16,8 @@ extension TootClient {
   public func refresh(_ post: Post) async throws -> Post {
     try await getPost(id: post.id)
   }
+
+  public func getHistory(of post: Post) async throws -> [PostEdit] {
+    try await getHistory(id: post.id)
+  }
 }
