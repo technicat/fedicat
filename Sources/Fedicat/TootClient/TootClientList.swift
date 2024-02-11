@@ -35,4 +35,17 @@ extension TootClient {
     try await getList(id: list.id)
   }
 
+  public func update(
+    _ list: List,
+    name: String? = nil,
+    policy: ListRepliesPolicy? = nil
+  ) async throws -> List {
+    let params = ListParams(
+      title: name ?? list.title,
+      repliesPolicy: policy)
+    return try await createList(
+      id: list.id,
+      params: params)
+  }
+
 }
