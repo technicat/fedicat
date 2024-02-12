@@ -22,12 +22,4 @@ extension String {
   public var bfTag: String {
     replacing(String.hashtagRegex, with: { match in "\(match.output.1)**\(match.output.2)**" })
   }
-
-  public var hashName: String {
-    "#\(self)"
-  }
-
-  public var atName: String {
-    "@\(self)"
-  }
 }
