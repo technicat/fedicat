@@ -5,4 +5,4 @@ This repo started out as just a list of all the [Mastodon iOS apps](iosapps.md) 
 - Simplified arguments, avoid having to fill out parameter structs.
 - Random other conveniences
 
-This package is not stable since [Fedicat the app](https://fedicat.com/) is in active development and relies on my [fork of TootSDK](https://github.com/technicat/TootSDK). Formatted with [swift-format](https://github.com/apple/swift-format).
+This package is not stable since [Fedicat the app](https://fedicat.com/) is in active development and sometimes relies on my [fork of TootSDK](https://github.com/technicat/TootSDK). Formatted with [swift-format](https://github.com/apple/swift-format).
