@@ -13,9 +13,4 @@ extension Account {
   public var isDiscoverable: Bool {
     discoverable ?? false
   }
-
-  @available(iOS 16, *)
-  public var atName: String {
-    acct.atName
-  }
 }
