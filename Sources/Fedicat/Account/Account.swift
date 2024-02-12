@@ -29,4 +29,10 @@ extension Account {
     public var isDeprecated: Bool {
         isSuspended || isLimited || isMoved
     }
+    
+    
+    @available(iOS 16, *)
+    public var atName: String {
+      acct.atName
+    }
 }
