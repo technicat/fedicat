@@ -1,4 +1,4 @@
-import Foundation // IndexSet
+import Foundation  // IndexSet
 import TootSDK
 
 extension TootClient {

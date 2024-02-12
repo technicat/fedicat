@@ -2,7 +2,7 @@ import TootSDK
 
 extension TootClient {
 
-  public func refresh(tag name: String) async throws -> Tag {
-    try await getTag(name)
+  public func refresh(_ tag: Tag) async throws -> Tag {
+    try await getTag(tag.name)
   }
 }
