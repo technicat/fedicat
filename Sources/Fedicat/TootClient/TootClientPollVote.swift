@@ -1,4 +1,4 @@
-import Foundation
+import Foundation // IndexSet
 import TootSDK
 
 extension TootClient {
@@ -12,11 +12,10 @@ extension TootClient {
   }
 
   public func vote(in poll: Poll, for option: Poll.Option) async throws -> Poll {
-    if let index = poll.index(of: option) {
-      return try await vote(in: poll, for: index)
-    } else {
+    guard let index = poll.index(of: option) else {
       return poll
     }
+    return try await vote(in: poll, for: index)
   }
 
 }
