@@ -20,4 +20,8 @@ extension TootClient {
   public func getHistory(of post: Post) async throws -> [PostEdit] {
     try await getHistory(id: post.id)
   }
+
+  public func getSource(of post: Post) async throws -> PostSource {
+    try await getPostSource(id: post.id)
+  }
 }
