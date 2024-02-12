@@ -20,7 +20,7 @@ extension TootClient {
       params: params)
   }
 
-  public func createList(_ name: String, policy: ListRepliesPolicy) async throws -> List {
+  public func create(list name: String, policy: ListRepliesPolicy) async throws -> List {
     let params = ListParams(
       title: name,
       repliesPolicy: policy)
