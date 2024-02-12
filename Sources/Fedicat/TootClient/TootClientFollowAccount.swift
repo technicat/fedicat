@@ -9,6 +9,20 @@ extension TootClient {
     try await followAccount(by: account.id, params: params)
   }
 
+  public func follow(
+    _ account: Account,
+    reposts: Bool = true,
+    notify: Bool = false,
+    languages: [String]? = []
+  ) async throws -> Relationship {
+    try await follow(
+      account,
+      params: FollowAccountParams(
+        reposts: reposts,
+        notify: notify,
+        languages: languages))
+  }
+
   public func unFollow(_ account: Account) async throws -> Relationship {
     try await unfollowAccount(by: account.id)
   }
