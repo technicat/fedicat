@@ -14,22 +14,6 @@ extension Account {
     discoverable ?? false
   }
 
-  public var isLimited: Bool {
-    limited ?? false
-  }
-
-  public var isMoved: Bool {
-    moved != nil
-  }
-
-  public var isSuspended: Bool {
-    suspended ?? false
-  }
-
-  public var isDeprecated: Bool {
-    isSuspended || isLimited || isMoved
-  }
-
   @available(iOS 16, *)
   public var atName: String {
     acct.atName
