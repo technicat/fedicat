@@ -2,16 +2,16 @@ import TootSDK
 
 extension TootClient {
 
-  public func getPostTranslation(id: String, language: String) async throws -> Translation {
+  public func getPostTranslation(id: String, in language: String) async throws -> Translation {
     try await getPostTranslation(
       id: id,
       params: PostTranslationParams(lang: language))
   }
 
-  public func getTranslation(of post: Post, language: String) async throws -> Translation {
+  public func getTranslation(of post: Post, in language: String) async throws -> Translation {
     try await getPostTranslation(
       id: post.id,
-      params: PostTranslationParams(lang: language))
+      in: language)
   }
 
   public func getTranslation(of post: Post) async throws -> Translation {
