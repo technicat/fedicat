@@ -13,4 +13,5 @@ extension Post {
   public var isVisible: Bool {
     isPublic || isUnlisted
   }
+
 }
