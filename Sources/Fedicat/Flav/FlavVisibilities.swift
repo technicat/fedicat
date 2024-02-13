@@ -1,9 +1,9 @@
 import TootSDK
 
-extension TootClient {
+extension TootSDKFlavour {
     
-    var postVisibilities: [Post.Visibility] {
-        switch flavour {
+    public var postVisibilities: [Post.Visibility] {
+        switch self {
         case .friendica, .pixelfed:
             [.public, .unlisted, .private]
         default:
