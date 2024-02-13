@@ -17,4 +17,9 @@ extension TootClient {
     let result = try await getFamiliarFollowers(of: [account])
     return result[0].accounts
   }
+
+  public func removeFromFollowers(_ account: Account) async throws -> Relationship {
+    try await removeAccountFromFollowers(by: account.id)
+  }
+
 }
