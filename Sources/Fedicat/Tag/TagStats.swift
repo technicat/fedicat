@@ -3,7 +3,7 @@ import TootSDK
 
 extension Tag {
 
-  var uses: Int {
+  public var uses: Int {
     guard let history else {
       return 0
     }
@@ -14,7 +14,7 @@ extension Tag {
       })
   }
 
-  var accounts: Int {
+  public var accounts: Int {
     guard let history else {
       return 0
     }
