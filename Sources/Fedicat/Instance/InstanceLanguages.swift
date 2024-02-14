@@ -2,19 +2,19 @@ import TootSDK
 
 extension Instance {
 
-  var hasRegistrations: Bool {
+  public var hasRegistrations: Bool {
     registrations ?? false
   }
 
-  var hasApprovals: Bool {
+  public var hasApprovals: Bool {
     approvalRequired ?? false
   }
 
-  var hasInvitations: Bool {
+  public var hasInvitations: Bool {
     invitesEnabled ?? false
   }
 
-  var hasRules: Bool {
+  public var hasRules: Bool {
     guard let rules else {
       return false
     }
