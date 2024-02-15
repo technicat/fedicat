@@ -6,4 +6,3 @@ extension HashtagTimelineQuery {
     self.init(tag: tag.name, onlyMedia: onlyMedia)
   }
 }
-
