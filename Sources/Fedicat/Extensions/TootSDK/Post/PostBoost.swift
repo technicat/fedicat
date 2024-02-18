@@ -2,6 +2,10 @@ import TootSDK
 
 extension Post {
 
+  public var isBoostable: Bool {
+    isVisible
+  }
+
   public var isBoost: Bool {
     repost != nil
   }
