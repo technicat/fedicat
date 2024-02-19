@@ -226,7 +226,11 @@ Features: Nice simple clean design. Also a twitter client.
 
 Quirks: Also a twitter client.
 
-## [Walleri](https://apps.apple.com/us/app/walleri/id6470121640)
+## [Walleri](https://indieapps.space/@walleri) by [Daniel Berezhnoy](https://mastodon.social/@DanielBerezhnoy)
+
+Free on the [App Store](https://apps.apple.com/us/app/walleri/id6470121640)
+
+Features: easy-to-read text and text-to-specch
 
 ## [Woolly](https://mastodon.social/@woollyapp) by [Matteo Villa](https://mvilla.it/)
 
