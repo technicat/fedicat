@@ -23,6 +23,17 @@ extension TootClient {
         languages: languages))
   }
 
+  public func follow(
+    _ account: Account,
+    reposts: Bool = true,
+    notify: Bool = false,
+    languages: [MastoCode]? = nil
+  ) async throws -> Relationship {
+    try await follow(
+      account, reposts: reposts, notify: notify,
+      languages: languages?.map { $0.rawValue })
+  }
+
   public func unFollow(_ account: Account) async throws -> Relationship {
     try await unfollowAccount(by: account.id)
   }
