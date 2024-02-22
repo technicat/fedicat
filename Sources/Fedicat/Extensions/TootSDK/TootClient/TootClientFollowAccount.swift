@@ -27,7 +27,7 @@ extension TootClient {
     _ account: Account,
     reposts: Bool = true,
     notify: Bool = false,
-    languages: [MastoCode]? = nil
+    languages: [ISOCode]? = nil
   ) async throws -> Relationship {
     try await follow(
       account, reposts: reposts, notify: notify,

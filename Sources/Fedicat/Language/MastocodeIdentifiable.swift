@@ -1,6 +1,6 @@
 import Foundation
 
-extension MastoCode: Identifiable {
+extension ISOCode: Identifiable {
   public var id: String {
     self.rawValue
   }

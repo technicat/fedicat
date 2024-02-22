@@ -14,7 +14,7 @@ extension TootClient {
       in: language)
   }
 
-  public func getTranslation(of post: Post, in language: MastoCode? = nil) async throws
+  public func getTranslation(of post: Post, in language: ISOCode? = nil) async throws
     -> Translation
   {
     if let language {

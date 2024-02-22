@@ -2,7 +2,7 @@ import Foundation
 
 /// ISO 639 language codes used by fediverse platforms
 /// various platforms use subsets, e.g. Akkoma only supports 2-letter codes
-public enum MastoCode: String, CaseIterable, Codable {
+public enum ISOCode: String, CaseIterable, Codable {
 
   case
     // ISO639.1
