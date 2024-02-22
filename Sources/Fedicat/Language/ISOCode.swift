@@ -1,7 +1,11 @@
 import Foundation
 
 /// ISO 639 language codes used by fediverse platforms
-/// various platforms use subsets, e.g. Akkoma only supports 2-letter codes
+/// various platforms use subsets
+/// e.g. Akkoma only supports 2-letter codes
+/// Mastodon doesn't support Kurdish, Samoan, Gaurani
+/// Hometown doesn't support regional Chinese
+/// and so on...
 public enum ISOCode: String, CaseIterable, Codable {
 
   case
@@ -43,15 +47,6 @@ public enum ISOCode: String, CaseIterable, Codable {
     zba, zgh
   case
     // ISO_639_1 Regional
-    esAR = "es-AR"
-  case
-    esMX = "es-MX"
-  case
-    ptBR = "pt-BR"
-  case
-    ptPT = "pt-PT"
-  case
-    srLatn = "sr-Latn"
   case
     zhCN = "zh-CN"
   case
