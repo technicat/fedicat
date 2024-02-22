@@ -7,7 +7,7 @@ public enum MastoCode: String, CaseIterable, Codable {
   case
     // ISO639.1
     aa, ab, ae, af, ak, am, an, ar, `as`, av, ay, az,
-    ba, be, bg, bi, bm, bn, bo, br, bs,
+    ba, be, bg, bh, bi, bm, bn, bo, br, bs,
     ca, ce, ch, co, cr, cs, cu, cv, cy,
     da, de, dv, dz,
     ee, el, en, eo, es, et, eu,
@@ -33,16 +33,25 @@ public enum MastoCode: String, CaseIterable, Codable {
     yi, yo,
     za, zh, zu,
     // ISO_639_3
-    ast,
-    ckb, chr, cnr,
+    ast, ckb, chr, cnr,
     jbo,
     kab, kmr,
     ldn, lfn,
     sco, sma, smj, szl,
-    tai,
-    tok,
+    tai, tok,
     xal,
     zba, zgh
+  case
+    // ISO_639_1 Regional
+    esAR = "es-AR"
+  case
+    esMX = "es-MX"
+  case
+    ptBR = "pt-BR"
+  case
+    ptPT = "pt-PT"
+  case
+    srLatn = "sr-Latn"
   case
     zhCN = "zh-CN"
   case

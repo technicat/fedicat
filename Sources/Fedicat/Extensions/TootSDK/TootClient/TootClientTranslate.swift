@@ -22,7 +22,7 @@ extension TootClient {
         of: post,
         in: language.rawValue)
     } else {
-        try await getPostTranslation(id: post.id)
+      try await getPostTranslation(id: post.id)
     }
   }
 
