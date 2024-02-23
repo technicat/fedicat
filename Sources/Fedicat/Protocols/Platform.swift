@@ -39,3 +39,49 @@ public protocol Platform {
   var supportsUpdateAccount: Bool { get }
 
 }
+
+// defaults
+public extension Platform {
+
+  var languages: [ISOCode] { [] }
+  var supportsTranslate: Bool { false }
+
+  var postVis: [Post.Visibility] {
+    [.public, .unlisted, .private, .direct]
+  }
+
+  var supportsProfileFields: Bool { true }
+  var supportsAnnouncements: Bool { true }
+  var supportsAnnouncementMark: Bool { true }
+  var supportsBookmark: Bool { true }
+  var supportsMutePost: Bool { true }
+  var supportsIsBoosted: Bool { true }
+  var supportsTrendingPosts: Bool { false }
+  var supportsTrendingTags: Bool { false }
+  var supportsTrendingLinks: Bool { false }
+  var supportsFollowTag: Bool { false }
+  var supportsNotificationTypes: Bool { false }
+  var supportsNotificationDelete: Bool { false }
+  var supportsList: Bool { true }
+  var supportsTagStats: Bool { false }
+  var supportsSearchAccounts: Bool { true }
+  var supportsSearchPosts: Bool { true }
+  var supportsFollowLanguages: Bool { false }
+  var supportsSchedule: Bool { false }
+  var supportsFamiliarFollowers: Bool { false }
+  var supportsFaveTimeline: Bool { true }
+  var supportsFilter: Bool { false }
+  var supportsProfileDirectory: Bool { false }
+  var supportsReportRules: Bool { true }
+  var supportsPollVote: Bool { true }
+  var supportsDomainBlocks: Bool { true }
+  var supportsRemoveFollower: Bool { false }
+  var supportsExtendedDescription: Bool { false }
+  var supportsProfileHeader: Bool { true }
+  var supportsPublicTimeline: Bool { true }
+  var supportsUpdateAccount: Bool { true }
+
+  var reportCats: [ReportCategory] {
+    Array(ReportCategory.mastodonSupported)
+  }
+}
