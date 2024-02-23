@@ -24,7 +24,6 @@ public protocol Platform {
   var supportsTagStats: Bool { get }
   var supportsSearchAccounts: Bool { get }
   var supportsSearchPosts: Bool { get }
-  var supportsPostLanguages: Bool { get }
   var supportsFollowLanguages: Bool { get }
   var supportsSchedule: Bool { get }
   var supportsFamiliarFollowers: Bool { get }
