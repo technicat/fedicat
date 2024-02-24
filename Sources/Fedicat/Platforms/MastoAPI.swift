@@ -1,61 +1,62 @@
 import TootSDK
 
-public class MastoAPI: Platform {
+open class MastoAPI: Platform {
 
-  public var version: Version
+  open var version: Version
 
   public init(_ version: Version) {
     //  Logger.log.info("api \(version.dot)")
     self.version = version
   }
 
-  public var name: String { "Mastodon API" }
-  public var supportsAnnouncements: Bool { version >= Version(3, 1) }
-  public var supportsAnnouncementMark: Bool { version >= Version(3, 1) }
-  public var supportsBookmark: Bool { version >= Version(3, 1) }
-  public var supportsConversation: Bool { version >= Version(2, 6) }
-  public var supportsDomainBlocks: Bool { version >= Version(0, 4) }
-  public var supportsExtendedDescription: Bool { version >= Version(4, 0) }
-  public var supportsFamiliarFollowers: Bool { version >= Version(3, 5) }
-  public var supportsFilter: Bool { version >= Version(4, 0) }
-  public var supportsFollowTag: Bool { version >= Version(4, 0) }
-  public var supportsMutePost: Bool { version >= Version(1, 4, 2) }
-  public var supportsNotificationDelete: Bool { version >= Version(1, 3) }
-  public var supportsNotificationDeleteAll: Bool { true }
-  public var supportsNotificationTypes: Bool { true }
-  public var supportsProfileDirectory: Bool { version >= Version(4, 0) }
-  public var supportsRemoveFollower: Bool { version >= Version(3, 5) }
-  public var supportsSearchPosts: Bool { version >= Version(2, 4, 1) }
-  public var supportsTagStats: Bool { version >= Version(2, 4, 1) }
-  public var supportsTranslate: Bool { version >= Version(4, 0) }
-  public var supportsTranslationLanguages: Bool { version >= Version(4, 2) }
-  public var supportsTrendingLinks: Bool { version >= Version(3, 5) }
-  public var supportsTrendingPosts: Bool { version >= Version(3, 5) }
-  public var supportsTrendingTags: Bool { version >= Version(3, 0) }
-  public var supportsUpdateAccount: Bool { version >= Version(1, 4, 1) }
+  open var name: String { "Mastodon API" }
+    open var supportsAnnouncements: Bool { version >= Version(3, 1) }
+    open var supportsAnnouncementMark: Bool { version >= Version(3, 1) }
+  open var supportsBookmark: Bool { version >= Version(3, 1) }
+  open var supportsConversation: Bool { version >= Version(2, 6) }
+  open var supportsDomainBlocks: Bool { version >= Version(0, 4) }
+  open var supportsExtendedDescription: Bool { version >= Version(4, 0) }
+  open var supportsFamiliarFollowers: Bool { version >= Version(3, 5) }
+  open var supportsFilter: Bool { version >= Version(4, 0) }
+  open var supportsFollowTag: Bool { version >= Version(4, 0) }
+  open var supportsMutePost: Bool { version >= Version(1, 4, 2) }
+  open var supportsNotificationDelete: Bool { version >= Version(1, 3) }
+  open var supportsNotificationDeleteAll: Bool { true }
+  open var supportsNotificationTypes: Bool { true }
+  open var supportsProfileDirectory: Bool { version >= Version(4, 0) }
+    open var supportsPublicTimeline: Bool { true }
+  open var supportsRemoveFollower: Bool { version >= Version(3, 5) }
+  open var supportsSearchPosts: Bool { version >= Version(2, 4, 1) }
+  open var supportsTagStats: Bool { version >= Version(2, 4, 1) }
+  open var supportsTranslate: Bool { version >= Version(4, 0) }
+  open var supportsTranslationLanguages: Bool { version >= Version(4, 2) }
+  open var supportsTrendingLinks: Bool { version >= Version(3, 5) }
+  open var supportsTrendingPosts: Bool { version >= Version(3, 5) }
+  open var supportsTrendingTags: Bool { version >= Version(3, 0) }
+  open var supportsUpdateAccount: Bool { version >= Version(1, 4, 1) }
 
-  public var supportsProfileFields: Bool { true }
-  public var supportsIsBoosted: Bool { true }
+  open var supportsProfileFields: Bool { true }
+  open var supportsIsBoosted: Bool { true }
 
-  public var supportsList: Bool { true }
+  open var supportsList: Bool { true }
 
-  public var supportsSearchAccounts: Bool { true }
+  open var supportsSearchAccounts: Bool { true }
 
-  public var supportsFollowLanguages: Bool { false }
-  public var supportsSchedule: Bool { false }
-  public var supportsFaveTimeline: Bool { true }
-  public var supportsReportRules: Bool { true }
-  public var supportsPollVote: Bool { true }
-  public var supportsProfileHeader: Bool { true }
-  public var supportsPublicTimeline: Bool { true }
+  open var supportsFollowLanguages: Bool { false }
+  open var supportsSchedule: Bool { false }
+  open var supportsFaveTimeline: Bool { true }
+  open var supportsReportRules: Bool { true }
+  open var supportsPollVote: Bool { true }
+  open var supportsProfileHeader: Bool { true }
+  open var supportsopenTimeline: Bool { true }
 
-  public var languages: [ISOCode] { [] }
+  open var languages: [ISOCode] { [] }
 
-  public var postVis: [Post.Visibility] {
+  open var postVis: [Post.Visibility] {
     [.public, .unlisted, .private, .direct]
   }
 
-  public var reportCats: [ReportCategory] {
+  open var reportCats: [ReportCategory] {
     [
       .spam,
       .other,
