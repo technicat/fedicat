@@ -4,11 +4,10 @@ public protocol Platform {
 
   var name: String { get }
   var languages: [ISOCode] { get }
-  var supportsTranslate: Bool { get }
-  var supportsTranslationLanguages: Bool { get }
   var postVis: [Post.Visibility] { get }
   var reportCats: [ReportCategory] { get }
-
+  var supportsTranslate: Bool { get }
+  var supportsTranslationLanguages: Bool { get }
   var supportsProfileFields: Bool { get }
   var supportsAnnouncements: Bool { get }
   var supportsAnnouncementMark: Bool { get }
@@ -39,27 +38,5 @@ public protocol Platform {
   var supportsProfileHeader: Bool { get }
   var supportsPublicTimeline: Bool { get }
   var supportsUpdateAccount: Bool { get }
-
-}
-
-// defaults
-// probably remove ethis
-public extension Platform {
-
-  var supportsProfileFields: Bool { true }
-  var supportsIsBoosted: Bool { true }
-  var supportsNotificationTypes: Bool { false }
-  var supportsList: Bool { true }
-  var supportsTagStats: Bool { false }
-  var supportsNotificationDeleteAll: Bool { true }
-  var supportsSearchAccounts: Bool { true }
-  var supportsSearchPosts: Bool { true }
-  var supportsFollowLanguages: Bool { false }
-  var supportsSchedule: Bool { false }
-  var supportsFaveTimeline: Bool { true }
-  var supportsReportRules: Bool { true }
-  var supportsPollVote: Bool { true }
-  var supportsProfileHeader: Bool { true }
-  var supportsPublicTimeline: Bool { true }
 
 }
