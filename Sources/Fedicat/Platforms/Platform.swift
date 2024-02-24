@@ -51,8 +51,7 @@ public extension Platform {
   }
 
   var supportsProfileFields: Bool { true }
-  var supportsAnnouncements: Bool { true }
-  var supportsAnnouncementMark: Bool { true }
+ 
   var supportsBookmark: Bool { true }
   var supportsMutePost: Bool { true }
   var supportsIsBoosted: Bool { true }
@@ -70,11 +69,8 @@ public extension Platform {
   var supportsSchedule: Bool { false }
   var supportsFamiliarFollowers: Bool { false }
   var supportsFaveTimeline: Bool { true }
-  var supportsFilter: Bool { false }
-  var supportsProfileDirectory: Bool { false }
   var supportsReportRules: Bool { true }
   var supportsPollVote: Bool { true }
-  var supportsDomainBlocks: Bool { true }
   var supportsRemoveFollower: Bool { false }
   var supportsExtendedDescription: Bool { false }
   var supportsProfileHeader: Bool { true }
