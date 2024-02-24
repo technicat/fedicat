@@ -3,12 +3,15 @@ import Foundation
 public struct Version {
   public var major: Int
   public var minor: Int
-  public var patch: String
+  public var patch: Int
 
-  // todo - make patch an Int
-  public init(_ major: Int, _ minor: Int, _ patch: String = "") {
+  public init(_ major: Int, _ minor: Int, _ patch: Int = 0) {
     self.major = major
     self.minor = minor
     self.patch = patch
   }
+}
+
+extension Version {
+  public var dot: String { "\(major).\(minor).\(patch)" }
 }
