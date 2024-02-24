@@ -5,7 +5,8 @@ public struct Version {
   public var minor: Int
   public var patch: String
 
-  public init(major: Int = 0, minor: Int = 0, patch: String = "") {
+// todo - make patch an Int
+  public init(_ major: Int, _ minor: Int, _ patch: String = "") {
     self.major = major
     self.minor = minor
     self.patch = patch
