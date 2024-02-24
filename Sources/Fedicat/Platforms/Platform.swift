@@ -66,6 +66,5 @@ public extension Platform {
   var supportsPollVote: Bool { true }
   var supportsProfileHeader: Bool { true }
   var supportsPublicTimeline: Bool { true }
-  var supportsUpdateAccount: Bool { true }
 
 }
