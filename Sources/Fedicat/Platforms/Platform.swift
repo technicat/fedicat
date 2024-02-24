@@ -66,7 +66,6 @@ public extension Platform {
   var supportsFaveTimeline: Bool { true }
   var supportsReportRules: Bool { true }
   var supportsPollVote: Bool { true }
-  var supportsRemoveFollower: Bool { false }
   var supportsProfileHeader: Bool { true }
   var supportsPublicTimeline: Bool { true }
   var supportsUpdateAccount: Bool { true }
