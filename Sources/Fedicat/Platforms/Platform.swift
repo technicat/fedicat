@@ -53,7 +53,6 @@ public extension Platform {
 
   var supportsProfileFields: Bool { true }
   var supportsIsBoosted: Bool { true }
-  var supportsFollowTag: Bool { false }
   var supportsNotificationTypes: Bool { false }
   var supportsNotificationDelete: Bool { false }
   var supportsList: Bool { true }
