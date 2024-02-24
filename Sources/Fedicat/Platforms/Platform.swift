@@ -51,7 +51,6 @@ public extension Platform {
   }
 
   var supportsProfileFields: Bool { true }
-  var supportsMutePost: Bool { true }
   var supportsIsBoosted: Bool { true }
   var supportsTrendingPosts: Bool { false }
   var supportsTrendingTags: Bool { false }
