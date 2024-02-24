@@ -21,6 +21,7 @@ public protocol Platform {
   var supportsFollowTag: Bool { get }
   var supportsNotificationTypes: Bool { get }
   var supportsNotificationDelete: Bool { get }
+  var supportsNotificationDeleteAll: Bool { get }
   var supportsList: Bool { get }
   var supportsTagStats: Bool { get }
   var supportsSearchAccounts: Bool { get }
@@ -42,21 +43,15 @@ public protocol Platform {
 }
 
 // defaults
+// probably remove ethis
 public extension Platform {
-
-  var languages: [ISOCode] { [] }
-  var supportsTranslate: Bool { false }
-
-  var postVis: [Post.Visibility] {
-    [.public, .unlisted, .private, .direct]
-  }
 
   var supportsProfileFields: Bool { true }
   var supportsIsBoosted: Bool { true }
   var supportsNotificationTypes: Bool { false }
-  var supportsNotificationDelete: Bool { false }
   var supportsList: Bool { true }
   var supportsTagStats: Bool { false }
+  var supportsNotificationDeleteAll: Bool { true }
   var supportsSearchAccounts: Bool { true }
   var supportsSearchPosts: Bool { true }
   var supportsFollowLanguages: Bool { false }
