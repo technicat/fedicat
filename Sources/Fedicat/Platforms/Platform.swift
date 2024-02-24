@@ -62,7 +62,6 @@ public extension Platform {
   var supportsSearchPosts: Bool { true }
   var supportsFollowLanguages: Bool { false }
   var supportsSchedule: Bool { false }
-  var supportsFamiliarFollowers: Bool { false }
   var supportsFaveTimeline: Bool { true }
   var supportsReportRules: Bool { true }
   var supportsPollVote: Bool { true }
