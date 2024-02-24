@@ -5,6 +5,7 @@ public protocol Platform {
   var name: String { get }
   var languages: [ISOCode] { get }
   var supportsTranslate: Bool { get }
+  var supportsTranslationLanguages: Bool { get }
   var postVis: [Post.Visibility] { get }
   var reportCats: [ReportCategory] { get }
 
