@@ -41,43 +41,38 @@ public protocol Platform {
 }
 
 // defaults
-public extension Platform {
+extension Platform {
 
-  var languages: [ISOCode] { [] }
-  var supportsTranslate: Bool { false }
+  public var languages: [ISOCode] { [] }
+  public var supportsTranslate: Bool { false }
 
-  var postVis: [Post.Visibility] {
+  public var postVis: [Post.Visibility] {
     [.public, .unlisted, .private, .direct]
   }
 
-  var supportsProfileFields: Bool { true }
- 
-  var supportsBookmark: Bool { true }
-  var supportsMutePost: Bool { true }
-  var supportsIsBoosted: Bool { true }
-  var supportsTrendingPosts: Bool { false }
-  var supportsTrendingTags: Bool { false }
-  var supportsTrendingLinks: Bool { false }
-  var supportsFollowTag: Bool { false }
-  var supportsNotificationTypes: Bool { false }
-  var supportsNotificationDelete: Bool { false }
-  var supportsList: Bool { true }
-  var supportsTagStats: Bool { false }
-  var supportsSearchAccounts: Bool { true }
-  var supportsSearchPosts: Bool { true }
-  var supportsFollowLanguages: Bool { false }
-  var supportsSchedule: Bool { false }
-  var supportsFamiliarFollowers: Bool { false }
-  var supportsFaveTimeline: Bool { true }
-  var supportsReportRules: Bool { true }
-  var supportsPollVote: Bool { true }
-  var supportsRemoveFollower: Bool { false }
-  var supportsExtendedDescription: Bool { false }
-  var supportsProfileHeader: Bool { true }
-  var supportsPublicTimeline: Bool { true }
-  var supportsUpdateAccount: Bool { true }
+  public var supportsProfileFields: Bool { true }
+  public var supportsMutePost: Bool { true }
+  public var supportsIsBoosted: Bool { true }
+  public var supportsTrendingPosts: Bool { false }
+  public var supportsTrendingTags: Bool { false }
+  public var supportsTrendingLinks: Bool { false }
+  public var supportsFollowTag: Bool { false }
+  public var supportsNotificationTypes: Bool { false }
+  public var supportsNotificationDelete: Bool { false }
+  public var supportsList: Bool { true }
+  public var supportsTagStats: Bool { false }
+  public var supportsSearchAccounts: Bool { true }
+  public var supportsSearchPosts: Bool { true }
+  public var supportsFollowLanguages: Bool { false }
+  public var supportsSchedule: Bool { false }
+  public var supportsFamiliarFollowers: Bool { false }
+  public var supportsFaveTimeline: Bool { true }
+  public var supportsReportRules: Bool { true }
+  public var supportsPollVote: Bool { true }
+  public var supportsRemoveFollower: Bool { false }
+  public var supportsExtendedDescription: Bool { false }
+  public var supportsProfileHeader: Bool { true }
+  public var supportsPublicTimeline: Bool { true }
+  public var supportsUpdateAccount: Bool { true }
 
-  var reportCats: [ReportCategory] {
-    Array(ReportCategory.mastodonSupported)
-  }
 }

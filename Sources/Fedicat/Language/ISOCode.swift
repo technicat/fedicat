@@ -45,7 +45,7 @@ public enum ISOCode: String, CaseIterable, Codable {
     tai, tok,
     xal,
     zba, zgh
-    // ISO_639_1 Regional
+  // ISO_639_1 Regional
   case
     zhCN = "zh-CN"
   case

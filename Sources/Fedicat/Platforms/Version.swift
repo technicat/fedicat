@@ -6,8 +6,8 @@ public struct Version {
   public var patch: String
 
   public init(major: Int = 0, minor: Int = 0, patch: String = "") {
-self.major = major
-self.minor = minor
-self.patch = patch
+    self.major = major
+    self.minor = minor
+    self.patch = patch
   }
 }
