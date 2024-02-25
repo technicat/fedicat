@@ -1,4 +1,3 @@
-open class Snac: MastoAPI  {
-    open override var name: String { "Hometown" }
+open class Snac: MastoAPI {
+  open override var name: String { "Hometown" }
 }
-

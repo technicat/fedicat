@@ -1,8 +1,9 @@
-open class Hometown: Mastodon {
+open class Akkoma: Pleroma {
 
-  open override var name: String { "Hometown" }
+  open override var name: String { "Akkoma" }
 
-  // todo - check versions
+  // all the two-letter codes
+    // todo - check version
   open override var languages: [ISOCode] {
     [
       .aa, .ab, .ae, .af, .ak, .am, .an, .ar, .as, .av, .ay, .az,
@@ -11,7 +12,7 @@ open class Hometown: Mastodon {
       .da, .de, .dv, .dz,
       .ee, .el, .en, .eo, .es, .et, .eu,
       .fa, .fi, .ff, .fj, .fo, .fr, .fy,
-      .ga, .gd, .gl, .gu, .gv,
+      .ga, .gd, .gl, .gn, .gu, .gv,
       .ha, .he, .hi, .ho, .hr, .hu, .ht, .hy, .hz,
       .ia, .id, .ie, .ig, .ii, .ik, .io, .is, .it, .iu,
       .ja, .jv,
@@ -23,7 +24,7 @@ open class Hometown: Mastodon {
       .pa, .pi, .pl, .ps, .pt,
       .qu,
       .rm, .rn, .ro, .ru, .rw,
-      .sa, .sc, .sd, .se, .sg, .si, .sk, .sl, .sn, .so, .sq, .sr, .ss, .st, .su, .sv, .sw,
+      .sa, .sc, .sd, .se, .sg, .si, .sk, .sl, .sm, .sn, .so, .sq, .sr, .ss, .st, .su, .sv, .sw,
       .ta, .te, .tg, .th, .ti, .tl, .tk, .tn, .to, .tr, .ts, .tt, .tw, .ty,
       .ug, .uk, .ur, .uz,
       .ve, .vi, .vo,
@@ -31,25 +32,6 @@ open class Hometown: Mastodon {
       .xh,
       .yi, .yo,
       .za, .zh, .zu,
-      // ISO_639_3
-      .ast,
-      .ckb,
-      //.chr,
-      .cnr,
-      .jbo,
-      .kab,
-      .kmr,
-      .ldn,
-      .lfn,
-      .sco,
-      .sma,
-      .smj,
-      // .szl,
-      // tai,
-      .tok,
-      .xal,
-      .zba,
-      .zgh,
     ]
   }
 }
