@@ -1,5 +1,6 @@
 import Foundation
 
+// possibly could have classes for different versions
 open class Mastodon: MastoAPI {
 
   open override var name: String { "Mastodon" }
