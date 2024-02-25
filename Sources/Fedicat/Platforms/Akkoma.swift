@@ -3,7 +3,7 @@ open class Akkoma: Pleroma {
   open override var name: String { "Akkoma" }
 
   // all the two-letter codes
-    // todo - check version
+  // todo - check version
   open override var languages: [ISOCode] {
     [
       .aa, .ab, .ae, .af, .ak, .am, .an, .ar, .as, .av, .ay, .az,
