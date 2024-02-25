@@ -2,6 +2,7 @@ import TootSDK
 
 extension Instance {
 
+    // todo - should use regex to capture all the version info
   public var platform: Platform {
     if version.lowercased().contains("akkoma") {
       return Akkoma(apiVersion)
