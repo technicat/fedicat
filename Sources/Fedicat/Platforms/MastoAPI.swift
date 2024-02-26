@@ -26,6 +26,7 @@ open class MastoAPI: Platform {
   open var supportsProfileDirectory: Bool { version >= Version(4, 0) }
   open var supportsPublicTimeline: Bool { true }
   open var supportsRemoveFollower: Bool { version >= Version(3, 5) }
+  open var supportsReportRules: Bool { version >= Version(4, 0) }
   open var supportsPollVote: Bool { version >= Version(2, 8) }  // supportsPoll
   open var supportsSchedule: Bool { version >= Version(2, 7) }
   open var supportsSearchPosts: Bool { version >= Version(2, 4, 1) }
@@ -46,7 +47,6 @@ open class MastoAPI: Platform {
 
   open var supportsFollowLanguages: Bool { false }
   open var supportsFaveTimeline: Bool { true }
-  open var supportsReportRules: Bool { true }
   open var supportsProfileHeader: Bool { true }
   open var supportsopenTimeline: Bool { true }
 
