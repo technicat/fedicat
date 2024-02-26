@@ -8,4 +8,5 @@ open class Sharkey: MastoAPI {
   open override var supportsNotificationDelete: Bool { false }
   open override var supportsNotificationDeleteAll: Bool { false }
   open override var supportsNotificationTypes: Bool { false }
+  open override var supportsTagStats: Bool { false }
 }
