@@ -7,6 +7,7 @@ open class Firefish: MastoAPI {
   open override var supportsDomainBlocks: Bool { false }
   open override var supportsExtendedDescription: Bool { false }
   open override var supportsFilter: Bool { false }
+  open override var supportsFollowTag: Bool { false }
   open override var supportsNotificationDelete: Bool { false }
   open override var supportsNotificationDeleteAll: Bool { false }
   open override var supportsNotificationTypes: Bool { false }
@@ -15,5 +16,5 @@ open class Firefish: MastoAPI {
   open override var supportsSearchAccounts: Bool { false }
   open override var supportsTranslate: Bool { false }
   open override var supportsTranslationLanguages: Bool { false }
-    open override var supportsTrendingTags: Bool { false }
+  open override var supportsTrendingTags: Bool { false }
 }

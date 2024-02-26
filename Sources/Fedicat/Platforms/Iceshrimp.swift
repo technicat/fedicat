@@ -4,5 +4,5 @@
 open class Iceshrimp: Firefish {
 
   open override var name: String { "Iceshrimp" }
-    open override var supportsTrendingTags: Bool { true }
+  open override var supportsTrendingTags: Bool { true }
 }
