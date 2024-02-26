@@ -46,6 +46,7 @@ public protocol Platform {
   var supportsSearchPosts: Bool { get }
 
   var supportsTagStats: Bool { get }
+  var supportsTagTimeline: Bool { get }
   var supportsTranslate: Bool { get }
   var supportsTranslationLanguages: Bool { get }
   var supportsTrendingPosts: Bool { get }

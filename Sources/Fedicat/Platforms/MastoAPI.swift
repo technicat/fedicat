@@ -12,25 +12,38 @@ open class MastoAPI: Platform {
   open var name: String { "Mastodon API" }
   open var supportsAnnouncements: Bool { version >= Version(3, 1) }
   open var supportsAnnouncementMark: Bool { version >= Version(3, 1) }
+
   open var supportsBookmark: Bool { version >= Version(3, 1) }
+
   open var supportsConversation: Bool { version >= Version(2, 6) }
+
   open var supportsDomainBlocks: Bool { version >= Version(0, 4) }
+
   open var supportsExtendedDescription: Bool { version >= Version(4, 0) }
+
   open var supportsFamiliarFollowers: Bool { version >= Version(3, 5) }
+  open var supportsFaveTimeline: Bool { true }
   open var supportsFilter: Bool { version >= Version(4, 0) }
   open var supportsFollowTag: Bool { version >= Version(4, 0) }
+
   open var supportsMutePost: Bool { version >= Version(1, 4, 2) }
   open var supportsNotificationDelete: Bool { version >= Version(1, 3) }
   open var supportsNotificationDeleteAll: Bool { true }
   open var supportsNotificationTypes: Bool { true }
+
+  open var supportsPollVote: Bool { version >= Version(2, 8) }  // supportsPoll
+  open var supportsProfileHeader: Bool { true }
   open var supportsProfileDirectory: Bool { version >= Version(4, 0) }
   open var supportsPublicTimeline: Bool { true }
+
   open var supportsRemoveFollower: Bool { version >= Version(3, 5) }
   open var supportsReportRules: Bool { version >= Version(4, 0) }
-  open var supportsPollVote: Bool { version >= Version(2, 8) }  // supportsPoll
+
   open var supportsSchedule: Bool { version >= Version(2, 7) }
   open var supportsSearchPosts: Bool { version >= Version(2, 4, 1) }
+
   open var supportsTagStats: Bool { version >= Version(2, 4, 1) }
+  open var supportsTagTimeline: Bool { true }
   open var supportsTranslate: Bool { version >= Version(4, 0) }
   open var supportsTranslationLanguages: Bool { version >= Version(4, 2) }
   open var supportsTrendingLinks: Bool { version >= Version(3, 5) }
@@ -46,9 +59,6 @@ open class MastoAPI: Platform {
   open var supportsSearchAccounts: Bool { true }
 
   open var supportsFollowLanguages: Bool { false }
-  open var supportsFaveTimeline: Bool { true }
-  open var supportsProfileHeader: Bool { true }
-  open var supportsopenTimeline: Bool { true }
 
   open var languages: [ISOCode] { [] }
 
