@@ -1,5 +1,7 @@
 import TootSDK
 
+// todo - pass with_suspended
+// https://docs.joinmastodon.org/methods/accounts/#relationships
 extension TootClient {
 
   public func getRelationship(with account: Account) async throws -> Relationship? {
