@@ -20,6 +20,7 @@ public protocol Platform {
   var supportsFilter: Bool { get }
 
   var supportsFollowLanguages: Bool { get }
+  var supportsFollowNotify: Bool { get }
   var supportsFollowTag: Bool { get }
 
   var supportsIsBoosted: Bool { get }

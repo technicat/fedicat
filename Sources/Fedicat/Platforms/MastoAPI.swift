@@ -24,7 +24,11 @@ open class MastoAPI: Platform {
   open var supportsFamiliarFollowers: Bool { version >= Version(3, 5) }
   open var supportsFaveTimeline: Bool { true }
   open var supportsFilter: Bool { version >= Version(4, 0) }
+  open var supportsFollowLanguages: Bool { version >= Version(4, 0) }
+  open var supportsFollowNotify: Bool { version >= Version(3, 3) }
   open var supportsFollowTag: Bool { version >= Version(4, 0) }
+
+  open var supportsList: Bool { true }
 
   open var supportsMutePost: Bool { version >= Version(1, 4, 2) }
   open var supportsNotificationDelete: Bool { version >= Version(1, 3) }
@@ -32,6 +36,7 @@ open class MastoAPI: Platform {
   open var supportsNotificationTypes: Bool { true }
 
   open var supportsPollVote: Bool { version >= Version(2, 8) }  // supportsPoll
+  open var supportsProfileFields: Bool { true }
   open var supportsProfileHeader: Bool { true }
   open var supportsProfileDirectory: Bool { version >= Version(4, 0) }
   open var supportsPublicTimeline: Bool { true }
@@ -51,14 +56,9 @@ open class MastoAPI: Platform {
   open var supportsTrendingTags: Bool { version >= Version(3, 0) }
   open var supportsUpdateAccount: Bool { version >= Version(1, 4, 1) }
 
-  open var supportsProfileFields: Bool { true }
   open var supportsIsBoosted: Bool { true }
 
-  open var supportsList: Bool { true }
-
   open var supportsSearchAccounts: Bool { true }
-
-  open var supportsFollowLanguages: Bool { false }
 
   open var languages: [ISOCode] { [] }
 
