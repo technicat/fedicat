@@ -10,6 +10,9 @@ open class MastoAPI: Platform {
   }
 
   open var name: String { "Mastodon API" }
+
+  open var requiresInstanceAuth: Bool { version >= Version(3, 0) }
+
   open var supportsAnnouncements: Bool { version >= Version(3, 1) }
   open var supportsAnnouncementMark: Bool { version >= Version(3, 1) }
 
@@ -28,10 +31,18 @@ open class MastoAPI: Platform {
   open var supportsFollowNotify: Bool { version >= Version(3, 3) }
   open var supportsFollowTag: Bool { version >= Version(4, 0) }
 
+  open var supportsInstance: Bool { version >= Version(1, 1) }
+  open var supportsInstanceConfig: Bool { version >= Version(3, 4, 2) }
+  open var supportsInstanceConfigAccount: Bool { version >= Version(4, 0) }
+  open var supportsInstanceInvites: Bool { version >= Version(3, 1, 4) }
+  open var supportsInstanceRules: Bool { version >= Version(3, 4) }
+
+  open var supportsInstanceV2: Bool { version >= Version(4, 0) }
+
   open var supportsList: Bool { version >= Version(2, 1) }
 
   open var supportsMutePost: Bool { version >= Version(1, 4, 2) }
-    
+
   open var supportsNotificationDelete: Bool { version >= Version(1, 3) }
   open var supportsNotificationDeleteAll: Bool { true }
   open var supportsNotificationTypes: Bool { true }
@@ -40,7 +51,7 @@ open class MastoAPI: Platform {
   open var supportsProfileFields: Bool { true }
   open var supportsProfileHeader: Bool { true }
   open var supportsProfileDirectory: Bool { version >= Version(4, 0) }
-    // private pubic timeline supported with 3.0.90
+  // private pubic timeline supported with 3.0.90
   open var supportsPublicTimeline: Bool { true }
 
   open var supportsRemoveFollower: Bool { version >= Version(3, 5) }
