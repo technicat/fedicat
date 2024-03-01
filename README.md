@@ -4,7 +4,15 @@ This repo started out as just a list of all the [Mastodon iOS apps](iosapps.md) 
 - A more object-oriented interface over the bare Mastodon/TootSDK interface like TootClient.boost(post) so you don't always have to extract and pass IDs.
 - Common operation names on different types, e.g. delete(), refresh(), follow()..
 - Simplified arguments, try to accomodate most common cases and avoid having to fill out parameter structs.
+- Platform descriptors with feature supports checks, mirroring forking relationships with inheritance, e.g. Hometown is a subclass of Mastodon
 - Random other conveniences
-- Otherwise try to follow the [Swift API Design Guidelines](https://www.swift.org/documentation/api-design-guidelines/)
 
-This package is not stable since [Fedicat the app](https://fedicat.com/) is in active development and sometimes relies on my [fork of TootSDK](https://github.com/technicat/TootSDK). Formatted with [swift-format](https://github.com/apple/swift-format).
+## Style
+
+Try to follow the [Swift API Design Guidelines](https://www.swift.org/documentation/api-design-guidelines/)
+
+Formatted and checked with [swift-format](https://github.com/apple/swift-format).
+
+## Stability
+
+This package is not stable since [Fedicat the app](https://fedicat.com/) is in active development and sometimes relies on my [fork of TootSDK](https://github.com/technicat/TootSDK).
