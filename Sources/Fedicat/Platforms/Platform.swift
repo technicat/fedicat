@@ -11,6 +11,8 @@ public protocol Platform {
   var supportsAnnouncementMark: Bool { get }
 
   var supportsBookmark: Bool { get }
+  var supportsBot: Bool { get }
+
   var supportsDomainBlocks: Bool { get }
 
   var supportsExtendedDescription: Bool { get }

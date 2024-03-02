@@ -17,6 +17,7 @@ open class MastoAPI: Platform {
   open var supportsAnnouncementMark: Bool { version >= Version(3, 1) }
 
   open var supportsBookmark: Bool { version >= Version(3, 1) }
+  open var supportsBot: Bool { version >= Version(2, 4) }
 
   open var supportsConversation: Bool { version >= Version(2, 6) }
 
