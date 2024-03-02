@@ -21,6 +21,7 @@ open class MastoAPI: Platform {
 
   open var supportsConversation: Bool { version >= Version(2, 6) }
 
+  open var supportsDiscoverable: Bool { version >= Version(3, 1) }
   open var supportsDomainBlocks: Bool { version >= Version(0, 4) }
 
   open var supportsExtendedDescription: Bool { version >= Version(4, 0) }
@@ -49,7 +50,7 @@ open class MastoAPI: Platform {
   open var supportsNotificationTypes: Bool { true }
 
   open var supportsPollVote: Bool { version >= Version(2, 8) }  // supportsPoll
-  open var supportsProfileFields: Bool { true }
+  open var supportsProfileFields: Bool { version >= Version(2, 4) }
   open var supportsProfileHeader: Bool { true }
   open var supportsProfileDirectory: Bool { version >= Version(4, 0) }
   // private pubic timeline supported with 3.0.90

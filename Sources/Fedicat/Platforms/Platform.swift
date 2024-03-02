@@ -13,6 +13,7 @@ public protocol Platform {
   var supportsBookmark: Bool { get }
   var supportsBot: Bool { get }
 
+  var supportsDiscoverable: Bool { get }
   var supportsDomainBlocks: Bool { get }
 
   var supportsExtendedDescription: Bool { get }
