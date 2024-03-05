@@ -56,6 +56,10 @@ open class MastoAPI: Platform {
   // private pubic timeline supported with 3.0.90
   open var supportsPublicTimeline: Bool { true }
 
+  open var supportsPostDefaultLanguage: Bool { version >= Version(2, 4, 2) }
+  open var supportsPostDefaultSensitive: Bool { version >= Version(2, 4) }
+  open var supportsPostDefaultVisibility: Bool { version >= Version(2, 4) }
+
   open var supportsRemoveFollower: Bool { version >= Version(3, 5) }
   open var supportsReportRules: Bool { version >= Version(4, 0) }
 

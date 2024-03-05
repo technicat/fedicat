@@ -42,6 +42,9 @@ public protocol Platform {
   var supportsNotificationTypes: Bool { get }
 
   var supportsPollVote: Bool { get }
+  var supportsPostDefaultLanguage: Bool { get }
+  var supportsPostDefaultSensitive: Bool { get }
+  var supportsPostDefaultVisibility: Bool { get }
   var supportsProfileFields: Bool { get }
   var supportsProfileDirectory: Bool { get }
   var supportsProfileHeader: Bool { get }
