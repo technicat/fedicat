@@ -3,8 +3,13 @@ import TootSDK
 public protocol Platform {
 
   var name: String { get }
+  /// post languages (maybe rename)
   var languages: [ISOCode] { get }
+  /// post visibilities
   var postVis: [Post.Visibility] { get }
+  /// post visibilities available as defaults
+  var postVisDefaults: [Post.Visibility] { get }
+  /// (problem) report categories
   var reportCats: [ReportCategory] { get }
 
   var supportsAnnouncements: Bool { get }

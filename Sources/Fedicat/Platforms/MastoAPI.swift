@@ -81,6 +81,10 @@ open class MastoAPI: Platform {
     [.public, .unlisted, .private, .direct]
   }
 
+  open var postVisDefaults: [Post.Visibility] {
+    [.public, .unlisted, .private]
+  }
+
   open var reportCats: [ReportCategory] {
     [
       .spam,
