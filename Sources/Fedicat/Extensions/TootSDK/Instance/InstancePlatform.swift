@@ -17,9 +17,12 @@ extension Instance {
     if version.lowercased().contains("friendica") {
       return Friendica(apiVersion)
     }
-    if version.lowercased().contains("hometown") {
-      return Hometown(apiVersion)
+    if version.lowercased().contains("glitch") {
+      return Glitch(apiVersion)
     }
+      if version.lowercased().contains("hometown") {
+        return Hometown(apiVersion)
+      }
     if version.lowercased().contains("iceshrimp") {
       return Iceshrimp(apiVersion)
     }
