@@ -7,8 +7,6 @@ public protocol Platform {
   var languages: [ISOCode] { get }
   /// post visibilities
   var postVis: [Post.Visibility] { get }
-  /// post visibilities available as defaults
-  var postVisDefaults: [Post.Visibility] { get }
   /// (problem) report categories
   var reportCats: [ReportCategory] { get }
 

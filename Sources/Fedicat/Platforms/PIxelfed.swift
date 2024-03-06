@@ -28,10 +28,6 @@ open class Pixelfed: MastoAPI {
   open override var supportsTrendingPosts: Bool { false }
   open override var supportsTrendingTags: Bool { false }
 
-  open override var postVisDefaults: [Post.Visibility] {
-    []
-  }
-
   open override var reportCats: [ReportCategory] {
     [
       .spam,
