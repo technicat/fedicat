@@ -53,7 +53,7 @@ open class MastoAPI: Platform {
   open var supportsProfileFields: Bool { version >= Version(2, 4) }
   open var supportsProfileHeader: Bool { true }
   open var supportsProfileDirectory: Bool { version >= Version(4, 0) }
-  // private pubic timeline supported with 3.0.90
+  // private public timeline supported with 3.0.90
   open var supportsPublicTimeline: Bool { true }
 
   open var supportsPostDefaultLanguage: Bool { version >= Version(2, 4, 2) }
@@ -62,6 +62,7 @@ open class MastoAPI: Platform {
 
   open var supportsRemoveFollower: Bool { version >= Version(3, 5) }
   open var supportsReportRules: Bool { version >= Version(4, 0) }
+  open var supportsRevoke: Bool { true }
 
   open var supportsSchedule: Bool { version >= Version(2, 7) }
   open var supportsSearchPosts: Bool { version >= Version(2, 4, 1) }

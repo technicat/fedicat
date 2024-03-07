@@ -16,6 +16,8 @@ open class Sharkey: MastoAPI {
   open override var supportsPostDefaultSensitive: Bool { false }
   open override var supportsPostDefaultVisibility: Bool { false }
 
+  open override var supportsRevoke: Bool { false }
+
   open override var supportsTagStats: Bool { false }
   open override var supportsTagTimeline: Bool { false }  // bug
 }

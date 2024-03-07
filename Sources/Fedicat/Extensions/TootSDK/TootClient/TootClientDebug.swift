@@ -7,11 +7,11 @@ extension TootClient {
       debugInstance || debugResponses || debugRequests
     }
     set {
-        if newValue {
-            debugOn()
-        } else {
-            debugOff()
-        }
+      if newValue {
+        debugOn()
+      } else {
+        debugOff()
+      }
     }
   }
 }

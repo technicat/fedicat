@@ -50,6 +50,7 @@ public protocol Platform {
 
   var supportsRemoveFollower: Bool { get }
   var supportsReportRules: Bool { get }
+  var supportsRevoke: Bool { get }
 
   var supportsSchedule: Bool { get }
   var supportsSearchAccounts: Bool { get }
