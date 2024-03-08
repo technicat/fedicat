@@ -21,6 +21,8 @@ open class Pixelfed: MastoAPI {
 
   open override var supportsPublicTimeline: Bool { false }
 
+  open override var supportsRevoke: Bool { false }
+
   open override var supportsSearchAccounts: Bool { false }
   open override var supportsSearchPosts: Bool { false }
 
