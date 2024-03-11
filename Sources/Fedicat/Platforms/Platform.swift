@@ -29,7 +29,9 @@ public protocol Platform {
   var supportsFollowNotify: Bool { get }
   var supportsFollowTag: Bool { get }
 
-  /// able to turn post searchability on/off
+  /// hide followers/followees
+  var supportsHideCollections: Bool { get }
+  /// turn post searchability on/off
   var supportsIndexable: Bool { get }
   /// a kludge for some platforms (Sharkey) not setting boosted after boosting
   var supportsIsBoosted: Bool { get }
@@ -38,7 +40,9 @@ public protocol Platform {
 
   var supportsMutePost: Bool { get }
 
+  /// delete single notification
   var supportsNotificationDelete: Bool { get }
+  /// delete all notifications
   var supportsNotificationDeleteAll: Bool { get }
   var supportsNotificationTypes: Bool { get }
 
