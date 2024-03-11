@@ -33,6 +33,10 @@ open class MastoAPI: Platform {
   open var supportsFollowNotify: Bool { version >= Version(3, 3) }
   open var supportsFollowTag: Bool { version >= Version(4, 0) }
 
+  /// https://docs.joinmastodon.org/entities/Account/#noindex
+  open var supportsIndexable: Bool { version >= Version(4, 2) }
+
+  /// V1 instance
   open var supportsInstance: Bool { version >= Version(1, 1) }
   open var supportsInstanceConfig: Bool { version >= Version(3, 4, 2) }
   open var supportsInstanceConfigAccount: Bool { version >= Version(4, 0) }
