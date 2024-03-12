@@ -5,6 +5,12 @@ open class Mastodon: MastoAPI {
 
   open override var name: String { "Mastodon" }
 
+  // in older versions (e.g. 2.8)
+  // indexable/hide_collections not always in Account
+  // maybe can remove this if we assume verifyCredentials is called first
+  open override var supportsHideCollections: Bool { version >= Version(4, 3) }
+  open override var supportsIndexable: Bool { version >= Version(4, 3) }
+
   // should match supported_locales in languages_helper.rb
   // todo - adjust for different api versions
   // 4.2 - added Cherokee and Kalmyk, Cantonese, remove kmr
