@@ -1,3 +1,4 @@
+import Foundation
 import TootSDK
 
 extension TootClient {
@@ -21,7 +22,7 @@ extension TootClient {
       indexable: indexable)
     return try await updateCredentials(params: params)
   }
-    
+
   public func updatePostDefaults(
     privacy: Post.Visibility? = nil,
     sensitive: Bool? = nil,
@@ -35,4 +36,25 @@ extension TootClient {
       source: source)
     return try await updateCredentials(params: params)
   }
+
+  public func updateProfile(
+    displayName: String? = nil,
+    note: String? = nil,
+    avatar: Data? = nil,
+    avatarMimeType: String? = nil,
+    header: Data? = nil,
+    headerMimeType: String? = nil,
+    fields: [String: UpdateCredentialsParams.Field]? = nil
+  ) async throws -> Account {
+    let params = UpdateCredentialsParams(
+      displayName: displayName,
+      note: note,
+      avatar: avatar,
+      avatarMimeType: avatarMimeType,
+      header: header,
+      headerMimeType: headerMimeType,
+      fieldsAttributes: fields)
+    return try await updateCredentials(params: params)
+  }
+
 }
