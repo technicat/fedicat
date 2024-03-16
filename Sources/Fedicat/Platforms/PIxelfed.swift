@@ -4,6 +4,8 @@ open class Pixelfed: MastoAPI {
 
   open override var name: String { "Pixelfed" }
 
+  open override var supportsBot: Bool { false }
+
   open override var supportsList: Bool { false }
 
   open override var supportsFollowTag: Bool { true }
