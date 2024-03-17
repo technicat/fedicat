@@ -1,6 +1,7 @@
 import Foundation
 import TootSDK
 
+/// https://docs.joinmastodon.org/methods/accounts/#update_credentials
 extension TootClient {
 
   public func updateAccountSettings(
