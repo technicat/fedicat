@@ -1,9 +1,14 @@
 import Foundation
 import TootSDK
 
-/// https://docs.joinmastodon.org/methods/accounts/#update_credentials
 extension TootClient {
 
+  /// https://docs.joinmastodon.org/methods/accounts/#verify_credentials
+  public func getAccount() async throws -> Account {
+    try await verifyCredentials()
+  }
+
+  /// https://docs.joinmastodon.org/methods/accounts/#update_credentials
   public func updateAccountSettings(
     locked: Bool? = nil,
     bot: Bool? = nil,
