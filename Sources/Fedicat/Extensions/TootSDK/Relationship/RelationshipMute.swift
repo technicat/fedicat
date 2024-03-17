@@ -1,8 +1,8 @@
 import TootSDK
 
 extension TootClient {
-    
-    public var isMutingNotifications: Bool {
-        mutingNotifications ?? false
-    }
+
+  public var isMutingNotifications: Bool {
+    mutingNotifications ?? false
+  }
 }
