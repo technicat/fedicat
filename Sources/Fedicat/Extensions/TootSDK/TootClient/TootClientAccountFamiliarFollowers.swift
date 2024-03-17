@@ -1,12 +1,6 @@
-//
-//  File.swift
-//
-//
-//  Created by Philip Chu on 3/16/24.
-//
-
 import TootSDK
 
+/// https://docs.joinmastodon.org/methods/accounts/#familiar_followers
 extension TootClient {
 
   public func getFamiliarFollowers(of accounts: [Account]) async throws -> [FamiliarFollowers] {
