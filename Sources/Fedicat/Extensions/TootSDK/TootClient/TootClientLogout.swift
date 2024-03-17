@@ -1,10 +1,3 @@
-//
-//  File.swift
-//
-//
-//  Created by Philip Chu on 3/16/24.
-//
-
 import TootSDK
 
 extension TootClient {
