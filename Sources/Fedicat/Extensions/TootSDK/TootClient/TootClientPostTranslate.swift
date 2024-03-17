@@ -1,5 +1,6 @@
 import TootSDK
 
+/// https://docs.joinmastodon.org/methods/statuses/#translate
 extension TootClient {
 
   public func getPostTranslation(id: String, in language: String) async throws -> Translation {

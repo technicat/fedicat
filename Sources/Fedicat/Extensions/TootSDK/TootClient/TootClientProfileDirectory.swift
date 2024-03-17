@@ -1,5 +1,6 @@
 import TootSDK
 
+/// https://docs.joinmastodon.org/methods/directory/
 extension TootClient {
 
   public func getProfileDirectory(

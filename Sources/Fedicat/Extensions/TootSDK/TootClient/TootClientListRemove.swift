@@ -1,5 +1,6 @@
 import TootSDK
 
+/// https://docs.joinmastodon.org/methods/lists/#accounts-remove
 extension TootClient {
 
   public func remove(from list: List, account: Account) async throws {

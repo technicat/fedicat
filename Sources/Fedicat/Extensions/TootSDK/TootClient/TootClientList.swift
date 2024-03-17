@@ -27,14 +27,6 @@ extension TootClient {
     return try await createList(params: params)
   }
 
-  public func delete(_ list: List) async throws {
-    try await deleteList(id: list.id)
-  }
-
-  public func refresh(_ list: List) async throws -> List {
-    try await getList(id: list.id)
-  }
-
   public func update(
     _ list: List,
     name: String? = nil,

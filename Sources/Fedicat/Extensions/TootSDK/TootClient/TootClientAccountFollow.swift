@@ -2,6 +2,7 @@ import TootSDK
 
 extension TootClient {
 
+  /// https://docs.joinmastodon.org/methods/accounts/#follow
   public func follow(
     _ account: Account,
     params: FollowAccountParams? = nil
@@ -34,6 +35,7 @@ extension TootClient {
       languages: languages?.map { $0.rawValue })
   }
 
+  /// https://docs.joinmastodon.org/methods/accounts/#unfollow
   public func unFollow(_ account: Account) async throws -> Relationship {
     try await unfollowAccount(by: account.id)
   }
