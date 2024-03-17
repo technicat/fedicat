@@ -2,6 +2,7 @@ import TootSDK
 
 extension TootClient {
 
+  /// https://docs.joinmastodon.org/methods/statuses/#delete
   public func delete(_ post: Post) async throws -> Post {
     do {
       let post = try await deletePost(id: post.id)
@@ -13,7 +14,4 @@ extension TootClient {
     }
   }
 
-  public func refresh(_ post: Post) async throws -> Post {
-    try await getPost(id: post.id)
-  }
 }
