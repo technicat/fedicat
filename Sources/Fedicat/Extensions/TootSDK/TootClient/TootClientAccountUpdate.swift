@@ -59,4 +59,14 @@ extension TootClient {
     return try await updateCredentials(params: params)
   }
 
+  /// https://docs.joinmastodon.org/methods/profile/#delete-profile-avatar
+  public func deleteAvatar() async throws -> Account {
+    try await getAccount()  // todo - add to TootSDK
+  }
+
+  /// https://docs.joinmastodon.org/methods/profile/#delete-profile-header
+  public func deleteHeader() async throws -> Account {
+    try await getAccount()  // todo - add to TootSDK
+  }
+
 }
