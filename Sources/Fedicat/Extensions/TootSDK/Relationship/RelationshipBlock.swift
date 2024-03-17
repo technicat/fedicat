@@ -11,8 +11,4 @@ extension Relationship {
   public var isBlockingYou: Bool {
     blockedBy ?? false
   }
-
-  public var isMutingNotifications: Bool {
-    mutingNotifications ?? false
-  }
 }
