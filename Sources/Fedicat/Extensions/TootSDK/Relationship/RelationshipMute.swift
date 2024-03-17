@@ -1,6 +1,6 @@
 import TootSDK
 
-extension TootClient {
+extension Relationship {
 
   public var isMutingNotifications: Bool {
     mutingNotifications ?? false
