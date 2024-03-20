@@ -1,6 +1,8 @@
 import Foundation  // IndexSet
 import TootSDK
 
+/// todo - support multiple choice
+/// https://docs.joinmastodon.org/methods/polls/#vote
 extension TootClient {
 
   public func vote(in poll: Poll, for choices: IndexSet) async throws -> Poll {
