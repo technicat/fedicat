@@ -3,9 +3,9 @@ import TootSDK
 
 extension TootClient {
 
-    /// todo - handle poll
-    /// todo - handle pleroma params (contentType and replyToConversationId)
-    /// todo - handle idempotency
+  /// todo - handle poll
+  /// todo - handle pleroma params (contentType and replyToConversationId)
+  /// todo - handle idempotency
   public func schedule(
     text: String,
     replyTo: Post? = nil,

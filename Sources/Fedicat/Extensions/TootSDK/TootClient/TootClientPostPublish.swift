@@ -2,8 +2,8 @@ import TootSDK
 
 extension TootClient {
 
-    /// todo - handle poll
-    /// todo - handle pleroma params (contentType and replyToConversationId)
+  /// todo - handle poll
+  /// todo - handle pleroma params (contentType and replyToConversationId)
   public func publish(
     text: String,
     replyTo: Post? = nil,
