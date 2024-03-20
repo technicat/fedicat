@@ -7,7 +7,7 @@ This repo started out as just a list of all the [Mastodon iOS apps](iosapps.md) 
 - `fave` instead of `favourite` (avoids British vs. American spelling and it's shorter) e.g. `client.fave(post)`, `client.unFave(post)`, and `post.isFaved`.
 - An `ISOCode` enum listing the language codes supported by the various platforms instead of passing strings, e.g. `client.getTranslation(of: post, in: .en)`.
 - `client.getInstance()` is a more precise name than `client.getInstanceInfo()` and it ensures that `client.flavour` is updated.
-- `instance.platform` returns a platform descriptor with feature support queries like `platform.supportsAnnouncements` based on the detected Mastodon API version. This avoids having to query `TootClient.flavour` and `TootClient.supportsFeature` and new platforms can be added without messing with TootSDK. The descriptors have inheritance hierarchies that mirror forking relationships, e.g. `Hometown` is a subclass of `Mastodon`.
+- `instance.platform` returns a platform descriptor with feature support queries like `platform.supportsAnnouncements` based on the detected Mastodon API version. This avoids having to query `TootClient.flavour` and `TootClient.supportsFeature`, and new platforms can be added without messing with TootSDK. The descriptors have inheritance hierarchies that mirror forking relationships, e.g. `Hometown` is a subclass of `Mastodon`.
 - Random other conveniences.
 
 ## Style
