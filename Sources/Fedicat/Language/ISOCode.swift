@@ -41,8 +41,12 @@ public enum ISOCode: String, CaseIterable, Codable {
     jbo,
     kab, kmr,
     ldn, lfn,
+    moh,
+    nds,
+    pdc,
     sco, sma, smj, szl,
     tai, tok,
+    vai,
     xal,
     zba, zgh
   // ISO_639_1 Regional

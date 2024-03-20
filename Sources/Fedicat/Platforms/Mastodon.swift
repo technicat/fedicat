@@ -13,8 +13,15 @@ open class Mastodon: MastoAPI {
 
   // should match supported_locales in languages_helper.rb
   // todo - adjust for different api versions
+  // 4.3 - add Lower German
   // 4.2 - added Cherokee and Kalmyk, Cantonese, remove kmr
   // 4.1 - added be, fy, cnr, sma, smj
+  let langs43: [ISOCode] = [
+    .moh,
+    .nds,
+    .pdc,
+    .vai
+  ]
   let langs42: [ISOCode] = [
     .chr, .xal, .zhCN,
     .zhHK,
@@ -71,6 +78,9 @@ open class Mastodon: MastoAPI {
     if version >= Version(4, 2) {
       all = all.filter { $0 != .kmr }
       all = all + langs42
+    }
+    if version >= Version(4, 3) {
+      all = all + langs43
     }
     return all
   }
