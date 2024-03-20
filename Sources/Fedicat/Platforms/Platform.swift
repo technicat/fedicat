@@ -68,6 +68,7 @@ public protocol Platform {
   var supportsSchedule: Bool { get }
   var supportsSearchAccounts: Bool { get }
   var supportsSearchPosts: Bool { get }
+  var supportsSuggestions: Bool { get }
 
   var supportsTagStats: Bool { get }
   var supportsTagTimeline: Bool { get }

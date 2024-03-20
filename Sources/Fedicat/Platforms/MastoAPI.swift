@@ -72,6 +72,7 @@ open class MastoAPI: Platform {
 
   open var supportsSchedule: Bool { version >= Version(2, 7) }
   open var supportsSearchPosts: Bool { version >= Version(2, 4, 1) }
+  open var supportsSuggestions: Bool { version >= Version(3, 4, 0) }
 
   open var supportsTagStats: Bool { version >= Version(2, 4, 1) }
   open var supportsTagTimeline: Bool { true }
