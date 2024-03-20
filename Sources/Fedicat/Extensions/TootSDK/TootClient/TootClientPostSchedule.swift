@@ -5,6 +5,7 @@ extension TootClient {
 
     /// todo - handle poll
     /// todo - handle pleroma params (contentType and replyToConversationId)
+    /// todo - handle idempotent
   public func schedule(
     text: String,
     mediaIds: [String]? = nil,
