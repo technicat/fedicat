@@ -1,27 +1,15 @@
 import TootSDK
 
-/// https://docs.joinmastodon.org/methods/statuses/#translate
 extension TootClient {
 
-  public func getPostTranslation(id: String, in language: String) async throws -> Translation {
-    try await getPostTranslation(
-      id: id,
-      params: PostTranslationParams(lang: language))
-  }
-
-  public func getTranslation(of post: Post, in language: String) async throws -> Translation {
-    try await getPostTranslation(
-      id: post.id,
-      in: language)
-  }
-
+  /// https://docs.joinmastodon.org/methods/statuses/#translate
   public func getTranslation(of post: Post, in language: ISOCode? = nil) async throws
     -> Translation
   {
     if let language {
-      try await getTranslation(
-        of: post,
-        in: language.rawValue)
+      try await getPostTranslation(
+        id: post.id,
+        params: PostTranslationParams(lang: language.rawValue))
     } else {
       try await getPostTranslation(id: post.id)
     }
