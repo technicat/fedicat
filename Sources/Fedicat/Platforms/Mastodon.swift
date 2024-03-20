@@ -20,7 +20,7 @@ open class Mastodon: MastoAPI {
     .moh,
     .nds,
     .pdc,
-    .vai
+    .vai,
   ]
   let langs42: [ISOCode] = [
     .chr, .xal, .zhCN,
