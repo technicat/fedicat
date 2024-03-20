@@ -5,9 +5,9 @@ extension TootClient {
     /// todo - handle poll
     /// todo - handle pleroma params (contentType and replyToConversationId)
   public func publish(
-    post: String,
+    text: String,
+    replyTo: Post? = nil,
     mediaIds: [String]? = nil,
-    inReplyToId: String? = nil,
     sensitive: Bool? = nil,
     spoilerText: String? = nil,
     visibility: Post.Visibility,
@@ -15,9 +15,9 @@ extension TootClient {
   ) async throws -> Post {
     try await publishPost(
       PostParams(
-        post: post,
+        post: text,
         mediaIds: mediaIds,
-        inReplyToId: inReplyToId,
+        inReplyToId: replyTo?.id,
         sensitive: sensitive,
         spoilerText: spoilerText,
         visibility: visibility,

@@ -5,11 +5,11 @@ extension TootClient {
 
     /// todo - handle poll
     /// todo - handle pleroma params (contentType and replyToConversationId)
-    /// todo - handle idempotent
+    /// todo - handle idempotency
   public func schedule(
     text: String,
+    replyTo: Post? = nil,
     mediaIds: [String]? = nil,
-    inReplyToId: String? = nil,
     sensitive: Bool? = nil,
     spoilerText: String? = nil,
     visibility: Post.Visibility,
@@ -25,7 +25,7 @@ extension TootClient {
         visibility: visibility,
         language: language.rawValue,
         scheduledAt: scheduledAt,
-        inReplyToId: inReplyToId
+        inReplyToId: replyTo?.id
       ))
   }
 }
