@@ -6,6 +6,7 @@ extension TootClient {
   /// todo - handle poll
   /// todo - handle pleroma params (contentType and replyToConversationId)
   /// todo - handle idempotency
+  /// https://docs.joinmastodon.org/methods/statuses/#create
   public func schedule(
     text: String,
     replyTo: Post? = nil,

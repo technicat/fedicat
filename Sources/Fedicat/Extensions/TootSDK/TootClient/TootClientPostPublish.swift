@@ -4,6 +4,7 @@ extension TootClient {
 
   /// todo - handle poll
   /// todo - handle pleroma params (contentType and replyToConversationId)
+  /// https://docs.joinmastodon.org/methods/statuses/#create
   public func publish(
     text: String,
     replyTo: Post? = nil,
