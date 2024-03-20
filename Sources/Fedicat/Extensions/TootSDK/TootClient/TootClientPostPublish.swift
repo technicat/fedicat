@@ -7,7 +7,7 @@ extension TootClient {
   public func publish(
     text: String,
     replyTo: Post? = nil,
-    media: [UploadedMediaAttachment] = [],
+    media: [UploadedMediaAttachment]? = nil,
     sensitive: Bool? = nil,
     spoilerText: String? = nil,
     visibility: Post.Visibility,
@@ -16,7 +16,7 @@ extension TootClient {
     try await publishPost(
       PostParams(
         post: text,
-        mediaIds: media.map { $0.id },
+        mediaIds: media?.map { $0.id },
         inReplyToId: replyTo?.id,
         sensitive: sensitive,
         spoilerText: spoilerText,
