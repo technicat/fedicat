@@ -9,7 +9,7 @@ extension TootClient {
   public func schedule(
     text: String,
     replyTo: Post? = nil,
-    mediaIds: [String]? = nil,
+    media: [UploadedMediaAttachment] = [],
     sensitive: Bool? = nil,
     spoilerText: String? = nil,
     visibility: Post.Visibility,
@@ -19,7 +19,7 @@ extension TootClient {
     try await schedulePost(
       ScheduledPostParams(
         text: text,
-        mediaIds: mediaIds,
+        mediaIds: media.map { $0.id },
         sensitive: sensitive,
         spoilerText: spoilerText,
         visibility: visibility,
