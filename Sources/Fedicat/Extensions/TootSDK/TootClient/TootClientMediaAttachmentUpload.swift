@@ -2,20 +2,23 @@ import Foundation
 import TootSDK
 
 extension TootClient {
-    
-    // todo - pass in thumbnail and focus
-    public func upload(
-        _ data: Data,
-        type: MIMEType,
-        description: String? = nil
-    ) async throws -> UploadedMediaAttachment {
-        try await uploadMedia(
-            UploadMediaAttachmentParams(
-                file: data,
-                thumbnail: nil,
-                description: description,
-                focus: nil),
-            mimeType: type.rawValue)
+
+  public func upload(_ data: Data, type: MIMEType, text: String?, wait: Int = 5) async throws
+    -> UploadedMediaAttachment
+  {
+    let upload = try await uploadMedia(
+      UploadMediaAttachmentParams(
+        file: data,
+        thumbnail: nil,
+        description: text,
+        focus: nil), mimeType: type.rawValue)
+    if upload.state == .serverProcessing && wait > 0 {
+      var media: MediaAttachment?
+      repeat {
+        try await Task.sleep(for: .seconds(wait))
+        media = try await getMedia(from: upload)
+      } while media == nil
     }
-    
+    return upload
+  }
 }
