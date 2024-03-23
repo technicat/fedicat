@@ -25,6 +25,9 @@ public protocol Platform {
   /// block domains
   var supportsDomainBlocks: Bool { get }
 
+  var supportsEditPost: Bool { get }
+  var supportsEditPostLanguage: Bool { get }
+
   var supportsExtendedDescription: Bool { get }
 
   var supportsFamiliarFollowers: Bool { get }

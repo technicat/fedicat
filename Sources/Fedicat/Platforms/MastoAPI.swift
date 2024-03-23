@@ -1,5 +1,6 @@
 import TootSDK
 
+// maybe should be a protocol
 open class MastoAPI: Platform {
 
   open var version: Version
@@ -23,6 +24,10 @@ open class MastoAPI: Platform {
 
   open var supportsDiscoverable: Bool { version >= Version(3, 1) }
   open var supportsDomainBlocks: Bool { version >= Version(0, 4) }
+
+  // https://docs.joinmastodon.org/methods/statuses/#edit
+  open var supportsEditPost: Bool { version >= Version(3, 5) }
+  open var supportsEditPostLanguage: Bool { version >= Version(4, 0) }
 
   open var supportsExtendedDescription: Bool { version >= Version(4, 0) }
 
