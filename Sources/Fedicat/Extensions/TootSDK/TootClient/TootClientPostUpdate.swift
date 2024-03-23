@@ -13,7 +13,8 @@ extension TootClient {
             post: text,
             spoilerText: spoiler,
             sensitive: sensitive,
-            mediaIds: media?.map { $0.id })
+            mediaIds: media?.map { $0.id },
+            poll: poll)
         return try await editPost(id: post.id, params)
     }
 }
