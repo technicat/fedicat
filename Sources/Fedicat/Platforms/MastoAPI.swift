@@ -25,10 +25,6 @@ open class MastoAPI: Platform {
   open var supportsDiscoverable: Bool { version >= Version(3, 1) }
   open var supportsDomainBlocks: Bool { version >= Version(0, 4) }
 
-  // https://docs.joinmastodon.org/methods/statuses/#edit
-  open var supportsEditPost: Bool { version >= Version(3, 5) }
-  open var supportsEditPostLanguage: Bool { version >= Version(4, 0) }
-
   open var supportsExtendedDescription: Bool { version >= Version(4, 0) }
 
   open var supportsFamiliarFollowers: Bool { version >= Version(3, 5) }
@@ -61,6 +57,11 @@ open class MastoAPI: Platform {
   open var supportsNotificationTypes: Bool { true }
 
   open var supportsPollVote: Bool { version >= Version(2, 8) }  // supportsPoll
+
+  // https://docs.joinmastodon.org/methods/statuses/#edit
+  open var supportsPostEdit: Bool { version >= Version(3, 5) }
+  open var supportsPostEditLanguage: Bool { version >= Version(4, 0) }
+
   open var supportsProfileFields: Bool { version >= Version(2, 4) }
   open var supportsProfileHeader: Bool { true }
   open var supportsProfileDirectory: Bool { version >= Version(4, 0) }
@@ -70,6 +71,9 @@ open class MastoAPI: Platform {
   open var supportsPostDefaultLanguage: Bool { version >= Version(2, 4, 2) }
   open var supportsPostDefaultSensitive: Bool { version >= Version(2, 4) }
   open var supportsPostDefaultVisibility: Bool { version >= Version(2, 4) }
+
+  // https://docs.joinmastodon.org/methods/statuses/#source
+  open var supportsPostSource: Bool { version >= Version(3, 5) }
 
   open var supportsRemoveFollower: Bool { version >= Version(3, 5) }
   open var supportsReportRules: Bool { version >= Version(4, 0) }

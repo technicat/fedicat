@@ -25,9 +25,6 @@ public protocol Platform {
   /// block domains
   var supportsDomainBlocks: Bool { get }
 
-  var supportsEditPost: Bool { get }
-  var supportsEditPostLanguage: Bool { get }
-
   var supportsExtendedDescription: Bool { get }
 
   var supportsFamiliarFollowers: Bool { get }
@@ -59,6 +56,12 @@ public protocol Platform {
   var supportsPostDefaultLanguage: Bool { get }
   var supportsPostDefaultSensitive: Bool { get }
   var supportsPostDefaultVisibility: Bool { get }
+
+  var supportsPostEdit: Bool { get }
+  var supportsPostEditLanguage: Bool { get }
+
+  var supportsPostSource: Bool { get }
+
   var supportsProfileFields: Bool { get }
   var supportsProfileDirectory: Bool { get }
   var supportsProfileHeader: Bool { get }
