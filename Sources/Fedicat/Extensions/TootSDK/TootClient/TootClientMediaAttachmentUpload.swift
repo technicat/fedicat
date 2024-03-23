@@ -3,7 +3,7 @@ import TootSDK
 
 extension TootClient {
 
-  public func upload(_ data: Data, type: MIMEType, text: String?, wait: Int = 5) async throws
+  public func upload(_ data: Data, type: MIMEType, text: String?, wait: Int = 0) async throws
     -> UploadedMediaAttachment
   {
     let upload = try await uploadMedia(
