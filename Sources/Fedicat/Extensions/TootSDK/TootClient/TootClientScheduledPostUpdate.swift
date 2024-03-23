@@ -8,7 +8,7 @@ extension TootClient {
     _ post: ScheduledPost,
     date: Date
   ) async throws -> ScheduledPost? {
-    return try await updateScheduledPostDate(
+    try await updateScheduledPostDate(
       id: post.id,
       ScheduledPostParams(
         visibility: .direct,  // kludge, not used
