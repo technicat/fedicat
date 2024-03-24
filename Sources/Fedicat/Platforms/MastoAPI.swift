@@ -61,6 +61,8 @@ open class MastoAPI: Platform {
   // https://docs.joinmastodon.org/methods/statuses/#edit
   open var supportsPostEdit: Bool { version >= Version(3, 5) }
   open var supportsPostEditLanguage: Bool { version >= Version(4, 0) }
+  // https://docs.joinmastodon.org/methods/statuses/#history
+  open var supportsPostHistory: Bool { version >= Version(3, 5) }
 
   open var supportsProfileFields: Bool { version >= Version(2, 4) }
   open var supportsProfileHeader: Bool { true }

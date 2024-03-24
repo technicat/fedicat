@@ -18,6 +18,9 @@ open class Pixelfed: MastoAPI {
   open override var supportsPostDefaultSensitive: Bool { false }
   open override var supportsPostDefaultVisibility: Bool { false }
 
+  open override var supportsPostEdit: Bool { false }
+  open override var supportsPostHistory: Bool { false }
+
   open override var supportsPostSource: Bool { false }
 
   open override var supportsProfileFields: Bool { false }

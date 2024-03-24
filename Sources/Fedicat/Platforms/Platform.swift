@@ -59,6 +59,7 @@ public protocol Platform {
 
   var supportsPostEdit: Bool { get }
   var supportsPostEditLanguage: Bool { get }
+  var supportsPostHistory: Bool { get }
 
   var supportsPostSource: Bool { get }
 
