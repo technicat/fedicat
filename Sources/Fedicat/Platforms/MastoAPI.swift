@@ -22,7 +22,7 @@ open class MastoAPI: Platform {
 
   open var supportsConversation: Bool { version >= Version(2, 6) }
 
-  open var supportsDiscoverable: Bool { version >= Version(3, 1) }
+  open var supportsDiscoverable: Bool { version >= Version(4, 2) }
   open var supportsDomainBlocks: Bool { version >= Version(0, 4) }
 
   open var supportsExtendedDescription: Bool { version >= Version(4, 0) }
@@ -35,7 +35,7 @@ open class MastoAPI: Platform {
   open var supportsFollowTag: Bool { version >= Version(4, 0) }
 
   /// https://docs.joinmastodon.org/methods/accounts/#update_credentials
-  open var supportsHideCollections: Bool { version >= Version(4, 1) }
+  open var supportsHideCollections: Bool { version >= Version(4, 2) }
   /// https://docs.joinmastodon.org/methods/accounts/#update_credentials
   open var supportsIndexable: Bool { version >= Version(4, 2) }
 
