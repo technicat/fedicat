@@ -78,7 +78,9 @@ open class MastoAPI: Platform {
   open var supportsPostSource: Bool { version >= Version(3, 5) }
 
   open var supportsRemoveFollower: Bool { version >= Version(3, 5) }
+
   open var supportsReportRules: Bool { version >= Version(4, 0) }
+
   open var supportsRevoke: Bool { true }
 
   open var supportsSchedule: Bool { version >= Version(2, 7) }
@@ -104,12 +106,26 @@ open class MastoAPI: Platform {
     [.public, .unlisted, .private, .direct]
   }
 
+  let reportCats35: [ReportCategory] = [
+    .spam,
+    .other,
+    .violation,
+  ]
+
+  let reportCats42: [ReportCategory] = [
+    // .legal
+  ]
+
   open var reportCats: [ReportCategory] {
-    [
-      .spam,
-      .other,
-      .violation,
-    ]
+    var cats: [ReportCategory] = []
+    if version >= Version(3, 5) {
+      cats = cats + reportCats35
+    }
+    if version >= Version(4, 2) {
+      cats = cats + reportCats42
+      return cats
+    }
+    return cats
   }
 
 }
