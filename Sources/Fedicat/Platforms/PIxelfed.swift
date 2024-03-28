@@ -49,12 +49,12 @@ open class Pixelfed: MastoAPI {
   open override var reportCats: [ReportCategory] {
     [
       .spam,
+      .copyright,
+      .impersonation,
       .sensitive,
       .abusive,
       .underage,
       //    .violence,
-      .copyright,
-      .impersonation,
       //    .scam,
       //     .terrorism,
     ]
