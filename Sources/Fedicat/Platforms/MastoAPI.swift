@@ -6,7 +6,6 @@ open class MastoAPI: Platform {
   open var version: Version
 
   public init(_ version: Version) {
-    //  Logger.log.info("api \(version.dot)")
     self.version = version
   }
 
@@ -113,7 +112,7 @@ open class MastoAPI: Platform {
   ]
 
   let reportCats42: [ReportCategory] = [
-    // .legal
+    .legal
   ]
 
   open var reportCats: [ReportCategory] {
