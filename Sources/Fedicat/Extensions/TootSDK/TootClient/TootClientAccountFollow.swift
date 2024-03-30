@@ -6,8 +6,8 @@ extension TootClient {
   public func follow(
     _ account: Account,
     includeBoosts: Bool = true,
-    notifyPosts: Bool = false,
-    onlyLanguages: [ISOCode]? = nil
+    onlyLanguages: [ISOCode]? = nil,
+    notifyPosts: Bool = false
   ) async throws -> Relationship {
     let params = FollowAccountParams(
       reposts: includeBoosts,
