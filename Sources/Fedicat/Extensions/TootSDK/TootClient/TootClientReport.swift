@@ -2,7 +2,6 @@ import TootSDK
 
 extension TootClient {
 
-  // firefish doesn't use category or ruleIds
   public func report(
     account: Account,
     comment: String?,
@@ -17,7 +16,7 @@ extension TootClient {
       postIds: posts.map { $0.id },
       comment: comment,
       forward: forward,
-      ruleIds: rules.map { Int($0.id) ?? 0 })
+      ruleIds: category == .violation ? rules.map { Int($0.id) ?? 0 } : [])
     try await report(params)
   }
 }
