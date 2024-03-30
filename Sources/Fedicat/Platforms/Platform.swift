@@ -60,7 +60,6 @@ public protocol Platform {
   var supportsPostEdit: Bool { get }
   var supportsPostEditLanguage: Bool { get }
   var supportsPostHistory: Bool { get }
-
   var supportsPostSource: Bool { get }
 
   var supportsProfileFields: Bool { get }
@@ -75,12 +74,16 @@ public protocol Platform {
   var supportsSchedule: Bool { get }
   var supportsSearchAccounts: Bool { get }
   var supportsSearchPosts: Bool { get }
+
   var supportsSuggestions: Bool { get }
+  var supportsSuggestionsStaff: Bool { get }
 
   var supportsTagStats: Bool { get }
   var supportsTagTimeline: Bool { get }
+
   var supportsTranslate: Bool { get }
   var supportsTranslationLanguages: Bool { get }
+
   var supportsTrendingPosts: Bool { get }
   var supportsTrendingTags: Bool { get }
   var supportsTrendingLinks: Bool { get }

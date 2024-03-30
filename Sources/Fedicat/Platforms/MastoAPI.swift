@@ -84,15 +84,20 @@ open class MastoAPI: Platform {
 
   open var supportsSchedule: Bool { version >= Version(2, 7) }
   open var supportsSearchPosts: Bool { version >= Version(2, 4, 1) }
+
   open var supportsSuggestions: Bool { version >= Version(3, 4, 0) }
+  open var supportsSuggestionsStaff: Bool { version >= Version(3, 4, 0) }
 
   open var supportsTagStats: Bool { version >= Version(2, 4, 1) }
   open var supportsTagTimeline: Bool { true }
+
   open var supportsTranslate: Bool { version >= Version(4, 0) }
   open var supportsTranslationLanguages: Bool { version >= Version(4, 2) }
+
   open var supportsTrendingLinks: Bool { version >= Version(3, 5) }
   open var supportsTrendingPosts: Bool { version >= Version(3, 5) }
   open var supportsTrendingTags: Bool { version >= Version(3, 0) }
+
   open var supportsUpdateAccount: Bool { version >= Version(1, 4, 1) }
 
   open var supportsIsBoosted: Bool { true }
