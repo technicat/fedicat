@@ -108,7 +108,7 @@ open class MastoAPI: Platform {
   let reportCats35: [ReportCategory] = [
     .spam,
     .violation,
-    .other
+    .other,
   ]
 
   let reportCats42: [ReportCategory] = [
@@ -121,7 +121,7 @@ open class MastoAPI: Platform {
       cats = cats + reportCats35
     }
     if version >= Version(4, 2) {
-      cats =  reportCats42 + cats
+      cats = reportCats42 + cats
       return cats
     }
     return cats
