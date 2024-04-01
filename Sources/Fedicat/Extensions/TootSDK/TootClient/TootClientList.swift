@@ -33,11 +33,13 @@ extension TootClient {
   public func update(
     _ list: List,
     name: String? = nil,
-    policy: ListRepliesPolicy? = nil
+    policy: ListRepliesPolicy? = nil,
+    exclusive: Bool? = nil
   ) async throws -> List {
     let params = ListParams(
       title: name ?? list.title,
-      repliesPolicy: policy)
+      repliesPolicy: policy,
+      exclusive: exclusive)
     return try await createList(
       id: list.id,
       params: params)
