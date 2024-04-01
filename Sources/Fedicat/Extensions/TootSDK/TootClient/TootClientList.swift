@@ -21,11 +21,11 @@ extension TootClient {
   }
 
     /// https://docs.joinmastodon.org/methods/lists/#create
-    public func create(list name: String, policy: ListRepliesPolicy? = nil, exclusive: Bool? = nil) async throws -> List {
+    public func create(list name: String, policy: ListRepliesPolicy? = nil, notHome: Bool? = nil) async throws -> List {
     let params = ListParams(
       title: name,
       repliesPolicy: policy,
-      exclusive: exclusive)
+      exclusive: notHome)
     return try await createList(params: params)
   }
 
@@ -34,12 +34,12 @@ extension TootClient {
     _ list: List,
     name: String? = nil,
     policy: ListRepliesPolicy? = nil,
-    exclusive: Bool? = nil
+    notHome: Bool? = nil
   ) async throws -> List {
     let params = ListParams(
       title: name ?? list.title,
       repliesPolicy: policy,
-      exclusive: exclusive)
+      exclusive: notHome)
     return try await createList(
       id: list.id,
       params: params)
