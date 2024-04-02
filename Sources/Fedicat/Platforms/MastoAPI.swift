@@ -48,6 +48,8 @@ open class MastoAPI: Platform {
   open var supportsInstanceV2: Bool { version >= Version(4, 0) }
 
   open var supportsList: Bool { version >= Version(2, 1) }
+  open var supportsReplyPolicy: Bool { version >= Version(3, 3) }
+  open var supportsListExclusive: Bool { version >= Version(4, 2) }
 
   open var supportsMutePost: Bool { version >= Version(1, 4, 2) }
 

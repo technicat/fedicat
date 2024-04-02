@@ -43,6 +43,8 @@ public protocol Platform {
   var supportsIsBoosted: Bool { get }
 
   var supportsList: Bool { get }
+  var supportsListReplyPolicy: Bool { get }
+  var supportsListExclusive: Bool { get }
 
   var supportsMutePost: Bool { get }
 
