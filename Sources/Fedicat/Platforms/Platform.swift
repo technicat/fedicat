@@ -92,3 +92,10 @@ public protocol Platform {
 
   var supportsUpdateAccount: Bool { get }
 }
+
+extension Platform {
+    
+    public var hasLanguages: Bool {
+        !languages.isEmpty
+    }
+}
