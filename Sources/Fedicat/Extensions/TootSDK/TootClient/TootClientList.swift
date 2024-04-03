@@ -21,7 +21,9 @@ extension TootClient {
   }
 
   /// https://docs.joinmastodon.org/methods/lists/#create
-  public func create(list name: String, repliesPolicy: ListRepliesPolicy? = nil, exclusive: Bool? = nil)
+  public func create(
+    list name: String, repliesPolicy: ListRepliesPolicy? = nil, exclusive: Bool? = nil
+  )
     async throws -> List
   {
     let params = ListParams(

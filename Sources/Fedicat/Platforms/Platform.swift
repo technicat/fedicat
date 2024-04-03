@@ -94,8 +94,8 @@ public protocol Platform {
 }
 
 extension Platform {
-    
-    public var hasLanguages: Bool {
-        !languages.isEmpty
-    }
+
+  public var hasLanguages: Bool {
+    !languages.isEmpty
+  }
 }

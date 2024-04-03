@@ -1,13 +1,14 @@
 import Foundation
 
-// should just be for images, e.g. ImageMIME?
 public enum MIMEType: String, CaseIterable, Codable {
   // image mime types supported by mastodon for attachments
   // (media_attachment.rb)
-  case imageAVIF = "image/avif"
-  case imageGIF = "image/gif"
-  case imageHEIC = "image/heic"
-  case imageHEIF = "image/heif"
-  case imageJPEG = "image/jpeg"
-  case imageWebP = "image/webp"
+  case avif = "image/avif"
+  case gif = "image/gif"
+  case heic = "image/heic"
+  case heif = "image/heif"
+  case jpeg = "image/jpeg"
+  case webp = "image/webp"
+  case mp4 = "video/mp4"
+  case webm = "video/webm"
 }

@@ -43,18 +43,18 @@ extension TootClient {
     displayName: String? = nil,
     note: String? = nil,
     avatar: Data? = nil,
-    avatarMimeType: String? = nil,
+    avatarMimeType: MIMEType? = nil,
     header: Data? = nil,
-    headerMimeType: String? = nil,
+    headerMimeType: MIMEType? = nil,
     fields: [String: UpdateCredentialsParams.Field]? = nil
   ) async throws -> Account {
     let params = UpdateCredentialsParams(
       displayName: displayName,
       note: note,
       avatar: avatar,
-      avatarMimeType: avatarMimeType,
+      avatarMimeType: avatarMimeType?.rawValue,
       header: header,
-      headerMimeType: headerMimeType,
+      headerMimeType: headerMimeType?.rawValue,
       fieldsAttributes: fields)
     return try await updateCredentials(params: params)
   }
