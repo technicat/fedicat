@@ -4,14 +4,15 @@ import TootSDK
 extension Post {
 
   public var hasLanguage: Bool {
-    language != nil
+    language != nil // should we validate?
   }
 
+    // not sure we should have a use for this as ISOCode is preferrerd
   public var languageCode: Locale.LanguageCode? {
-    guard let lang = language else {
+    guard let language else {
       return nil
     }
-    return Locale.LanguageCode(lang)  // preprocess string?
+    return Locale.LanguageCode(language)  // preprocess string?
   }
 
   public var languageISOCode: ISOCode? {
