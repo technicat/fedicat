@@ -1,8 +1,8 @@
 import TootSDK
 
 extension Post {
-    
-    public var isSensitive: Bool {
-      sensitive
-    }
+
+  public var isSensitive: Bool {
+    sensitive
+  }
 }
