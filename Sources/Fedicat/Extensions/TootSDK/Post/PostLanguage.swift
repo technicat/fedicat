@@ -21,4 +21,12 @@ extension Post {
     }
     return ISOCode(rawValue: language)  // preprocess string?
   }
+
+  public var languageName: String? {
+    guard let language else {
+      return nil
+    }
+    return language.localizedLanguageName
+  }
+
 }

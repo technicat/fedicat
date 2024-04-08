@@ -14,6 +14,7 @@ extension TootClient {
   public func getRelationships(with accounts: [Account], includeSuspended: Bool = false)
     async throws -> [Relationship]
   {
-      try await getRelationships(by: accounts.map { $0.id }, params: RelationshipParams(withSuspended: includeSuspended))
+    try await getRelationships(
+      by: accounts.map { $0.id }, params: RelationshipParams(withSuspended: includeSuspended))
   }
 }
