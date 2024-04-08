@@ -8,4 +8,9 @@ extension UserTimelineQuery {
   ) {
     self.init(userId: account.id, onlyMedia: onlyMedia, pinned: pinned, tagged: tag?.name)
   }
+
+  public var isOnlyMedia: Bool {
+    onlyMedia ?? false
+  }
+
 }
