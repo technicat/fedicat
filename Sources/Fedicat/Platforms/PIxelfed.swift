@@ -8,6 +8,7 @@ open class Pixelfed: MastoAPI {
 
   open override var supportsList: Bool { false }
 
+  open override var supportsFeaturedTags: Bool { false }
   open override var supportsFollowTag: Bool { true }
 
   open override var supportsNotificationDelete: Bool { false }

@@ -61,16 +61,12 @@ extension TootClient {
 
   /// https://docs.joinmastodon.org/methods/profile/#delete-profile-avatar
   public func deleteAvatar() async throws -> Account {
-    // stubbed
-    // todo - add to TootSDK
-    try await getAccount()
+    try await deleteProfileAvatar()
   }
 
   /// https://docs.joinmastodon.org/methods/profile/#delete-profile-header
   public func deleteHeader() async throws -> Account {
-    // stubbed
-    // todo - add to TootSDK
-    try await getAccount()
+    try await deleteProfileHeader()
   }
 
 }

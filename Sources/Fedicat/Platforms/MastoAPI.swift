@@ -28,6 +28,7 @@ open class MastoAPI: Platform {
 
   open var supportsFamiliarFollowers: Bool { version >= Version(3, 5) }
   open var supportsFaveTimeline: Bool { true }
+  open var supportsFeaturedTags: Bool { version >= Version(3, 0) }
   open var supportsFilter: Bool { version >= Version(4, 0) }
   open var supportsFollowLanguages: Bool { version >= Version(4, 0) }
   open var supportsFollowNotify: Bool { version >= Version(3, 3) }

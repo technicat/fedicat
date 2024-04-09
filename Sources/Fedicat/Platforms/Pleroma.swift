@@ -1,6 +1,7 @@
 open class Pleroma: MastoAPI {
 
   open override var name: String { "Pleroma" }
+  open override var supportsFeaturedTags: Bool { false }
   open override var supportsNotificationTypes: Bool { false }
 
   open override var supportsPostDefaultLanguage: Bool { false }

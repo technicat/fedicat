@@ -29,6 +29,7 @@ public protocol Platform {
 
   var supportsFamiliarFollowers: Bool { get }
   var supportsFaveTimeline: Bool { get }
+  var supportsFeaturedTags: Bool { get }
   var supportsFilter: Bool { get }
 
   var supportsFollowLanguages: Bool { get }
