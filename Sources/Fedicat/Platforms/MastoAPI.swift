@@ -66,8 +66,10 @@ open class MastoAPI: Platform {
   open var supportsPostHistory: Bool { version >= Version(3, 5) }
 
   open var supportsProfileFields: Bool { version >= Version(2, 4) }
-  open var supportsProfileHeader: Bool { true }
   open var supportsProfileDirectory: Bool { version >= Version(4, 0) }
+  open var supportsProfileHeader: Bool { true }
+  open var supportsProfileImageDelete: Bool { version >= Version(4, 2) }
+
   // private public timeline supported with 3.0.90
   open var supportsPublicTimeline: Bool { true }
 

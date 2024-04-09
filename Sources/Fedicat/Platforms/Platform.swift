@@ -67,6 +67,8 @@ public protocol Platform {
   var supportsProfileFields: Bool { get }
   var supportsProfileDirectory: Bool { get }
   var supportsProfileHeader: Bool { get }
+  var supportsProfileImageDelete: Bool { get }
+
   var supportsPublicTimeline: Bool { get }
 
   var supportsRemoveFollower: Bool { get }
