@@ -8,12 +8,12 @@ extension Post {
   }
 
   // not sure we should have a use for this as ISOCode is preferrerd
-//  public var languageCode: Locale.LanguageCode? {
-//    guard let language else {
-//      return nil
-//    }
-//    return Locale.LanguageCode(language)  // preprocess string?
-//  }
+  //  public var languageCode: Locale.LanguageCode? {
+  //    guard let language else {
+  //      return nil
+  //    }
+  //    return Locale.LanguageCode(language)  // preprocess string?
+  //  }
 
   public var languageCode: ISOCode? {
     guard let language else {
