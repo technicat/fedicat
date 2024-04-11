@@ -55,7 +55,7 @@ public protocol Platform {
   var supportsNotificationDeleteAll: Bool { get }
   var supportsNotificationTypes: Bool { get }
 
-   var supportsPins: Bool { get }
+  var supportsPins: Bool { get }
 
   var supportsPollVote: Bool { get }
   var supportsPostDefaultLanguage: Bool { get }
@@ -74,7 +74,7 @@ public protocol Platform {
 
   var supportsPublicTimeline: Bool { get }
 
- var supportsRelationshipWithSuspended: Bool { get }
+  var supportsRelationshipWithSuspended: Bool { get }
   var supportsRemoveFollower: Bool { get }
   var supportsReportRules: Bool { get }
   var supportsRevoke: Bool { get }
