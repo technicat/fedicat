@@ -13,7 +13,7 @@ open class Sharkey: MastoAPI {
   open override var supportsNotificationDeleteAll: Bool { false }
   open override var supportsNotificationTypes: Bool { false }
 
-   open override var supportsPins: Bool { false  }
+ //  open override var supportsPins: Bool { false  }
 
   open override var supportsPostDefaultLanguage: Bool { false }
   open override var supportsPostDefaultSensitive: Bool { false }
