@@ -58,6 +58,9 @@ open class MastoAPI: Platform {
   open var supportsNotificationDeleteAll: Bool { true }
   open var supportsNotificationTypes: Bool { true }
 
+// https://docs.joinmastodon.org/methods/accounts/#statuses
+  open var supportsPins: Bool { version >= Version(1, 6)  }
+
   open var supportsPollVote: Bool { version >= Version(2, 8) }  // supportsPoll
 
   // https://docs.joinmastodon.org/methods/statuses/#edit
@@ -81,8 +84,8 @@ open class MastoAPI: Platform {
   // https://docs.joinmastodon.org/methods/statuses/#source
   open var supportsPostSource: Bool { version >= Version(3, 5) }
 
+open var supportsRelationshipWithSuspended: Bool { version >= Version(4, 3) }
   open var supportsRemoveFollower: Bool { version >= Version(3, 5) }
-
   open var supportsReportRules: Bool { version >= Version(4, 0) }
 
   open var supportsRevoke: Bool { true }
@@ -90,7 +93,7 @@ open class MastoAPI: Platform {
   open var supportsSchedule: Bool { version >= Version(2, 7) }
   open var supportsSearchPosts: Bool { version >= Version(2, 4, 1) }
 
-  open var supportsSuggestions: Bool { version >= Version(3, 4, 0) }
+  open var supportsSuggestions: Bool { version >= Version(3, 4, 0) } // v2
   open var supportsSuggestionsStaff: Bool { version >= Version(3, 4, 0) }
 
   open var supportsTagStats: Bool { version >= Version(2, 4, 1) }
