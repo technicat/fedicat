@@ -35,6 +35,8 @@ open class Pixelfed: MastoAPI {
   open override var supportsSearchPosts: Bool { false }
 
   open override var supportsTagStats: Bool { false }
+    
+    open override var supportsSuggestions: Bool { false }
 
   open override var supportsTrendingLinks: Bool { false }
   open override var supportsTrendingPosts: Bool { false }
