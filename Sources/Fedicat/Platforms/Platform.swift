@@ -10,6 +10,8 @@ public protocol Platform {
   var postVis: [Post.Visibility] { get }
   /// (problem) report categories
   var reportCats: [ReportCategory] { get }
+    /// suggestion sources
+    var suggestionSources: [Suggestion.Source] { get }
 
   var supportsAnnouncements: Bool { get }
   /// mark announcement as read
@@ -83,9 +85,6 @@ public protocol Platform {
   var supportsSearchAccounts: Bool { get }
   var supportsSearchPosts: Bool { get }
 
-  var supportsSuggestions: Bool { get }
-  var supportsSuggestionsStaff: Bool { get }
-
   var supportsTagStats: Bool { get }
   var supportsTagTimeline: Bool { get }
 
@@ -104,4 +103,8 @@ extension Platform {
   public var hasLanguages: Bool {
     !languages.isEmpty
   }
+    
+    public var hasSuggestions: Bool {
+      !suggestionSources.isEmpty
+    }
 }

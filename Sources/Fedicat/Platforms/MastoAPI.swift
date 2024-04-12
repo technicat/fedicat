@@ -93,9 +93,6 @@ open class MastoAPI: Platform {
   open var supportsSchedule: Bool { version >= Version(2, 7) }
   open var supportsSearchPosts: Bool { version >= Version(2, 4, 1) }
 
-  open var supportsSuggestions: Bool { version >= Version(3, 4, 0) }  // v2
-  open var supportsSuggestionsStaff: Bool { version >= Version(3, 4, 0) }
-
   open var supportsTagStats: Bool { version >= Version(2, 4, 1) }
   open var supportsTagTimeline: Bool { true }
 
@@ -139,5 +136,14 @@ open class MastoAPI: Platform {
     }
     return cats
   }
+    
+    // v2
+    open var suggestionSources: [Suggestion.Source] {
+        version >= Version(3, 4, 0) ? [
+        .staff,
+        .pastInteractions,
+        .global
+        ] : []
+    }
 
 }

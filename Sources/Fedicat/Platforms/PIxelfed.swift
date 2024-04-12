@@ -36,8 +36,6 @@ open class Pixelfed: MastoAPI {
 
   open override var supportsTagStats: Bool { false }
 
-  open override var supportsSuggestions: Bool { false }
-
   open override var supportsTrendingLinks: Bool { false }
   open override var supportsTrendingPosts: Bool { false }
   open override var supportsTrendingTags: Bool { false }
@@ -62,5 +60,10 @@ open class Pixelfed: MastoAPI {
       //     .terrorism,
     ]
   }
+    
+    // doesn't support suggestions
+    open override var suggestionSources: [Suggestion.Source] {
+      []
+    }
 
 }
