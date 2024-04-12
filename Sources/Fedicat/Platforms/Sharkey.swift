@@ -4,6 +4,12 @@ open class Sharkey: MastoAPI {
 
   open override var name: String { "Sharkey" }
 
+  open override var suggestionSources: [Suggestion.Source] {
+    [
+      .global
+    ]
+  }
+
   open override var supportsIsBoosted: Bool { false }
 
   open override var supportsFaveTimeline: Bool { false }
@@ -24,10 +30,4 @@ open class Sharkey: MastoAPI {
   open override var supportsTagStats: Bool { false }
   open override var supportsTagTimeline: Bool { false }  // bug
 
-  open override var suggestionSources: [Suggestion.Source] {
-    [
-      .pastInteractions,
-      .global,
-    ]
-  }
 }

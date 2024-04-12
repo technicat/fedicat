@@ -5,6 +5,11 @@ open class Firefish: MastoAPI {
   open override var name: String { "Firefish" }
 
   open override var reportCats: [ReportCategory] { [] }
+  open override var suggestionSources: [Suggestion.Source] {
+    [
+      .global
+    ]
+  }
 
   open override var supportsDomainBlocks: Bool { false }
   open override var supportsFeaturedTags: Bool { false }
