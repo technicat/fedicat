@@ -1,4 +1,5 @@
 import TootSDK
+
 open class Sharkey: MastoAPI {
 
   open override var name: String { "Sharkey" }
@@ -22,11 +23,11 @@ open class Sharkey: MastoAPI {
 
   open override var supportsTagStats: Bool { false }
   open override var supportsTagTimeline: Bool { false }  // bug
-    
-    open override var suggestionSources: [Suggestion.Source] {
-        [
-            .pastInteractions,
-            .global
-        ]
-    }
+
+  open override var suggestionSources: [Suggestion.Source] {
+    [
+      .pastInteractions,
+      .global,
+    ]
+  }
 }

@@ -60,10 +60,10 @@ open class Pixelfed: MastoAPI {
       //     .terrorism,
     ]
   }
-    
-    // doesn't support suggestions
-    open override var suggestionSources: [Suggestion.Source] {
-      []
-    }
+
+  // doesn't support suggestions
+  open override var suggestionSources: [Suggestion.Source] {
+    []
+  }
 
 }

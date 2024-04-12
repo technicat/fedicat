@@ -10,8 +10,8 @@ public protocol Platform {
   var postVis: [Post.Visibility] { get }
   /// (problem) report categories
   var reportCats: [ReportCategory] { get }
-    /// suggestion sources
-    var suggestionSources: [Suggestion.Source] { get }
+  /// suggestion sources
+  var suggestionSources: [Suggestion.Source] { get }
 
   var supportsAnnouncements: Bool { get }
   /// mark announcement as read
@@ -103,8 +103,8 @@ extension Platform {
   public var hasLanguages: Bool {
     !languages.isEmpty
   }
-    
-    public var hasSuggestions: Bool {
-      !suggestionSources.isEmpty
-    }
+
+  public var hasSuggestions: Bool {
+    !suggestionSources.isEmpty
+  }
 }

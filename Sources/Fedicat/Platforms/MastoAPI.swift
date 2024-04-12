@@ -136,14 +136,15 @@ open class MastoAPI: Platform {
     }
     return cats
   }
-    
-    // v2
-    open var suggestionSources: [Suggestion.Source] {
-        version >= Version(3, 4, 0) ? [
+
+  // v2
+  open var suggestionSources: [Suggestion.Source] {
+    version >= Version(3, 4, 0)
+      ? [
         .staff,
         .pastInteractions,
-        .global
-        ] : []
-    }
+        .global,
+      ] : []
+  }
 
 }
