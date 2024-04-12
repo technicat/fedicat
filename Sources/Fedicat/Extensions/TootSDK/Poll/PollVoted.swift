@@ -19,4 +19,8 @@ extension Poll {
     }
     return didVote(for: index)
   }
+
+  public var isMultipleChoice: Bool {
+    multiple
+  }
 }
