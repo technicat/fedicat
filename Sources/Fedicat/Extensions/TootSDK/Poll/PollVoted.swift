@@ -1,6 +1,11 @@
 import TootSDK
 
 extension Poll {
+
+  public var isVotable: Bool {
+    !hasExpired && !hasVoted
+  }
+
   public var hasVoted: Bool {
     voted ?? false
   }
