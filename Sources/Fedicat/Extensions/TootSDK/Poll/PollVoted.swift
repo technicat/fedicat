@@ -3,12 +3,16 @@ import TootSDK
 extension Poll {
 
   public var isVotable: Bool {
-    !hasExpired && !hasVoted
+    !hasExpired && !hasFinishedVoting
   }
 
   public var hasVoted: Bool {
     voted ?? false
   }
+    
+    public var hasFinishedVoting: Bool {
+      hasVoted && isSingleChoice
+    }
 
   public func index(of option: Poll.Option) -> Int? {
     options.firstIndex(of: option)
