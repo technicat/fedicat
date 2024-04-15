@@ -1,23 +1,16 @@
 import Foundation  // IndexSet
 import TootSDK
 
-/// todo - support multiple choice
 /// https://docs.joinmastodon.org/methods/polls/#vote
 extension TootClient {
 
-  public func vote(in poll: Poll, for choices: IndexSet) async throws -> Poll {
-    try await votePoll(id: poll.id, choices: choices)
-  }
-
-  public func vote(in poll: Poll, for index: Int) async throws -> Poll {
-    try await vote(in: poll, for: IndexSet(integer: index))
-  }
-
+  /// fedicat handles multiple choice by voting for each option individually
+  /// if we need to batch, then support passing a collection of options
   public func vote(in poll: Poll, for option: Poll.Option) async throws -> Poll {
     guard let index = poll.index(of: option) else {
       return poll
     }
-    return try await vote(in: poll, for: index)
+    return try await votePoll(id: poll.id, choices: IndexSet(integer: index))
   }
 
 }

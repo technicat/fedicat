@@ -9,10 +9,10 @@ extension Poll {
   public var hasVoted: Bool {
     voted ?? false
   }
-    
-    public var hasFinishedVoting: Bool {
-      hasVoted && isSingleChoice
-    }
+
+  public var hasFinishedVoting: Bool {
+    hasVoted && isSingleChoice
+  }
 
   public func index(of option: Poll.Option) -> Int? {
     options.firstIndex(of: option)
