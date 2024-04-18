@@ -212,5 +212,6 @@ extension ISOCode {
     .zhHK: "Chinese (Hong Kong)",
     .zhTW: "Chinese (Taiwan)",
     .zhYUE: "Cantonese",
+    .und: "unknown"
   ]
 }

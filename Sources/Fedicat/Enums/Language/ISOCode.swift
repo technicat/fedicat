@@ -58,4 +58,8 @@ public enum ISOCode: String, CaseIterable, Codable {
     zhTW = "zh-TW"
   case
     zhYUE = "zh-YUE"
+  // indicates auto-detection
+  // https://docs.joinmastodon.org/methods/instance/#translation_languages
+  case
+    und
 }
