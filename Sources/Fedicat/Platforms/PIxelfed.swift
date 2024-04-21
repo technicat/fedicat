@@ -40,7 +40,7 @@ open class Pixelfed: MastoAPI {
   open override var supportsTrendingPosts: Bool { false }
   open override var supportsTrendingTags: Bool { false }
 
-  open override var notificationTypes: Set<TootNotification.NotificationType> {
+  open override var notificationTypes: Notifications {
     []
   }
 

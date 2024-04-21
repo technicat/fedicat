@@ -10,6 +10,10 @@ open class Sharkey: MastoAPI {
     ]
   }
 
+  open override var notificationTypes: Notifications {
+    []
+  }
+
   open override var supportsIsBoosted: Bool { false }
 
   open override var supportsFaveTimeline: Bool { false }
