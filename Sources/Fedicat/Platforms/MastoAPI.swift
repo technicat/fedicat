@@ -60,7 +60,6 @@ open class MastoAPI: Platform {
 
   open var supportsNotificationDelete: Bool { version >= Version(1, 3) }
   open var supportsNotificationDeleteAll: Bool { true }
-  open var supportsNotificationTypes: Bool { true }
 
   // https://docs.joinmastodon.org/methods/accounts/#statuses
   open var supportsPins: Bool { version >= Version(1, 6) }
@@ -118,8 +117,23 @@ open class MastoAPI: Platform {
   // todo - add admin types
   // todo - version check
   open var notificationTypes: Set<TootNotification.NotificationType> {
-    [.follow, .mention, .repost, .favourite, .poll, .followRequest, .post, .update]
+    var types: Set<TootNotification.NotificationType> = [
+      .follow, .mention, .repost, .favourite, .poll, .followRequest, .post, .update,
+    ]
+    if version >= Version(3, 1) {
+      types = types.union(noteTypes31)
+    }
+    if version >= Version(3, 3) {
+      types = types.union(noteTypes33)
+    }
+    return types
   }
+
+  let noteTypes31: Set<TootNotification.NotificationType> =
+    [.followRequest]
+
+  let noteTypes33: Set<TootNotification.NotificationType> =
+    [.post]
 
   open var postVis: [Post.Visibility] {
     [.public, .unlisted, .private, .direct]

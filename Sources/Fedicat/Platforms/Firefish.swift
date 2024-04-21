@@ -17,7 +17,6 @@ open class Firefish: MastoAPI {
   open override var supportsNote: Bool { false }
   open override var supportsNotificationDelete: Bool { false }
   open override var supportsNotificationDeleteAll: Bool { false }
-  open override var supportsNotificationTypes: Bool { false }
 
   open override var supportsPostDefaultLanguage: Bool { false }
   open override var supportsPostDefaultSensitive: Bool { false }

@@ -14,7 +14,6 @@ open class Pixelfed: MastoAPI {
   open override var supportsNote: Bool { false }
   open override var supportsNotificationDelete: Bool { false }
   open override var supportsNotificationDeleteAll: Bool { false }
-  open override var supportsNotificationTypes: Bool { false }
 
   open override var supportsPostDefaultLanguage: Bool { false }
   open override var supportsPostDefaultSensitive: Bool { false }
@@ -40,6 +39,10 @@ open class Pixelfed: MastoAPI {
   open override var supportsTrendingLinks: Bool { false }
   open override var supportsTrendingPosts: Bool { false }
   open override var supportsTrendingTags: Bool { false }
+
+  open override var notificationTypes: Set<TootNotification.NotificationType> {
+    []
+  }
 
   // doesn't support .direct
   open override var postVis: [Post.Visibility] {

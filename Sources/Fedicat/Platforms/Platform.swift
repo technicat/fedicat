@@ -60,7 +60,6 @@ public protocol Platform {
   var supportsNotificationDelete: Bool { get }
   /// delete all notifications
   var supportsNotificationDeleteAll: Bool { get }
-  var supportsNotificationTypes: Bool { get }
 
   var supportsPins: Bool { get }
 
