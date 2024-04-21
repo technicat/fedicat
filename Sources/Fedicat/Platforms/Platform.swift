@@ -109,7 +109,12 @@ extension Platform {
     !languages.isEmpty
   }
 
+  public var hasNotificationTypes: Bool {
+    !notificationTypes.isEmpty
+  }
+
   public var hasSuggestions: Bool {
     !suggestionSources.isEmpty
   }
+
 }
