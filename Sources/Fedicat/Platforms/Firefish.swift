@@ -31,4 +31,8 @@ open class Firefish: MastoAPI {
   open override var supportsTranslate: Bool { false }
   open override var supportsTranslationLanguages: Bool { false }
   open override var supportsTrendingTags: Bool { false }
+
+  open override var notificationTypes: Set<TootNotification.NotificationType> {
+    [.follow, .mention, .repost, .favourite, .poll, .followRequest]
+  }
 }

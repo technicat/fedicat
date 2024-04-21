@@ -117,7 +117,7 @@ open class MastoAPI: Platform {
 
   // todo - add admin types
   // todo - version check
-  open var notificationTypes: [TootNotification.NotificationType] {
+  open var notificationTypes: Set<TootNotification.NotificationType> {
     [.follow, .mention, .repost, .favourite, .poll, .followRequest, .post, .update]
   }
 
