@@ -1,4 +1,4 @@
-This repo started out as just a list of all the [Mastodon iOS apps](iosapps.md) I've found, but now it's also the github public home base for my [fediverse app](https://fedicat.com/) in progress and an associated Swift package with some possibly useful reusable code, mainly [TootSDK](https://github.com/TootSDK/TootSDK) extensions:
+This repo started out as just a list of all the [Mastodon iOS apps](iosapps.md) I've found, but now it's also the github public home base for my [fediverse app](https://fedicat.com/) in progress and an associated Swift package with some possibly useful reusable code, mainly [TootSDK](https://github.com/technicat/TootSDK) extensions:
 
 - An object-oriented interface so you operate on objects instead of IDs, e.g. `client.boost(post)` instead of `client.boostPost(id: post.id)`.
 - Predicates like `post.isBoosted` instead of `post.boost ?? false` (not necessarily correct, sometimes a platform will just choose not to supply a value in certain contexts).
@@ -22,4 +22,4 @@ This package is not stable since [Fedicat the app](https://fedicat.com/) is in a
 
 ## Roadmap
 
-I have a Session wrapper around TootClient that maintains additional state and facilitates loading, saving, and switching among multiple active logins, which I would like to move into this package (and maybe move the TootSDK extensions into TootSDK or a fork).
+I have a Session wrapper around TootClient that maintains additional state and facilitates loading, saving, and switching among multiple active logins, which I would like to move into this package (and maybe move the TootSDK extensions into TootSDK).
