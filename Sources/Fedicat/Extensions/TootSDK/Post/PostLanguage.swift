@@ -17,9 +17,9 @@ extension Post {
 
   public var languageCode: ISOCode {
     guard let language else {
-        return .und
+      return .und
     }
-      return ISOCode(rawValue: language) ?? .und // preprocess string?
+    return ISOCode(rawValue: language) ?? .und  // preprocess string?
   }
 
   public var languageName: String? {

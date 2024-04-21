@@ -49,8 +49,11 @@ public protocol Platform {
   var supportsListReplyPolicy: Bool { get }
   var supportsListExclusive: Bool { get }
 
+  var supportsMarkers: Bool { get }
   var supportsMutePost: Bool { get }
 
+  /// private note for account
+  var supportsNote: Bool { get }
   /// delete single notification
   var supportsNotificationDelete: Bool { get }
   /// delete all notifications

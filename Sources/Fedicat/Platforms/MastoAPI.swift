@@ -52,7 +52,11 @@ open class MastoAPI: Platform {
   open var supportsListReplyPolicy: Bool { version >= Version(3, 3) }
   open var supportsListExclusive: Bool { version >= Version(4, 2) }
 
+  open var supportsMarkers: Bool { version >= Version(3, 0) }
   open var supportsMutePost: Bool { version >= Version(1, 4, 2) }
+
+  // https://docs.joinmastodon.org/methods/accounts/#note
+  open var supportsNote: Bool { version >= Version(3, 2) }
 
   open var supportsNotificationDelete: Bool { version >= Version(1, 3) }
   open var supportsNotificationDeleteAll: Bool { true }

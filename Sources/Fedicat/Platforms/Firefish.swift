@@ -13,6 +13,8 @@ open class Firefish: MastoAPI {
 
   open override var supportsDomainBlocks: Bool { false }
   open override var supportsFeaturedTags: Bool { false }
+
+  open override var supportsNote: Bool { false }
   open override var supportsNotificationDelete: Bool { false }
   open override var supportsNotificationDeleteAll: Bool { false }
   open override var supportsNotificationTypes: Bool { false }
