@@ -6,6 +6,8 @@ public protocol Platform {
   var name: String { get }
   /// post languages (maybe rename)
   var languages: [ISOCode] { get }
+  ///
+  var notificationTypes: [TootNotification.NotificationType] { get }
   /// post visibilities
   var postVis: [Post.Visibility] { get }
   /// (problem) report categories

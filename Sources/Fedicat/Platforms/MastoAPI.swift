@@ -115,6 +115,12 @@ open class MastoAPI: Platform {
 
   open var languages: [ISOCode] { [] }
 
+  // todo - add admin types
+  // todo - version check
+  open var notificationTypes: [TootNotification.NotificationType] {
+    [.follow, .mention, .repost, .favourite, .poll, .followRequest, .post, .update]
+  }
+
   open var postVis: [Post.Visibility] {
     [.public, .unlisted, .private, .direct]
   }
