@@ -4,7 +4,7 @@ open class Sharkey: MastoAPI {
 
   open override var name: String { "Sharkey" }
 
-  open override var suggestionSources: [Suggestion.Source] {
+  open override var suggestionSources: Suggestions {
     [
       .global
     ]

@@ -66,8 +66,6 @@ open class Pixelfed: MastoAPI {
   }
 
   // doesn't support suggestions
-  open override var suggestionSources: [Suggestion.Source] {
-    []
-  }
+  open override var suggestionSources: Suggestions { [] }
 
 }

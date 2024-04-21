@@ -5,7 +5,7 @@ open class Firefish: MastoAPI {
   open override var name: String { "Firefish" }
 
   open override var reportCats: [ReportCategory] { [] }
-  open override var suggestionSources: [Suggestion.Source] {
+  open override var suggestionSources: Suggestions {
     [
       .global
     ]

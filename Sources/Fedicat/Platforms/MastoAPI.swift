@@ -115,9 +115,9 @@ open class MastoAPI: Platform {
   open var languages: [ISOCode] { [] }
 
   // todo - add admin types
-  // todo - version check
-  open var notificationTypes: Set<TootNotification.NotificationType> {
-    var types: Set<TootNotification.NotificationType> = [
+ /// https://docs.joinmastodon.org/methods/notifications/#get
+  open var notificationTypes: Notifications {
+    var types: Notifications = [
       .follow, .mention, .repost, .favourite, .poll, .followRequest, .post, .update,
     ]
     if version >= Version(3, 1) {
@@ -129,11 +129,9 @@ open class MastoAPI: Platform {
     return types
   }
 
-  let noteTypes31: Set<TootNotification.NotificationType> =
-    [.followRequest]
+  let noteTypes31: Notifications = [.followRequest]
 
-  let noteTypes33: Set<TootNotification.NotificationType> =
-    [.post]
+  let noteTypes33: Notifications = [.post]
 
   open var postVis: [Post.Visibility] {
     [.public, .unlisted, .private, .direct]
@@ -162,7 +160,7 @@ open class MastoAPI: Platform {
   }
 
   // v2
-  open var suggestionSources: [Suggestion.Source] {
+  open var suggestionSources: Suggestions {
     version >= Version(3, 4, 0)
       ? [
         .staff,
