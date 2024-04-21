@@ -117,3 +117,5 @@ extension Platform {
   }
 
 }
+
+public typealias Notifications = Set<TootNotification.NotificationType>
