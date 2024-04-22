@@ -1,9 +1,9 @@
-import TootSDK
-
-extension Post {
-
-  public var hasAltAll: Bool {
-    mediaAttachments.isEmpty || mediaAttachments.allSatisfy { $0.hasAltText }
-  }
-
-}
+//import TootSDK
+//
+//extension Attached {
+//
+//  public var hasAltAll: Bool {
+//    return attachments.isEmpty || attachments.allSatisfy { $0.hasAltText }
+//  }
+//
+//}
