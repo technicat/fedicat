@@ -24,5 +24,5 @@ This package is not stable since [Fedicat the app](https://fedicat.com/) is in a
 
 - I have a Session wrapper around TootClient that maintains additional state and facilitates loading, saving, and switching among multiple active logins, which I would like to move into this package
 - Maybe move the TootSDK extensions into TootSDK (but it's kind of nice to maintain this modularity)
-- Ideally I'd like to remove all the platform checking (i.e. remove TootSDKFlavour) in TootSDK and take care of that here. Already removed TootSDKFeature.
+- Ideally I'd like to remove all the platform checking in TootSDK and take care of that here. Already removed TootSDKFeature, but probably the TootSDKFlavour checks still have to take place for platform-specific query generation. Maybe eventually replace TootSDKFlavour with Platform.
 - Platform-specific version checks, e.g. Pixelfed versions, in addition to Mastodon API version checks.
