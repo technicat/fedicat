@@ -26,3 +26,4 @@ This package is not stable since [Fedicat the app](https://fedicat.com/) is in a
 - Maybe move the TootSDK extensions into TootSDK (but it's kind of nice to maintain this modularity)
 - Ideally I'd like to remove all the platform checking in TootSDK and take care of that here. Already removed TootSDKFeature, but probably the TootSDKFlavour checks still have to take place for platform-specific query generation. Maybe eventually replace TootSDKFlavour with Platform.
 - Platform-specific version checks, e.g. Pixelfed versions, in addition to Mastodon API version checks.
+- Probably don't want to move UI stuff here, but who knows.
