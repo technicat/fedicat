@@ -115,7 +115,7 @@ open class MastoAPI: Platform {
   open var languages: [ISOCode] { [] }
 
   // todo - add admin types
- /// https://docs.joinmastodon.org/methods/notifications/#get
+  /// https://docs.joinmastodon.org/methods/notifications/#get
   open var notificationTypes: Notifications {
     var types: Notifications = [
       .follow, .mention, .repost, .favourite, .poll, .followRequest, .post, .update,
