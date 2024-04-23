@@ -1,4 +1,4 @@
-This repo started out as just a list of all the [Mastodon iOS apps](iosapps.md) I've found, but now it's also the github public home base for my [fediverse app](https://fedicat.com/) in progress and an associated Swift package with some possibly useful reusable code, mainly [TootSDK](https://github.com/technicat/TootSDK) extensions:
+This repo started out as just a list of all the [Mastodon iOS apps](iosapps.md) I've found, but now it's also the github public home base for my [fediverse app](https://fedicat.com/) in progress and an associated Swift package with (hopefully) reusable code for the app, mainly [TootSDK](https://github.com/technicat/TootSDK) extensions. The current plan is to gradually move those into the TootSDK fork while migrating higher level code here (I'll do some tagging, but it's very not stable).
 
 - An object-oriented interface so you operate on objects instead of IDs, e.g. `client.boost(post)` instead of `client.boostPost(id: post.id)`.
 - Predicates like `post.isBoosted` instead of `post.boost ?? false` (not necessarily correct, sometimes a platform will just choose not to supply a value in certain contexts).
@@ -16,14 +16,3 @@ Try to follow the [Swift API Design Guidelines](https://www.swift.org/documentat
 
 Formatted and checked with [swift-format](https://github.com/apple/swift-format).
 
-## Stability
-
-This package is not stable since [Fedicat the app](https://fedicat.com/) is in active development and sometimes relies on my [fork of TootSDK](https://github.com/technicat/TootSDK).
-
-## Roadmap
-
-- I have a Session wrapper around TootClient that maintains additional state and facilitates loading, saving, and switching among multiple active logins, which I would like to move into this package
-- Maybe move the TootSDK extensions into TootSDK (but it's kind of nice to maintain this modularity)
-- Ideally I'd like to remove all the platform checking in TootSDK and take care of that here. Already removed TootSDKFeature, but probably the TootSDKFlavour checks still have to take place for platform-specific query generation. Maybe eventually replace TootSDKFlavour with Platform.
-- Platform-specific version checks, e.g. Pixelfed versions, in addition to Mastodon API version checks.
-- Probably don't want to move UI stuff here, but who knows.
