@@ -86,6 +86,7 @@ public protocol Platform {
   var supportsRevoke: Bool { get }
 
   var supportsSchedule: Bool { get }
+  var supportsScheduleUpdate: Bool { get }
   var supportsSearchAccounts: Bool { get }
   var supportsSearchPosts: Bool { get }
 
@@ -99,6 +100,7 @@ public protocol Platform {
   var supportsTrendingTags: Bool { get }
   var supportsTrendingLinks: Bool { get }
 
+  // rename to supportAccountUpdate
   var supportsUpdateAccount: Bool { get }
 }
 

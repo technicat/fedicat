@@ -94,6 +94,8 @@ open class MastoAPI: Platform {
   open var supportsRevoke: Bool { true }
 
   open var supportsSchedule: Bool { version >= Version(2, 7) }
+  open var supportsScheduleUpdate: Bool { version >= Version(2, 7) }
+
   open var supportsSearchPosts: Bool { version >= Version(2, 4, 1) }
 
   open var supportsTagStats: Bool { version >= Version(2, 4, 1) }

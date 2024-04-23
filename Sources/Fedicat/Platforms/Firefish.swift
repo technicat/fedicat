@@ -25,6 +25,7 @@ open class Firefish: MastoAPI {
 
   open override var supportsRevoke: Bool { false }
 
+  open override var supportsSchedule: Bool { false }
   open override var supportsSearchAccounts: Bool { false }
 
   open override var supportsTranslate: Bool { false }
