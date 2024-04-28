@@ -6,7 +6,7 @@ extension FeaturedTag: Comparable {
     lhs: TootSDK.FeaturedTag,
     rhs: TootSDK.FeaturedTag
   ) -> Bool {
-      // or could use this
+    // or could use this
     //  lhs.postsCount < rhs.postsCount
     lhs.name < rhs.name
   }

@@ -4,5 +4,5 @@ public let firefish = [
   "calckey.world",
   "firefish.city",
   "gamerplus.org",
-  "gamethattune.club"
+  "gamethattune.club",
 ]
