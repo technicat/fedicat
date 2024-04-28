@@ -10,5 +10,13 @@ public let glitch = [
   "indiepocalypse.social",
   "inherently.digital",
   "mastodon.de",
+  "meow.social",
+  "mstdn.ca",
+  "neuromatch.social",
+  "octodon.social",
+  "oldbytes.space",
+  "strangeobject.space",
   "tech.lgbt",
+  "toot.cat",
+  "tweesecake.social",
 ]
