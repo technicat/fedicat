@@ -1,0 +1,18 @@
+public let hometown = [
+  "assemblag.es",
+  "avantwhatever.org",
+  "colorid.es",
+  "cooler.mom",
+  "dads.cool",
+  "digipres.club",
+  "flipping.rocks",
+  "giantheart.social",
+  "hcommons.social",
+  "merveilles.town",
+  "pagan.plus",
+  "post.lurk.org",
+  "rage.love",
+  "reallife.social",
+  "simian.rodeo",
+  "weirder.earth",
+]
