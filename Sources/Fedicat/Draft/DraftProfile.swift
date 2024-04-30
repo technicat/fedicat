@@ -34,6 +34,6 @@ public class DraftProfile {
       }
     }
   }
-    
-    public init() {}
+
+  public init() {}
 }

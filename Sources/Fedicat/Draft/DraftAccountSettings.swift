@@ -19,6 +19,6 @@ public class DraftAccountSettings {
     hideCollections = account.isHidingCollections
     indexable = account.isIndexable
   }
-    
-    public init() {}
+
+  public init() {}
 }
