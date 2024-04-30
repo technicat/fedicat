@@ -1,13 +1,21 @@
+import TootSDK
+import Foundation
+
 @Observable
 public class DraftPostDefaults {
-
-  var lang: ISOCode = .en
-  var visibility: Post.Visibility = .public
-  var sensitive: Bool = false
-
-  @MainActor func copy(from account: Account) {
-    lang = account.defaultLanguage
-    sensitive = account.defaultSensitive
-    visibility = account.defaultVisibility
-  }
+    
+    public var lang: ISOCode = .en
+    public var visibility: Post.Visibility = .public
+    public var sensitive: Bool = false
+    
+    @MainActor public func copy(from account: Account) {
+        lang = account.defaultLanguage
+        sensitive = account.defaultSensitive
+        visibility = account.defaultVisibility
+    }
+    
+    public init() {
+    }
+    
 }
+
