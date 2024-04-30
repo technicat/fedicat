@@ -90,7 +90,7 @@ public let mastodon =
     "stranger.social",
     "syringa.social",
     "techhub.social",
- //   "theatl.social",
+    //   "theatl.social",
     "toot.io",
     "toot.community",
     "toot.wales",

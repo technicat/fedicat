@@ -3,5 +3,5 @@ public let iceshrimp = [
   "iceshrimp.chrt.dev",
   "iceshrimp.social",
   "infosec.town",
-//  "jistflow.com",
+  //  "jistflow.com",
 ]

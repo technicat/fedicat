@@ -63,7 +63,7 @@ public class DraftPost {
     if let text = schedule.params.text {
       self.text = text
     }
-    if let spoiler = schedule.spoiler{
+    if let spoiler = schedule.spoiler {
       spoilerText = spoiler
     }
     self.isSensitive = schedule.isSensitive

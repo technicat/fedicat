@@ -2,7 +2,6 @@ import Foundation
 import SwiftUI
 import TootSDK
 
-
 /// rename to DraftImageAttachment
 ///  define DraftVideoAttachment
 ///   define DraftAudioAttachment
