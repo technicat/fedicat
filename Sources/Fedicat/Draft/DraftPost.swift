@@ -2,7 +2,6 @@ import SwiftUI
 import TootSDK
 
 // add protocols?
-@available(iOS 17.0, *)
 @Observable
 public class DraftPost {
 

@@ -5,7 +5,6 @@ import TootSDK
 /// rename to DraftImageAttachment
 ///  define DraftVideoAttachment
 ///   define DraftAudioAttachment
-@available(iOS 17.0, *)
 @Observable
 public class DraftAttachment: Identifiable, Equatable {
 
