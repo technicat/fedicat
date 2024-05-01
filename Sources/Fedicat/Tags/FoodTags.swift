@@ -1,4 +1,4 @@
 public let foodTags = [
-    "TacoTuesday",
-    "DimSum",
-  ]
+  "TacoTuesday",
+  "DimSum",
+]

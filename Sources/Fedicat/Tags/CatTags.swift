@@ -1,10 +1,10 @@
 public let catTags = [
-    "blep",
-    "CatPhotoDuJour",
-    "CatsOfMastodon",
-    "ToeBeansTuesday",
-    "TongueOutTuesday",
-    "Caturday",
-    "FediCat",
-    "tortie",
-  ]
+  "blep",
+  "CatPhotoDuJour",
+  "CatsOfMastodon",
+  "ToeBeansTuesday",
+  "TongueOutTuesday",
+  "Caturday",
+  "FediCat",
+  "tortie",
+]
