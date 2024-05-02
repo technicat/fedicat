@@ -1,7 +1,7 @@
 import TootSDK
 
 /// https://docs.joinmastodon.org/methods/trends/
-/// todo - check max
+/// todo - get max limits from Platform
 /// todo - offset
 extension Session {
 
