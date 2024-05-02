@@ -11,7 +11,11 @@ extension Session {
     account?.isMentioned(by: mention) ?? false
   }
 
-  public func isMine(_ post: Post) -> Bool {
+  public func isMy(_ post: Post) -> Bool {
     isMe(post.account)
+  }
+
+  public func mentionsMe(in post: Post) -> Bool {
+    account?.isMentioned(by: post) ?? false
   }
 }

@@ -28,9 +28,9 @@ extension Session {
   }
 
   private var mutedAccountsLimit: Int {
-      // this was originally here because pixelfed had a max of 40
-      // use max limit to minimize queries
-      // we could get this from Platform
-      return 80
+    // this was originally here because pixelfed had a max of 40
+    // use max limit to minimize queries
+    // we could get this from Platform
+    return 80
   }
 }

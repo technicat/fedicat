@@ -1,6 +1,6 @@
 import TootSDK
 
-/// cache Accounts to avoid 
+/// cache Accounts to avoid
 extension Session {
 
   public var accountsSorted: [Account] {

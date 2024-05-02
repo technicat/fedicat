@@ -1,10 +1,10 @@
 import TootSDK
 
 extension Session {
-    
-    public var canPinPost: Bool {
-      isAuth && supportsPins
-    }
+
+  public var canPinPost: Bool {
+    isAuth && supportsPins
+  }
 
   public var supportsPins: Bool {
     platform?.supportsPins ?? false
