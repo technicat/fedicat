@@ -10,6 +10,7 @@ extension Session {
     platform?.supportsPins ?? false
   }
 
+  @discardableResult
   public func pin(_ post: Post) async throws -> Post {
     guard !post.isPinned else {
       return post
@@ -17,6 +18,7 @@ extension Session {
     return try await client.pin(post)
   }
 
+  @discardableResult
   public func unPin(_ post: Post) async throws -> Post {
     guard post.isPinned else {
       return post

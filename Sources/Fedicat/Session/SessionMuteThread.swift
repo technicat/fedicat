@@ -12,6 +12,7 @@ extension Session {
     platform?.supportsMutePost ?? false
   }
 
+  @discardableResult
   public func muteThread(of post: Post) async throws -> Post {
     guard !post.isMuted else {
       return post
@@ -19,6 +20,7 @@ extension Session {
     return try await client.mute(post)
   }
 
+  @discardableResult
   public func unMuteThread(of post: Post) async throws -> Post {
     guard post.isMuted else {
       return post
