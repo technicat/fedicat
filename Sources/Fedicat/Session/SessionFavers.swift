@@ -9,7 +9,7 @@ extension Session {
     let result = try await client.getFavers(
       of: post,
       page,
-      limit: faversLimit)
+      limit: faversPageLimit)
     await addAccounts(result.result)
     return result
   }
