@@ -2,7 +2,7 @@ import TootSDK
 
 extension Session {
 
-    // todo get from platform
+  // todo get from platform
   public var maxFollow: Int {
     guard let account else {
       return 7500
