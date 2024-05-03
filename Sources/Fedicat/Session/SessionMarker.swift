@@ -8,16 +8,11 @@ extension Session {
   }
 
   public func getHomeMarker() async throws -> Marker? {
-    try await getMarker(Marker.Timeline.home)
+      try await client.getMarker(for: Marker.Timeline.home)
   }
 
   public func getNotificationsMarker() async throws -> Marker? {
-    try await getMarker(Marker.Timeline.notifications)
-  }
-
-  private func getMarker(_ timeline: Marker.Timeline) async throws -> Marker? {
-    let markers = try await client.getMarkers(for: Set([timeline]))
-    return markers[timeline]
+      try await client.getMarker(for: Marker.Timeline.notifications)
   }
 
   public func saveHomeMarker(_ readID: String) async throws {
