@@ -22,4 +22,3 @@ extension Session {
     return list
   }
 }
-
