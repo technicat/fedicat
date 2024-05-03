@@ -1,6 +1,11 @@
 import Foundation
 import TootSDK
 
+/// a fediverse session with enough state to support the UI
+/// (somewhat application specific, of course, in the choise of saved state)
+/// /// an app should be able to manage, switch among, and resume multiple Sessions
+/// ideally the UI should not deal with TootClient directly
+/// but instead go through Session for all queries
 @Observable
 public class Session {
 
