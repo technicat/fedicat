@@ -15,7 +15,7 @@ extension Session {
   }
 
   // todo - get from Platform
-  public var conversationsPageLimit: Int {
+  private var conversationsPageLimit: Int {
     40
   }
 

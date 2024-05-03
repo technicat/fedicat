@@ -11,11 +11,16 @@ extension Session {
     platform?.suggestionSources ?? []
   }
 
-  public func getSuggestions(limit: Int = 80) async throws -> [Suggestion] {
-    let sugg = try await client.getSuggestions(limit: orNil(limit, 40))
+  public func getSuggestions() async throws -> [Suggestion] {
+    let sugg = try await client.getSuggestions(limit: suggestionsLimit)
     await addAccounts(sugg)
     return sugg
   }
+    
+    // todo - get from platform
+    private var suggestionsLimit: Int {
+        80
+    }
 
   /// https://docs.joinmastodon.org/methods/suggestions/#remove
   public func delete(_ suggestion: Suggestion) async throws {

@@ -26,7 +26,7 @@ extension Session {
     return posts
   }
 
-  public var trendingPostsLimit: Int {
+  private var trendingPostsLimit: Int {
     40
   }
 
@@ -35,7 +35,7 @@ extension Session {
     // cache tags?
   }
 
-  public var trendingTagsLimit: Int {
+  private var trendingTagsLimit: Int {
     20
   }
 
@@ -43,7 +43,7 @@ extension Session {
     try await client.getTrendingLinks(limit: trendingTagsLimit)
   }
 
-  public var trendingLinksLimit: Int {
+  private var trendingLinksLimit: Int {
     20
   }
 }
