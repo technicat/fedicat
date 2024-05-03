@@ -19,7 +19,7 @@ extension Session {
     return result
   }
 
-    // todo - get this from platform
+  // todo - get this from platform
   private func getTimelineLimit(_ timeline: Timeline) -> Int {
     switch timeline {
     default:
