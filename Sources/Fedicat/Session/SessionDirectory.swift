@@ -32,5 +32,5 @@ extension Session {
     return accounts
   }
 
-    private var directoryLimit: Int { 80 } // todo - get from platform
+  private var directoryLimit: Int { 80 }  // todo - get from platform
 }
