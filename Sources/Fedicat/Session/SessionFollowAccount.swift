@@ -40,6 +40,7 @@ extension Session {
     followedAccounts.map(\.1)
   }
 
+  @discardableResult
   public func follow(
     _ account: Account,
     includeBoosts: Bool = true,
@@ -58,6 +59,7 @@ extension Session {
     // }
   }
 
+  @discardableResult
   public func unFollow(_ account: Account) async throws -> Relationship {
     let rel = try await client.unFollow(account)
     await remove(follow: account)
