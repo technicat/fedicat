@@ -4,7 +4,7 @@ extension Session {
 
   /// some platforms don't properly set isBoosted/isReblogged/isReposted
   public var supportsIsBoosted: Bool {
-      platform?.supportsIsBoosted ?? false
+    platform?.supportsIsBoosted ?? false
   }
 
   public func boost(_ post: Post) async throws -> Post {
