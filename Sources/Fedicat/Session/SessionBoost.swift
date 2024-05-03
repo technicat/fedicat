@@ -7,6 +7,7 @@ extension Session {
     platform?.supportsIsBoosted ?? false
   }
 
+  @discardableResult
   public func boost(_ post: Post) async throws -> Post {
     guard !post.isBoosted else {
       return post
@@ -14,6 +15,7 @@ extension Session {
     return try await client.boost(post)
   }
 
+  @discardableResult
   public func unBoost(_ post: Post) async throws -> Post {
     guard post.isBoosted || supportsIsBoosted else {
       return post
