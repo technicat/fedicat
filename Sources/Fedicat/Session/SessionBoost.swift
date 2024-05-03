@@ -3,9 +3,8 @@ import TootSDK
 extension Session {
 
   /// some platforms don't properly set isBoosted/isReblogged/isReposted
-  /// used to be all the Misskey forks, not just Sharkey
   public var supportsIsBoosted: Bool {
-    !isSharkey
+      platform?.supportsIsBoosted ?? false
   }
 
   public func boost(_ post: Post) async throws -> Post {
