@@ -1,7 +1,6 @@
 import TootSDK
 
 /// https://docs.joinmastodon.org/methods/trends/
-/// todo - get max limits from Platform
 extension Session {
 
   public var supportsTrends: Bool {
@@ -26,8 +25,8 @@ extension Session {
     return posts
   }
 
-  private var trendingPostsLimit: Int {
-    platform?.trendingPostsLimit ?? 0
+  private var trendingPostsLimit: Int? {
+    platform?.trendingPostsLimit
   }
 
   public func getTrendingTags() async throws -> [Tag] {
@@ -35,15 +34,15 @@ extension Session {
     // cache tags?
   }
 
-  private var trendingTagsLimit: Int {
-    platform?.trendingTagsLimit ?? 0
+  private var trendingTagsLimit: Int? {
+    platform?.trendingTagsLimit
   }
 
   public func getTrendingLinks() async throws -> [TrendingLink] {
     try await client.getTrendingLinks(limit: trendingTagsLimit)
   }
 
-  private var trendingLinksLimit: Int {
-    platform?.trendingLinksLimit ?? 0
+  private var trendingLinksLimit: Int? {
+    platform?.trendingLinksLimit
   }
 }

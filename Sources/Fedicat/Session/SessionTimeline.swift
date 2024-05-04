@@ -13,19 +13,14 @@ extension Session {
     let result = try await client.getTimeline(
       timeline,
       pageInfo: page,
-      limit: getTimelineLimit(timeline))
+      limit: getPageLimit(for: timeline))
     let posts = result.result
     await addPostAccounts(posts)
     return result
   }
 
-  // todo - get this from platform
-  private func getTimelineLimit(_ timeline: Timeline) -> Int {
-    switch timeline {
-    default:
-      // use max limit to minimize queries
-      return 40
-    }
+  private func getPageLimit(for timeline: Timeline) -> Int? {
+      platform?.getTimelineLimit(timeline)
   }
 
   public var supportsFaveTimeline: Bool {
