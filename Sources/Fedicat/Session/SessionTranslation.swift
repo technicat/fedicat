@@ -25,7 +25,7 @@ extension Session {
   }
 
   public func getTranslation(of post: Post, to language: ISOCode? = nil) async throws -> Post {
-    let translation = try await client.getTranslation(of: post, in: language)
+    let translation = try await client.getTranslation(of: post, to: language)
     // todo - handle 403 error, no translation available
     let newPost = Post(from: post)
     newPost.copy(from: translation)
