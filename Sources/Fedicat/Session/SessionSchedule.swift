@@ -26,8 +26,8 @@ extension Session {
     return result
   }
 
-  private var scheduledPostsPageLimit: Int? { 
-      platform?.scheduledPageLimit
+  private var scheduledPostsPageLimit: Int? {
+    platform?.scheduledPageLimit
   }
 
 }

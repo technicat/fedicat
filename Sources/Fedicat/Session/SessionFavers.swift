@@ -14,7 +14,7 @@ extension Session {
     return result
   }
 
-  private var faversPageLimit: Int? { 
-      platform?.faversPageLimit
+  private var faversPageLimit: Int? {
+    platform?.faversPageLimit
   }
 }

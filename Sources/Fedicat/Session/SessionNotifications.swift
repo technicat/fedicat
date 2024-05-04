@@ -41,7 +41,7 @@ extension Session {
   }
 
   private var notificationsPageLimit: Int? {
-      platform?.notificationsPageLimit
+    platform?.notificationsPageLimit
   }
 
 }

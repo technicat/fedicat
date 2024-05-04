@@ -32,7 +32,7 @@ extension Session {
     return accounts
   }
 
-  private var directoryLimit: Int? { 
-      platform?.directoryLimit
+  private var directoryLimit: Int? {
+    platform?.directoryLimit
   }
 }
