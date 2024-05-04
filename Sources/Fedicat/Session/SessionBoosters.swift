@@ -13,7 +13,7 @@ extension Session {
     return result
   }
 
-  private var boosterPageLimit: Int {
-    platform?.boosterPageLimit ?? 80
+  private var boosterPageLimit: Int? {
+    platform?.boosterPageLimit
   }
 }

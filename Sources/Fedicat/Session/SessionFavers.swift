@@ -14,5 +14,7 @@ extension Session {
     return result
   }
 
-  private var faversPageLimit: Int { 80 }  // todo - get from Platform
+  private var faversPageLimit: Int? { 
+      platform?.faversPageLimit
+  }
 }

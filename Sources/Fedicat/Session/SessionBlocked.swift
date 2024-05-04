@@ -12,7 +12,7 @@ extension Session {
     return result
   }
 
-  private var blockedAccountsLimit: Int {
-    platform?.blockedAccountsLimit ?? 0
+  private var blockedAccountsLimit: Int? {
+    platform?.blockedAccountsLimit
   }
 }
