@@ -28,7 +28,7 @@ extension Session {
     let result = try await client.getNotifications(
       with: types, without: notNotificationTypes(types),
       page,
-      limit: notificationPageLimit)
+      limit: notificationsPageLimit)
     let notes = result.result
     // assume no boosts
     for note in notes {
@@ -40,6 +40,8 @@ extension Session {
     return result
   }
 
-  private var notificationPageLimit: Int { 30 }  // todo - platform
+  private var notificationsPageLimit: Int? {
+      platform?.notificationsPageLimit
+  }
 
 }
