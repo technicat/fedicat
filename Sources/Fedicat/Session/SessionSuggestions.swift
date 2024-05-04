@@ -17,8 +17,8 @@ extension Session {
     return sugg
   }
 
-  private var suggestionsLimit: Int {
-    platform?.suggestionsLimit ?? 0
+  private var suggestionsLimit: Int? {
+    platform?.suggestionsLimit
   }
 
   /// https://docs.joinmastodon.org/methods/suggestions/#remove

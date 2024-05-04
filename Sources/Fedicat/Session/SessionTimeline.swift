@@ -20,11 +20,11 @@ extension Session {
   }
 
   private func getPageLimit(for timeline: Timeline) -> Int? {
-      platform?.getTimelineLimit(timeline)
+      platform?.getLimit(for: timeline)
   }
 
   public var supportsFaveTimeline: Bool {
-    platform?.supportsFaveTimeline ?? false
+      platform?.supports(Timeline.favourites) ?? false
   }
 
   public var supportsTagTimeline: Bool {
