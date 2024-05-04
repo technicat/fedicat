@@ -39,7 +39,7 @@ extension Session {
     }
     return result
   }
-    
-    private var notificationPageLimit: Int { 30 } // todo - platform
+
+  private var notificationPageLimit: Int { 30 }  // todo - platform
 
 }
