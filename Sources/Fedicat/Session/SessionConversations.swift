@@ -14,9 +14,8 @@ extension Session {
     return result
   }
 
-  // todo - get from Platform
   private var conversationsPageLimit: Int {
-    40
+      platform?.conversationsPageLimit ?? 0
   }
 
   public func delete(_ conversation: Conversation) async throws {

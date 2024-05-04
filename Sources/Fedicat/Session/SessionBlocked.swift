@@ -13,6 +13,6 @@ extension Session {
   }
 
   private var blockedAccountsLimit: Int {
-    platform?.blockedAccountsLimit ?? 80
+    platform?.blockedAccountsLimit ?? 0
   }
 }

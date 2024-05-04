@@ -13,6 +13,6 @@ extension Session {
   }
 
   private var mutedAccountsLimit: Int {
-    platform?.mutedAccountsLimit ?? 80
+    platform?.mutedAccountsLimit ?? 0
   }
 }

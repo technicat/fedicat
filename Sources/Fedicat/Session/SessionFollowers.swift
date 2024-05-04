@@ -14,5 +14,7 @@ extension Session {
     return result
   }
 
-  private var followersPageLimit: Int { 40 }  // todo - get from platform
+  private var followersPageLimit: Int {
+      platform?.followersPageLimit ?? 0
+  }
 }
