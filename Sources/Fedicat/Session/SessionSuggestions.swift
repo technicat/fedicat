@@ -18,7 +18,7 @@ extension Session {
   }
 
   private var suggestionsLimit: Int {
-      platform?.suggestionsLimit ?? 0
+    platform?.suggestionsLimit ?? 0
   }
 
   /// https://docs.joinmastodon.org/methods/suggestions/#remove

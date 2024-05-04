@@ -15,6 +15,6 @@ extension Session {
   }
 
   private var followersPageLimit: Int {
-      platform?.followersPageLimit ?? 0
+    platform?.followersPageLimit ?? 0
   }
 }

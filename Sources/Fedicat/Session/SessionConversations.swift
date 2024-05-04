@@ -15,7 +15,7 @@ extension Session {
   }
 
   private var conversationsPageLimit: Int {
-      platform?.conversationsPageLimit ?? 0
+    platform?.conversationsPageLimit ?? 0
   }
 
   public func delete(_ conversation: Conversation) async throws {
