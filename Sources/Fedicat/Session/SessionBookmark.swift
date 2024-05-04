@@ -7,7 +7,7 @@ extension Session {
   }
 
   public var supportsBookmark: Bool {
-    platform?.supportsBookmark ?? false
+      platform?.supports(.bookmarks) ?? false
   }
 
   @discardableResult
