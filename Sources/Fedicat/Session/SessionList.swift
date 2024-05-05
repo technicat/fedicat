@@ -3,8 +3,12 @@ import TootSDK
 
 extension Session {
 
+  public var canReadLists: Bool {
+    isAuth && supportsList
+  }
+
   public var supportsList: Bool {
-    isAuth && (platform?.supportsList ?? false)
+    platform?.supportsList ?? false
   }
 
   public var supportsListReplyPolicy: Bool {
@@ -37,6 +41,7 @@ extension Session {
     listsArray.sorted(by: <)
   }
 
+  // use sets?
   public func lists(minus list: [List]) -> [List] {
     listsArray.filter { !list.contains($0) }
   }
