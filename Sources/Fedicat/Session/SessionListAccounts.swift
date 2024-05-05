@@ -9,10 +9,12 @@ extension Session {
     let result = try await client.getAccounts(
       in: list,
       page,
-      limit: listAccountsLimit)
+      limit: listAccountsPageLimit)
     await addAccounts(result.result)
     return result
   }
 
-  private var listAccountsLimit: Int { 80 }  // platform
+  private var listAccountsPageLimit: Int? {
+    platform?.listAccountsPageLimit
+  }
 }
