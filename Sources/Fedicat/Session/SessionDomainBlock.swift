@@ -2,7 +2,6 @@ import TootSDK
 
 extension Session {
 
-    // check limit
   public var supportsDomainBlocks: Bool {
     isAuth && (platform?.supportsDomainBlocks ?? false)
   }
@@ -28,21 +27,14 @@ extension Session {
   }
 
   private var blockedDomainsLimit: Int? {
-      platform?.blockedDomainsLimit
-//    switch client.flavour {
-//    //    case .pixelfed:
-//    //      return 40
-//    default:
-//      // use max limit to minimize queries
-//      return 200
-//    }
+    platform?.blockedDomainsLimit
   }
 
   public func blockDomain(in account: Account) async throws {
     guard let domain = account.domain else {
-        // we're going to check at the UI level anyway
-     // throw SessionError.noDomain
-        return
+      // we're going to check at the UI level anyway
+      // throw SessionError.noDomain
+      return
     }
     try await block(domain: domain)
   }
