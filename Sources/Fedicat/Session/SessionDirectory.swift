@@ -7,7 +7,7 @@ extension Session {
   }
 
   public var supportsPublicDirectory: Bool {
-    // maybe a bug, Mitra api spec doesn't list auth required
+    // todo - move this to platform
     supportsDirectory && !(platform is Mitra)
   }
 
