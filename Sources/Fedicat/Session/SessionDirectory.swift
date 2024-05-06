@@ -5,11 +5,11 @@ extension Session {
   public var supportsDirectory: Bool {
     platform?.supportsDirectory ?? false
   }
-    
-    public var supportsPublicDirectory: Bool {
-        // maybe a bug, Mitra api spec doesn't list auth required
-      supportsDirectory && !(platform is Mitra)
-    }
+
+  public var supportsPublicDirectory: Bool {
+    // maybe a bug, Mitra api spec doesn't list auth required
+    supportsDirectory && !(platform is Mitra)
+  }
 
   public func getLocalDirectory(
     offset: Int? = nil,

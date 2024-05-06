@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var supportsBlockedDomains: Bool {
-      platform?.supportsBlockedDomains ?? false
+    platform?.supportsBlockedDomains ?? false
   }
 
   public var canBlockDomains: Bool {

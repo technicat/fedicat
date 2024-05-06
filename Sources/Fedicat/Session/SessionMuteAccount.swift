@@ -1,19 +1,19 @@
 import TootSDK
 
 extension Session {
-    
-    // move this
-    public var supportsFilteredAccounts: Bool {
-        supportsMutedAccounts || supportsBlockedAccounts
-    }
-    
-    public var supportsMutedAccounts: Bool {
-        platform?.supportsMutedAccounts ?? false
-    }
 
-    public var canMuteAccounts: Bool {
-      isAuth && supportsMutedAccounts
-    }
+  // move this
+  public var supportsFilteredAccounts: Bool {
+    supportsMutedAccounts || supportsBlockedAccounts
+  }
+
+  public var supportsMutedAccounts: Bool {
+    platform?.supportsMutedAccounts ?? false
+  }
+
+  public var canMuteAccounts: Bool {
+    isAuth && supportsMutedAccounts
+  }
 
   @discardableResult
   public func mute(
