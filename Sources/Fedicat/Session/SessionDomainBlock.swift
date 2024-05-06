@@ -2,12 +2,12 @@ import TootSDK
 
 extension Session {
 
-  public var supportsDomainBlocks: Bool {
-    isAuth && (platform?.supportsDomainBlocks ?? false)
+  public var supportsBlockedDomains: Bool {
+      platform?.supportsBlockedDomains ?? false
   }
 
   public var canBlockDomains: Bool {
-    isAuth && supportsDomainBlocks
+    isAuth && supportsBlockedDomains
   }
 
   public func block(domain: String) async throws {
