@@ -32,9 +32,7 @@ extension Session {
 
   public func blockDomain(in account: Account) async throws {
     guard let domain = account.domain else {
-      // we're going to check at the UI level anyway
-      // throw SessionError.noDomain
-      return
+      throw SessionError.noDomain
     }
     try await block(domain: domain)
   }
