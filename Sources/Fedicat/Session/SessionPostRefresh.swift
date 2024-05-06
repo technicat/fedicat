@@ -10,7 +10,7 @@ extension Session {
 
   public var requiresRefreshAfterBoost: Bool {
     // todo - maybe move this to Platform
-    platform is Pixelfed || platform is Mitra
+    platform is Pixelfed //|| platform is Mitra
   }
 
   public var requiresRefreshAfterLike: Bool {
