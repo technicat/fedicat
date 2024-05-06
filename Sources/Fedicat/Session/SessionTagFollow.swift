@@ -61,7 +61,7 @@ extension Session {
   }
     
     private var followedTagsPageLimit: Int? {
-        200
+        platform?.followedTagsPageLimit
     }
 
   public func getAllFollowedTags() async throws {
