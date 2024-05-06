@@ -5,10 +5,10 @@ extension Session {
   public var canFollowTag: Bool {
     isAuth && supportsTagFollow
   }
-    
-    public var supportsTagFollow: Bool {
-      platform?.supportsFollowTag ?? false
-    }
+
+  public var supportsTagFollow: Bool {
+    platform?.supportsFollowTag ?? false
+  }
 
   @MainActor func add(follow tag: Tag) {
     followedTags[tag.name] = tag
@@ -59,10 +59,10 @@ extension Session {
     }
     return result
   }
-    
-    private var followedTagsPageLimit: Int? {
-        platform?.followedTagsPageLimit
-    }
+
+  private var followedTagsPageLimit: Int? {
+    platform?.followedTagsPageLimit
+  }
 
   public func getAllFollowedTags() async throws {
     try await client.getPages { page in try await getFollowedTags(page) }
