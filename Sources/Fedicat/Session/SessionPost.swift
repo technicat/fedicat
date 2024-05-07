@@ -18,6 +18,10 @@ extension Session {
     platform?.supportsPostDefaultVisibility ?? false
   }
 
+  public var supportsSpoiler: Bool {
+    platform?.supportsSpoiler ?? false
+  }
+
   public var supportsPostDefaults: Bool {
     supportsUpdateAccount
       && (supportsPostDefaultLanguage || supportsPostDefaultSensitive
