@@ -218,6 +218,14 @@ Features: List of popular instances provided at login.
 
 Quirks: Square avatars.
 
+## [Tusks](https://thirdculture.app/tusks) by [@bardi@mas.to](https://mas.to/@bardi)
+
+Free on the [App Store](https://apps.apple.com/us/app/tusks-for-mastodon/id6473683937) with in-app purchase, built with [Tootsdk](https://github.com/tootsdk/tootsdk) (nice credit in the About screen).
+
+Features: Focus on authoring posts and threads.
+
+Quirks: No timeline.
+
 ## [TwidereX](https://x.twidere.com/)
 
 Free on the [App Store](https://apps.apple.com/us/app/twidere-x/id1530314034), Swift code on [GitHub](https://github.com/TwidereProject/TwidereX-iOS)
@@ -228,7 +236,7 @@ Quirks: Also a twitter client.
 
 ## [Walleri](https://indieapps.space/@walleri) by [Daniel Berezhnoy](https://mastodon.social/@DanielBerezhnoy)
 
-Free on the [App Store](https://apps.apple.com/us/app/walleri/id6470121640)
+Free on the [App Store](https://apps.apple.com/us/app/walleri/id6470121640). Built with [Tootsdk](https://github.com/tootsdk/tootsdk).
 
 Features: easy-to-read text and text-to-specch
 
