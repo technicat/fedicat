@@ -1,6 +1,10 @@
 import TootSDK
 
 extension Session {
+    
+    public var supportsBoosters: Bool {
+        platform?.supportsBoosters ?? false
+    }
 
   public func getBoosters(
     of post: Post,

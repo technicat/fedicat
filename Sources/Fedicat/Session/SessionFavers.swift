@@ -1,6 +1,10 @@
 import TootSDK
 
 extension Session {
+    
+    public var supportsFavers: Bool {
+        platform?.supportsFavers ?? false
+    }
 
   public func getFavers(
     of post: Post,
