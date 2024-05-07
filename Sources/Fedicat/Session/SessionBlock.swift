@@ -3,11 +3,11 @@ import TootSDK
 extension Session {
 
   public var supportsBlockedAccounts: Bool {
-    platform?.supportsBlockedDomains ?? false
+    platform?.supportsBlockedAccounts ?? false
   }
 
   public var canBlockAccounts: Bool {
-    isAuth && supportsBlockedDomains
+    isAuth && supportsBlockedAccounts
   }
 
   @discardableResult
