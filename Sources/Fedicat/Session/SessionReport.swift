@@ -1,6 +1,10 @@
 import TootSDK
 
 extension Session {
+    
+    public var supportsReport: Bool {
+      !(platform is Mitra) // todo - move to platform
+    }
 
   public var supportsReportRules: Bool {
     platform?.supportsReportRules ?? false
