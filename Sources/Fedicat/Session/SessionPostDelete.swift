@@ -4,7 +4,7 @@ extension Session {
 
   @discardableResult
   public func delete(_ post: Post) async throws -> Post {
-    if supportsDeleteAndEditPost {
+    if supportsPostDeleteAndEdit {
       let post = try await client.deleteAndEdit(post)
       // ideally the post should disappear from view
       // but if not, show that it's really deleted
@@ -17,7 +17,7 @@ extension Session {
     }
   }
 
-  private var supportsDeleteAndEditPost: Bool {
-    false  // todo - move to platform
+  private var supportsPostDeleteAndEdit: Bool {
+      platform?.supportsPostDeleteAndEdit ?? false
   }
 }
