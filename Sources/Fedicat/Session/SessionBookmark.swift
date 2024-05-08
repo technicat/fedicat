@@ -5,6 +5,12 @@ extension Session {
   public var canBookmark: Bool {
     isAuth && supportsBookmark
   }
+    
+    public func canBookmark(_ post: Post) -> Bool {
+        isAuth &&
+        supportsBookmark && 
+        (!(platform is Friendica) || !post.isReply)
+    }
 
   public var supportsBookmark: Bool {
     platform?.supports(.bookmarks) ?? false
