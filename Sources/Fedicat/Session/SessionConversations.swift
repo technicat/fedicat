@@ -1,6 +1,10 @@
 import TootSDK
 
 extension Session {
+    
+    public var supportsConversations: Bool {
+        platform?.supportsConversations ?? false
+    }
 
   public func getConversations(_ page: PagedInfo? = nil) async throws
     -> PagedResult<[Conversation]>
