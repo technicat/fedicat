@@ -7,8 +7,7 @@ extension Session {
   }
 
   public var supportsPublicDirectory: Bool {
-    // todo - move this to platform
-    supportsDirectory && !(platform is Mitra)
+    supportsDirectory && supportsPublicDirectory
   }
 
   public func getLocalDirectory(

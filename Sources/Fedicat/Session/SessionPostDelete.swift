@@ -18,6 +18,6 @@ extension Session {
   }
 
   private var supportsPostDeleteAndEdit: Bool {
-      platform?.supportsPostDeleteAndEdit ?? false
+    platform?.supportsPostDeleteAndEdit ?? false
   }
 }
