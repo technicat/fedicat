@@ -29,4 +29,9 @@ extension Session {
   public var canDeleteProfileImage: Bool {
     isAuth && supportsProfileImageDelete
   }
+
+  public var supportsHeader: Bool {
+    platform?.supportsProfileHeader ?? false
+  }
+
 }
