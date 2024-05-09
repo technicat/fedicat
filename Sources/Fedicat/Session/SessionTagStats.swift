@@ -1,5 +1,5 @@
 extension Session {
-  var supportsTagStats: Bool {
+  public var supportsTagStats: Bool {
     platform?.supportsTagStats ?? false
   }
 }
