@@ -14,7 +14,7 @@ extension Session {
   }
 
   public func hasValidAttachments(_ draft: DraftPost) -> Bool {
-    if draft.attached.count < minAttachments {
+    if let min = minAttachments, draft.attached.count < min {
       return false
     }
     if let max = maxAttachments, draft.attached.count > max {

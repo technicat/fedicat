@@ -14,7 +14,7 @@ extension Session {
     instance?.maxAttachments
   }
 
-  public var minAttachments: Int {
-    platform is Pixelfed ? 1 : 0
+  public var minAttachments: Int? {
+      platform?.minAttachments
   }
 }
