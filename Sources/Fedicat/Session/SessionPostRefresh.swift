@@ -9,13 +9,12 @@ extension Session {
   }
 
   public var requiresRefreshAfterBoost: Bool {
-    // todo - maybe move this to Platform
-    platform is Pixelfed  //|| platform is Mitra
+      platform?.requiresRefreshAfterBoost ?? false
   }
 
+    // rename to fave
   public var requiresRefreshAfterLike: Bool {
-    // todo - maybe move this to Platform
-    platform is Pixelfed
+      platform?.requiresRefreshAfterFave ?? false
   }
 
   public func refresh(_ post: Post) async throws -> Post {
