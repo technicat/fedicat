@@ -15,7 +15,7 @@ extension Session {
   }
 
   public func report(
-    account: Account,
+    _ account: Account,
     comment: String,
     forward: Bool = false,
     category: ReportCategory,
@@ -23,11 +23,35 @@ extension Session {
     rules: [InstanceRule] = []
   ) async throws {
     try await client.report(
-      account: account,
-      comment: comment.orNil,
+      account,
+      comment: comment.notBlank,
       forward: orNil(forward, false),
       category: category,
       posts: posts,
       rules: rules)
   }
+    
+    public func reportPixelfed(
+      _ account: Account,
+      comment: String,
+      forward: Bool = false,
+      category: ReportCategory,
+      posts: [Post]
+    ) async throws {
+      try await client.reportPixelfed(
+        account,
+        comment: comment.notBlank,
+        category: category)
+    }
+    
+    public func reportPixelfed(
+      _ post: Post,
+      comment: String,
+      category: ReportCategory
+    ) async throws {
+      try await client.reportPixelfed(
+        post,
+        comment: comment.notBlank,
+        category: category)
+    }
 }
