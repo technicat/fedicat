@@ -34,9 +34,7 @@ extension Session {
     public func reportPixelfed(
       _ account: Account,
       comment: String,
-      forward: Bool = false,
-      category: ReportCategory,
-      posts: [Post]
+      category: ReportCategory
     ) async throws {
       try await client.reportPixelfed(
         account,
