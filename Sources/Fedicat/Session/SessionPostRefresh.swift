@@ -9,12 +9,12 @@ extension Session {
   }
 
   public var requiresRefreshAfterBoost: Bool {
-      platform?.requiresRefreshAfterBoost ?? false
+    platform?.requiresRefreshAfterBoost ?? false
   }
 
-    // rename to fave
+  // rename to fave
   public var requiresRefreshAfterLike: Bool {
-      platform?.requiresRefreshAfterFave ?? false
+    platform?.requiresRefreshAfterFave ?? false
   }
 
   public func refresh(_ post: Post) async throws -> Post {

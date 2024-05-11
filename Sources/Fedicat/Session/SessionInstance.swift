@@ -10,7 +10,7 @@ extension Session {
     self.platform = platform
   }
 
-    /// https://docs.joinmastodon.org/methods/instance/
+  /// https://docs.joinmastodon.org/methods/instance/
   @discardableResult
   public func getInstance() async throws -> Instance {
     let instance = try await client.getInstance()

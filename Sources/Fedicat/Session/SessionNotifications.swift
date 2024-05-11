@@ -19,9 +19,9 @@ extension Session {
     _ page: PagedInfo? = nil
   ) async throws -> PagedResult<[TootNotification]> {
     let result = try await client.getNotifications(
-        types: types,
-        // for friendica, which only supports exclude_types
-   //   without: notificationTypes.subtracting(types) 
+      types: types,
+      // for friendica, which only supports exclude_types
+      //   without: notificationTypes.subtracting(types)
       page,
       limit: notificationsPageLimit)
     let notes = result.result

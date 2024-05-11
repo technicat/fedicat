@@ -28,42 +28,42 @@ extension Session {
       category: category,
       rules: rules)
   }
-    
-    public func report(
-        _ post: Post,
-      comment: String,
-      forward: Bool = false,
-      category: ReportCategory,
-      rules: [InstanceRule] = []
-    ) async throws {
-      try await client.report(
-        post.account,
-        comment: comment.notBlank,
-        forward: orNil(forward, false),
-        category: category,
-        posts: [post],
-        rules: rules)
-    }
-    
-    public func reportPixelfed(
-      _ account: Account,
-      comment: String,
-      category: ReportCategory
-    ) async throws {
-      try await client.reportPixelfed(
-        account,
-        comment: comment.notBlank,
-        category: category)
-    }
-    
-    public func reportPixelfed(
-      _ post: Post,
-      comment: String,
-      category: ReportCategory
-    ) async throws {
-      try await client.reportPixelfed(
-        post,
-        comment: comment.notBlank,
-        category: category)
-    }
+
+  public func report(
+    _ post: Post,
+    comment: String,
+    forward: Bool = false,
+    category: ReportCategory,
+    rules: [InstanceRule] = []
+  ) async throws {
+    try await client.report(
+      post.account,
+      comment: comment.notBlank,
+      forward: orNil(forward, false),
+      category: category,
+      posts: [post],
+      rules: rules)
+  }
+
+  public func reportPixelfed(
+    _ account: Account,
+    comment: String,
+    category: ReportCategory
+  ) async throws {
+    try await client.reportPixelfed(
+      account,
+      comment: comment.notBlank,
+      category: category)
+  }
+
+  public func reportPixelfed(
+    _ post: Post,
+    comment: String,
+    category: ReportCategory
+  ) async throws {
+    try await client.reportPixelfed(
+      post,
+      comment: comment.notBlank,
+      category: category)
+  }
 }

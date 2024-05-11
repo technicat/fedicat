@@ -15,6 +15,6 @@ extension Session {
   }
 
   public var minAttachments: Int? {
-      platform?.minAttachments
+    platform?.minAttachments
   }
 }
