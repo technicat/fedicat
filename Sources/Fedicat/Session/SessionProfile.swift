@@ -30,8 +30,4 @@ extension Session {
     isAuth && supportsProfileImageDelete
   }
 
-  public var supportsHeader: Bool {
-    platform?.supportsProfileHeader ?? false
-  }
-
 }
