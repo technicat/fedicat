@@ -17,6 +17,7 @@ extension Session {
     return account
   }
 
+    @discardableResult
   public func update(_ profile: DraftProfile) async throws -> Account {
     let account = try await client.updateProfile(
       displayName: profile.displayName,
@@ -29,6 +30,19 @@ extension Session {
     await setAccount(account)
     return account
   }
+    
+    // todo - use DraftPixelfedProfile
+    @discardableResult
+    public func updatePixelfed(_ profile: DraftProfile) async throws -> Account {
+      let account = try await client.updatePixelfedProfile(
+        displayName: profile.displayName,
+        note: profile.note,
+        avatar: profile.avatar?.jpeg() // or png
+      )
+      await setAccount(account)
+      return account
+    }
+
 
   public func updateFields(_ profile: DraftProfile) async throws -> Account {
     var map = [String: UpdateCredentialsParams.Field]()
