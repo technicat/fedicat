@@ -1,5 +1,4 @@
 import Foundation
-import SwiftSys
 import SwiftUI
 import TootSDK
 
