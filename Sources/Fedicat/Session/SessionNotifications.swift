@@ -14,19 +14,14 @@ extension Session {
     notificationTypes.intersection(types)
   }
 
-  public func notNotificationTypes(_ types: NotificationTypes) -> NotificationTypes {
-    notificationTypes.subtracting(types)
-  }
-
   public func getNotifications(
     with types: NotificationTypes,
     _ page: PagedInfo? = nil
   ) async throws -> PagedResult<[TootNotification]> {
-    // friendica requires exclusion types
-    // or you just end up getting everything
-    // doesn't seem to hurt elsewhere
     let result = try await client.getNotifications(
-      with: types, without: notNotificationTypes(types),
+        types: types,
+        // for friendica, which only supports exclude_types
+   //   without: notificationTypes.subtracting(types) 
       page,
       limit: notificationsPageLimit)
     let notes = result.result
