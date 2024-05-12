@@ -8,6 +8,7 @@ public let fediTags = [
   "fediverse",
   "firefish",
   "Flipboard",
+  "Fedicat",
   "Feditext",
   "Friendica",
   "Hometown",
