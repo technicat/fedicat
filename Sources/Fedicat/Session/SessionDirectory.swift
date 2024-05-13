@@ -7,7 +7,7 @@ extension Session {
   }
 
   public var supportsPublicDirectory: Bool {
-    supportsDirectory && supportsPublicDirectory
+      supportsDirectory && (platform?.supportsPublicDirectory ?? false)
   }
 
   public func getLocalDirectory(
