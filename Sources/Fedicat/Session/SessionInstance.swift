@@ -32,4 +32,8 @@ extension Session {
     //      }
     return instance
   }
+    
+    public var supportsInstanceV2: Bool {
+        platform?.supportsInstanceV2 ?? false
+    }
 }
