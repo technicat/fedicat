@@ -1,7 +1,7 @@
 import TootSDK
 
 // maybe move this to tootsdk
-extension Instance {
+extension InstanceV1 {
 
   public var name: String? {
     title ?? uri

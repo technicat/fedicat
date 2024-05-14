@@ -2,7 +2,7 @@ import TootSDK
 
 extension Session {
 
-  @MainActor func setInstance(_ instance: Instance) {
+  @MainActor func setInstance(_ instance: InstanceV1) {
     self.instance = instance
   }
 
@@ -12,7 +12,7 @@ extension Session {
 
   /// https://docs.joinmastodon.org/methods/instance/
   @discardableResult
-  public func getInstance() async throws -> Instance {
+  public func getInstance() async throws -> InstanceV1 {
     let instance = try await client.getInstance()
     await setInstance(instance)
     await setPlatform(instance.platform)
