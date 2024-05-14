@@ -1,6 +1,6 @@
-This repo started out as a list of all the [Mastodon iOS apps](iosapps.md) I've found, but now it's also the github public home base for my [fediverse app](https://fedicat.com/) in progress (available on [Testflight](https://testflight.apple.com/join/b6GatWTY)) and an associated Swift package that comprises the middle layer between the UI and [TootSDK](https://github.com/technicat/TootSDK) which I've [augmented](https://github.com/technicat/TootSDK/blob/main/FORK.md) with an object-oriented calling interface and an alternate platform detection and feature checking system.
+This repo started out as a list of all the [Mastodon iOS apps](iosapps.md) I've found, but now it's also the issue tracker for my [fediverse app](https://fedicat.com/) in progress (available on [Testflight](https://testflight.apple.com/join/b6GatWTY)) and a Swift package that comprises the middle layer between the UI and a [fork](https://github.com/technicat/TootSDK/blob/main/FORK.md) [TootSDK](https://github.com/technicat/TootSDK).
 
-While the development of both packages is oriented toward the app, the idea is to keep the TootSDK fork generally useful while the Fedicat package is necessarily somewhat app-specific, although it may provide an example how you might maintain session state and handle multiple sessions. Development is active so don't expect stability.
+While the development of both packages is oriented toward the app, the idea is to keep the TootSDK fork generally useful while the Fedicat package is customized to support the app, although it is an example how you can maintain session state, handle multiple sessions, and deal with multiple platforms. Development is active so don't expect stability.
 
 ## Style
 
