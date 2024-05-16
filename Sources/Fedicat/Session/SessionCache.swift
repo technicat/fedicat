@@ -3,7 +3,6 @@ import TootSDK
 extension Session {
 
   public func cache(_ priority: TaskPriority) {
-    //  let priority = Session.backPriority
     // split these into functions
     if supportsTagFollow {
       Task(priority: priority) {
