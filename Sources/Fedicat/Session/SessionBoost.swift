@@ -8,14 +8,14 @@ extension Session {
   }
 
   @discardableResult
-  public func boost(_ post: Post) async throws -> Post {
+  public func boost(_ post: Post, visibility: Post.Visibility = .public) async throws -> Post {
     guard !post.isBoosted else {
       // assume we don't allow/want multiple boosts
       // even though some (like Sharkey) seem to allow it
       // probably inadvertently
       return post
     }
-    let post = try await client.boost(post)
+    let post = try await client.boost(post, visibility: visibility)
     // mastodon spec says the boosted post is in the reblog field
     // of the boosting post which is returned
     // but some like Pixelfed return the boosted post
