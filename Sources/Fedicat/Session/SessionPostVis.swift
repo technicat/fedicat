@@ -3,17 +3,17 @@ import TootSDK
 extension Session {
 
   /// post visibilities available for the platform
-  public var postVis: [Post.Visibility] {
+  public var postVis: PostVisibilities {
     platform?.postVis ?? []
   }
 
   /// post visibilities suitable as a default
-  public var postVisDefaults: [Post.Visibility] {
-    postVis.filter { $0 != .direct }
+  public var postVisDefaults: PostVisibilities {
+      postVis.subtracting([.direct])
   }
 
   /// post visibilities available for the platform
-  public var boostVis: [Post.Visibility] {
+  public var boostVis:  PostVisibilities {
     platform?.boostVis ?? []
   }
 }
