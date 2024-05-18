@@ -28,7 +28,7 @@ extension Session {
         || supportsPostDefaultVisibility)
   }
 
-  public var languages: [ISOCode] {
+  public var languages: Set<ISOCode> {
     platform?.languages ?? []
   }
 }
