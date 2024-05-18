@@ -1,6 +1,5 @@
 public let mastodon =
   [
-    "allies.social",
     "apobangpo.space",
     "archaeo.social",
     "aus.social",
@@ -90,7 +89,7 @@ public let mastodon =
     "stranger.social",
     "syringa.social",
     "techhub.social",
-    //   "theatl.social",
+    "theatl.social",
     "toot.io",
     "toot.community",
     "toot.wales",
