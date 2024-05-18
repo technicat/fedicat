@@ -10,7 +10,7 @@ extension Session {
     platform?.supportsReportRules ?? false
   }
 
-  public var reportCategories: [ReportCategory] {
+  public var reportCategories: ReportCats {
     platform?.reportCats ?? []
   }
 
