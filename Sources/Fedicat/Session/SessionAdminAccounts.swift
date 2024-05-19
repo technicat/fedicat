@@ -3,7 +3,6 @@ import TootSDK
 extension Session {
 
   public func getAccountsV1(
-    _ account: Account,
     _ page: PagedInfo? = nil
   ) async throws -> PagedResult<[Account]> {
     let result = try await client.getAccountsV1(
@@ -14,7 +13,6 @@ extension Session {
   }
 
   public func getAccountsV2(
-    _ account: Account,
     _ page: PagedInfo? = nil
   ) async throws -> PagedResult<[Account]> {
     let result = try await client.getAccountsV2(
