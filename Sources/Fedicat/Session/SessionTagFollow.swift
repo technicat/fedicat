@@ -65,6 +65,6 @@ extension Session {
   }
 
   public func getAllFollowedTags() async throws {
-    try await client.getPages { page in try await getFollowedTags(page) }
+    try await getPages { page in try await getFollowedTags(page) }
   }
 }

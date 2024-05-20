@@ -25,7 +25,7 @@ extension Session {
 
   public func getAllFollowedAccounts() async throws {
     if let account {
-      try await client.getPages { page in try await getFollowedAccounts(by: account, page) }
+      try await getPages { page in try await getFollowedAccounts(by: account, page) }
     }
   }
 }
