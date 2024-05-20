@@ -2,6 +2,10 @@ import TootSDK
 
 /// https://docs.joinmastodon.org/methods/search/
 extension Session {
+    
+    public var supportsSearchAccount: Bool {
+      platform?.supportsSearchAccount ?? false
+    }
 
   public func search(
     in account: Account,
