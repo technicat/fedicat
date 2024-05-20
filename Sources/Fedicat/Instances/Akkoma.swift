@@ -1,5 +1,5 @@
 public let akkoma = [
-  "allies.rocks",
+    "blob.cat",
   "miraiverse.xyz",
   "mycrowd.ca",
   "outerheaven.club",
