@@ -15,12 +15,12 @@ extension Session {
   public func search(
     _ query: String,
     following: Bool = false,
-    excludeUnreviewed: Bool = false,
-    resolve: Bool = false
+    excludeUnreviewed: Bool = false
+ //   resolve: Bool = false
   ) async throws -> Search {
     let params = SearchParams(
       query: query.trimWSNL,
-      resolve: orNil(resolve, false),
+     // resolve: orNil(resolve, false),
       following: orNil(following, false),
       excludeUnreviewed: orNil(excludeUnreviewed, false))
     let result = try await client.search(params: params)
@@ -32,16 +32,18 @@ extension Session {
 
   public func findAccounts(
     _ query: String,
-    offset: Int? = nil,
-    limit: Int? = 80,
     order: ProfileDirectoryParams.Order? = nil,
     local: Bool? = nil
   ) async throws -> [Account] {
-    let accounts = try await client.searchAccounts(
-      params: SearchAccountsParams(query: query.trimWSNL),
-      limit: limit, offset: offset
+      let accounts = try await client.findAccounts(
+        query,
+        limit: platform?.searchAccountsLimit,
+        order: order,
+        local: local
     )
     await addAccounts(accounts)
     return accounts
   }
+        
 }
+
