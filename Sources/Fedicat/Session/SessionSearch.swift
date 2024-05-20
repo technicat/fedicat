@@ -1,6 +1,5 @@
 import TootSDK
 
-/// https://docs.joinmastodon.org/methods/search/
 extension Session {
 
   public var supportsSearchPosts: Bool {
@@ -12,18 +11,15 @@ extension Session {
   }
 
   // todo - page
+    /// https://docs.joinmastodon.org/methods/search/#v2
   public func search(
     _ query: String,
     following: Bool = false,
     excludeUnreviewed: Bool = false
- //   resolve: Bool = false
   ) async throws -> Search {
-    let params = SearchParams(
-      query: query.trimWSNL,
-     // resolve: orNil(resolve, false),
-      following: orNil(following, false),
-      excludeUnreviewed: orNil(excludeUnreviewed, false))
-    let result = try await client.search(params: params)
+      let result = try await client.search(for: query,
+                                           following: following, 
+                                           excludeUnreviewed: excludeUnreviewed)
     await addAccounts(result.accounts)
     await addAccounts(result.posts)
     // maybe cache tags
@@ -36,7 +32,7 @@ extension Session {
     local: Bool? = nil
   ) async throws -> [Account] {
       let accounts = try await client.findAccounts(
-        query,
+        with: query,
         limit: platform?.searchAccountsLimit,
         order: order,
         local: local
