@@ -68,7 +68,7 @@ extension Session {
   }
 
   @discardableResult
-  public func follow(uri name: String) async throws -> Relationship {
+  public func follow(uri name: String) async throws -> Relationship? {
     try await client.followAccount(uri: name)
   }
 }
