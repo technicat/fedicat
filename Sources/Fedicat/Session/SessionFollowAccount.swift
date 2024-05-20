@@ -66,4 +66,10 @@ extension Session {
     // todo - check relationship
     return rel
   }
+    
+    
+    @discardableResult
+    public func follow(uri name: String) async throws -> Relationship {
+      try await client.followAccount(uri: name)
+    }
 }
