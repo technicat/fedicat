@@ -1,6 +1,6 @@
 import TootSDK
 
-extension Report.Category: Identifiable {
+extension ReportCategory: Identifiable {
   public var id: String {
     rawValue
   }

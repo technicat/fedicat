@@ -8,7 +8,7 @@ extension Session {
   }
 
   @discardableResult
-  public func boost(_ post: Post, visibility: Post.Visibility = .public) async throws -> Post {
+  public func boost(_ post: Post, visibility: PostVisibility = .public) async throws -> Post {
     guard !post.isBoosted else {
       // assume we don't allow/want multiple boosts
       // even though some (like Sharkey) seem to allow it

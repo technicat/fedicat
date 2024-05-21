@@ -5,7 +5,7 @@ import TootSDK
 public class DraftPostDefaults {
 
   public var lang: ISOCode = .en
-  public var visibility: Post.Visibility = .public
+  public var visibility: PostVisibility = .public
   public var sensitive: Bool = false
 
   @MainActor public func copy(from account: Account) {
