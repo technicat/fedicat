@@ -8,8 +8,8 @@ public class DraftProfile {
   public var displayName: String = ""
   public var note: String = ""
   public var fields: [ProfileField] = []  // TootField?
-  public var avatar: UIImage?
-  public var header: UIImage?
+  public var avatar: UIImage? = nil
+  public var header: UIImage? = nil
 
   public var hasAvatar: Bool {
     avatar != nil
