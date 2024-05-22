@@ -2,7 +2,7 @@ import TootSDK
 
 extension Session {
 
-  public var supportsNotificationTypes: Bool {
+  public var canQueryNotificationTypes: Bool {
     platform?.hasNotificationTypes ?? false
   }
 
@@ -10,7 +10,7 @@ extension Session {
     platform?.notificationTypes ?? []
   }
 
-  public func supportsNotificationTypes(_ types: NotificationTypes) -> NotificationTypes {
+  public func canQuery(_ types: NotificationTypes) -> NotificationTypes {
     notificationTypes.intersection(types)
   }
 
