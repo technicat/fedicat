@@ -4,6 +4,7 @@ public let catTags = [
   "CatsOfMastodon",
   "ToeBeansTuesday",
   "TongueOutTuesday",
+  "WhiskersWednesday",
   "Caturday",
   "FediCat",
   "tortie",
