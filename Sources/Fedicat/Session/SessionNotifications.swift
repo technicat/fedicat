@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var canQueryNotificationTypes: Bool {
-    platform?.hasNotificationTypes ?? false
+    platform?.canQueryNotificationTypes ?? false
   }
 
   public var notificationTypes: NotificationTypes {
