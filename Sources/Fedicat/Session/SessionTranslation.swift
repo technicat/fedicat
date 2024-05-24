@@ -4,7 +4,9 @@ import TootSDK
 extension Session {
 
   public func canTranslate(_ post: Post) -> Bool {
-    canTranslate && (!supportsTranslationLanguages || hasTranslationTargets(for: post))
+      platform is Akkoma || // hack
+   ( canTranslate && (!supportsTranslationLanguages || hasTranslationTargets(for: post))
+     )
   }
 
   public func hasTranslationTargets(for post: Post) -> Bool {
@@ -23,8 +25,16 @@ extension Session {
   public var supportsTranslate: Bool {
     platform?.supportsTranslate ?? false
   }
+    
+    public func getTranslation(of post: Post, to language: ISOCode? = nil) async throws -> Post {
+        if platform is Akkoma {
+            return try await getAkkomaTranslation(of: post, to: language ?? .en)
+        } else {
+            return try await getMastodonTranslation(of: post, to: language)
+        }
+    }
 
-  public func getTranslation(of post: Post, to language: ISOCode? = nil) async throws -> Post {
+  public func getMastodonTranslation(of post: Post, to language: ISOCode? = nil) async throws -> Post {
     let translation = try await client.getTranslation(of: post, to: language)
     // todo - handle 403 error, no translation available
     // if we get this to work, we don't need copy (and don't need inits)
@@ -34,6 +44,13 @@ extension Session {
     newPost.copy(from: translation)
     return newPost
   }
+    
+    public func getAkkomaTranslation(of post: Post, to language: ISOCode) async throws -> Post {
+      let translation = try await client.getAkkomaTranslation(of: post, to: language)
+      let newPost = Post(from: post)
+      newPost.copy(from: translation)
+      return newPost
+    }
 
   public func getTranslationTargets(of post: Post) -> [ISOCode] {
     translations[post.languageCode] ?? []
@@ -56,5 +73,10 @@ extension Post {
       self.poll = poll
     }
   }
+    
+    func copy(from translation: AkkomaTranslation) {
+      content =
+        "<p><em>translated from \(translation.detectedLanguage.localizedLanguageName)</em></p><p>\(translation.text)</p>"
+    }
 
 }
