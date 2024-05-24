@@ -43,7 +43,7 @@ extension Session {
   // todo - use DraftPixelfedProfile
   @discardableResult
   public func updatePixelfed(_ profile: DraftProfile) async throws -> Account {
-    let account = try await client.updatePixelfedProfile(
+    let account = try await client.updateProfilePixelfed(
       displayName: profile.displayName,
       note: profile.note,
       avatar: profile.avatar?.jpeg()  // or png
