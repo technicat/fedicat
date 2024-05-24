@@ -4,7 +4,7 @@ import TootSDK
 extension Session {
 
   public func canTranslate(_ post: Post) -> Bool {
-      platform is Akkoma || // hack
+     // platform is Akkoma || // hack
    ( canTranslate && (!supportsTranslationLanguages || hasTranslationTargets(for: post))
      )
   }

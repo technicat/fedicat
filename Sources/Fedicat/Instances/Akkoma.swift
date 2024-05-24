@@ -1,5 +1,7 @@
 public let akkoma = [
   "blob.cat",
+  "fe.disroot.org",
+  "genserver.social",
   "miraiverse.xyz",
   "mycrowd.ca",
   "outerheaven.club",

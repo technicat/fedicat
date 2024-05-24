@@ -3,7 +3,8 @@ import TootSDK
 extension Session {
 
   public func getTranslationLanguages() async throws -> Translations {
-    let map = try await client.getTranslationCodes()  //Languages()
+      let map = platform is Akkoma ? try await client.getTranslationCodesAkkoma() :
+      try await client.getTranslationCodes()
     await setTranslations(map)
     return map
   }
