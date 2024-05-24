@@ -15,7 +15,7 @@ public class DraftPost {
   public var lang: ISOCode = .en  // ISO639_1(rawValue: Sys.currentLang!) ?? "en"
   public var isSensitive: Bool = false
   public var visibility: PostVisibility = PostVisibility.public
-  public var replyTo: Post?
+  public var replyTo: Post? = nil
 
   public var poll: CreatePoll?
 
