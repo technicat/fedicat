@@ -3,10 +3,18 @@ import TootSDK
 // todo - add getTranslation(of: from: in:)
 extension Session {
 
+  public var supportsTranslationLanguages: Bool {
+    platform?.supportsTranslationLanguages ?? false
+  }
+
+  public var canReadTranslationLanguages: Bool {
+    // Akkoma requires authentication
+    supportsTranslationLanguages && (!(platform is Akkoma) || isAuth)
+  }
+
   public func canTranslate(_ post: Post) -> Bool {
-     // platform is Akkoma || // hack
-   ( canTranslate && (!supportsTranslationLanguages || hasTranslationTargets(for: post))
-     )
+    // platform is Akkoma || // hack
+    (canTranslate && (!supportsTranslationLanguages || hasTranslationTargets(for: post)))
   }
 
   public func hasTranslationTargets(for post: Post) -> Bool {
@@ -25,16 +33,18 @@ extension Session {
   public var supportsTranslate: Bool {
     platform?.supportsTranslate ?? false
   }
-    
-    public func getTranslation(of post: Post, to language: ISOCode? = nil) async throws -> Post {
-        if platform is Akkoma {
-            return try await getTranslationAkkoma(of: post, to: language ?? .en)
-        } else {
-            return try await getTranslationMastodon(of: post, to: language)
-        }
-    }
 
-  public func getTranslationMastodon(of post: Post, to language: ISOCode? = nil) async throws -> Post {
+  public func getTranslation(of post: Post, to language: ISOCode? = nil) async throws -> Post {
+    if platform is Akkoma {
+      return try await getTranslationAkkoma(of: post, to: language ?? .en)
+    } else {
+      return try await getTranslationMastodon(of: post, to: language)
+    }
+  }
+
+  public func getTranslationMastodon(of post: Post, to language: ISOCode? = nil) async throws
+    -> Post
+  {
     let translation = try await client.getTranslation(of: post, to: language)
     // todo - handle 403 error, no translation available
     // if we get this to work, we don't need copy (and don't need inits)
@@ -44,13 +54,13 @@ extension Session {
     newPost.copy(from: translation)
     return newPost
   }
-    
-    public func getTranslationAkkoma(of post: Post, to language: ISOCode) async throws -> Post {
-      let translation = try await client.getTranslationAkkoma(of: post, to: language)
-      let newPost = Post(from: post)
-      newPost.copy(from: translation)
-      return newPost
-    }
+
+  public func getTranslationAkkoma(of post: Post, to language: ISOCode) async throws -> Post {
+    let translation = try await client.getTranslationAkkoma(of: post, to: language)
+    let newPost = Post(from: post)
+    newPost.copy(from: translation)
+    return newPost
+  }
 
   public func getTranslationTargets(of post: Post) -> [ISOCode] {
     translations[post.languageCode] ?? []
@@ -73,10 +83,10 @@ extension Post {
       self.poll = poll
     }
   }
-    
-    func copy(from translation: TranslationAkkoma) {
-      content =
-        "<p><em>translated from \(translation.detectedLanguage.localizedLanguageName)</em></p><p>\(translation.text)</p>"
-    }
+
+  func copy(from translation: TranslationAkkoma) {
+    content =
+      "<p><em>translated from \(translation.detectedLanguage.localizedLanguageName)</em></p><p>\(translation.text)</p>"
+  }
 
 }

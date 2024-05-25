@@ -10,13 +10,4 @@ extension Session {
   public var supportsExtendedDescription: Bool {
     platform?.supportsInstanceExtendedDescription ?? false
   }
-
-  public var supportsTranslationLanguages: Bool {
-    platform?.supportsTranslationLanguages ?? false
-  }
-    
-    public var canReadTranslationLanguages: Bool {
-        // Akkoma requires authentication
-      supportsTranslationLanguages && (!(platform is Akkoma) || isAuth)
-    }
 }
