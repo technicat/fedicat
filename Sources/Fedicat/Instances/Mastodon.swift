@@ -74,6 +74,7 @@ public let mastodon =
     "opencoaster.net",
     "oslo.town",
     "paktodon.asia",
+    "pc.cafe",
     "pdx.social",
     "phpc.social",
     "piano.masto.host",
