@@ -1,6 +1,10 @@
 import TootSDK
 
 extension Session {
+    
+    public var supportsAdmin: Bool {
+        platform is Mastodon
+    }
 
   public func getAdminAccounts(
     _ page: PagedInfo? = nil
@@ -13,7 +17,7 @@ extension Session {
   }
 
   private var adminAccountsPageLimit: Int {
-    40
+    100
     // platform?.followersPageLimit ?? 0
   }
 }
