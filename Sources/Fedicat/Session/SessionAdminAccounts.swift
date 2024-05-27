@@ -6,10 +6,11 @@ extension Session {
         platform is Mastodon
     }
 
-  public func getAdminAccounts(
+    public func getAdminAccounts(_ origin: AdminAccountOrigin? = nil,
     _ page: PagedInfo? = nil
   ) async throws -> PagedResult<[AdminAccount]> {
     let result = try await client.getAdminAccountsV2(
+        params: AdminAccountsV2Params(origin: origin),
       page,
       limit: adminAccountsPageLimit)
     await addAccounts(result.result)
@@ -17,7 +18,7 @@ extension Session {
   }
 
   private var adminAccountsPageLimit: Int {
-    100
+    200
     // platform?.followersPageLimit ?? 0
   }
 }
