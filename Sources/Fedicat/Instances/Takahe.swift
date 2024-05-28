@@ -1,3 +1,6 @@
 public let takahe = [
-  "fedi.vision"
+  "clubnf.us",
+  "fedi.vision",
+  "nexific.social",
+  "takahe.mercadosocial.madrid",
 ]
