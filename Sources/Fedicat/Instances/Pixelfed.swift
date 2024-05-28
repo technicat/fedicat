@@ -1,10 +1,20 @@
 public let pixelfed = [
+  "eorzea.photos",
+  "gram.social",
+  "metapixl.com",
   "photofed.world",
+  "pix.toot.wales",
   "pixel.tchncs.de",
   "pixelfed.art",
+  "pixelfed.au",
   "pixelfed.de",
+  "pixelfed.fi",
+  "pixelfed.fr",
+  "pixelfed.nz",
   "pixelfed.scot",
   "pixelfed.social",
+  "pixelfed.uno",
+  "pixelfed.tokyo",
   "pixey.org",
-  "pxlmo.com"
+  "pxlmo.com",
 ]
