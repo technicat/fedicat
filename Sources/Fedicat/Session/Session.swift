@@ -56,4 +56,10 @@ public class Session {
   public init(_ client: TootClient) {
     self.client = client
   }
+
+  public init(_ client: TootClient, _ platform: Platform) {
+    self.client = client
+    self.platform = platform
+  }
+
 }
