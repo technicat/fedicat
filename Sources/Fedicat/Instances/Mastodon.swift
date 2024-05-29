@@ -19,7 +19,6 @@ public let mastodon =
     "fairy.id",
     "fediscience.org",
     "feedbeat.me",
-    "fedibird.com",
     "floss.social",
     "fosstodon.org",
     "growers.social",
