@@ -7,7 +7,7 @@ extension Session {
   }
 
   public var supportsTagFollow: Bool {
-    platform?.supportsFollowTag ?? false
+    followedTagsPageLimit > 0
   }
 
   @MainActor func add(follow tag: Tag) {
@@ -60,8 +60,8 @@ extension Session {
     return result
   }
 
-  private var followedTagsPageLimit: Int? {
-    platform?.followedTagsPageLimit
+  private var followedTagsPageLimit: Int {
+    platform?.followedTagsPageLimit ?? 0
   }
 
   public func getAllFollowedTags() async throws {

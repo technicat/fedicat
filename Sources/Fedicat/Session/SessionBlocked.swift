@@ -12,7 +12,11 @@ extension Session {
     return result
   }
 
-  private var blockedAccountsLimit: Int? {
-    platform?.blockedAccountsLimit
+  private var blockedAccountsLimit: Int {
+    platform?.blockedAccountsLimit ?? 0
   }
+    
+    public var supportsBlockedAccounts: Bool {
+      blockedAccountsLimit > 0
+    }
 }

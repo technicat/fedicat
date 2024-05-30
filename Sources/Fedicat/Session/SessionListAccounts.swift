@@ -14,7 +14,12 @@ extension Session {
     return result
   }
 
-  private var listAccountsPageLimit: Int? {
-    platform?.listAccountsPageLimit
+  private var listAccountsPageLimit: Int {
+    platform?.listAccountsPageLimit ?? 0
   }
+    
+    
+    public var supportsList: Bool {
+        listAccountsPageLimit > 0
+    }
 }

@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var supportsBlockedDomains: Bool {
-    platform?.supportsBlockedDomains ?? false
+   blockedDomainsLimit > 0
   }
 
   public var canBlockDomains: Bool {
@@ -26,8 +26,8 @@ extension Session {
       limit: blockedDomainsLimit)
   }
 
-  private var blockedDomainsLimit: Int? {
-    platform?.blockedDomainsLimit
+  private var blockedDomainsLimit: Int {
+    platform?.blockedDomainsLimit ?? 0
   }
 
   public func blockDomain(in account: Account) async throws {

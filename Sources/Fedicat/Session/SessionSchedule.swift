@@ -7,7 +7,7 @@ extension Session {
   }
 
   public var supportsSchedule: Bool {
-    platform?.supportsSchedule ?? false
+    scheduledPageLimit > 0
   }
 
   public var canScheduleUpdate: Bool {
@@ -21,13 +21,13 @@ extension Session {
   public func getScheduledPosts(_ page: PagedInfo? = nil) async throws
     -> PagedResult<[ScheduledPost]>
   {
-    let result = try await client.getScheduledPosts(page, limit: scheduledPostsPageLimit)
+    let result = try await client.getScheduledPosts(page, limit: scheduledPageLimit)
     hasSchedule = !(result.result.isEmpty && page == nil)
     return result
   }
 
-  private var scheduledPostsPageLimit: Int? {
-    platform?.scheduledPageLimit
+  private var scheduledPageLimit: Int {
+    platform?.scheduledPageLimit ?? 0
   }
 
 }

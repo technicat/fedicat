@@ -7,10 +7,6 @@ extension Session {
     supportsMutedAccounts || supportsBlockedAccounts
   }
 
-  public var supportsMutedAccounts: Bool {
-    platform?.supportsMutedAccounts ?? false
-  }
-
   public var canMuteAccounts: Bool {
     isAuth && supportsMutedAccounts
   }

@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var supportsDirectory: Bool {
-    platform?.supportsDirectory ?? false
+     directoryLimit > 0
   }
 
   public var supportsPublicDirectory: Bool {
@@ -36,7 +36,7 @@ extension Session {
     return accounts
   }
 
-  private var directoryLimit: Int? {
-    platform?.directoryLimit
+  private var directoryLimit: Int {
+    platform?.directoryLimit ?? 0
   }
 }

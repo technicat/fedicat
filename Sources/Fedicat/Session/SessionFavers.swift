@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var supportsFavers: Bool {
-    platform?.supportsFavers ?? false
+      faversPageLimit > 0
   }
 
   public func getFavers(
@@ -18,7 +18,7 @@ extension Session {
     return result
   }
 
-  private var faversPageLimit: Int? {
-    platform?.faversPageLimit
+  private var faversPageLimit: Int {
+    platform?.faversPageLimit ?? 0
   }
 }

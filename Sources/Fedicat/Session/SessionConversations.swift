@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var supportsConversations: Bool {
-    platform?.supportsConversations ?? false
+    conversationsPageLimit > 0
   }
 
   public func getConversations(_ page: PagedInfo? = nil) async throws
@@ -18,8 +18,8 @@ extension Session {
     return result
   }
 
-  private var conversationsPageLimit: Int? {
-    platform?.conversationsPageLimit
+  private var conversationsPageLimit: Int {
+    platform?.conversationsPageLimit ?? 0
   }
 
   public func delete(_ conversation: Conversation) async throws {

@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var supportsBoosters: Bool {
-    platform?.supportsBoosters ?? false
+    boosterPageLimit > 0
   }
 
   public func getBoosters(
@@ -17,7 +17,7 @@ extension Session {
     return result
   }
 
-  private var boosterPageLimit: Int? {
-    platform?.boosterPageLimit
+  private var boosterPageLimit: Int {
+    platform?.boosterPageLimit ?? 0
   }
 }

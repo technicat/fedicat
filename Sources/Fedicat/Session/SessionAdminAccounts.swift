@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var supportsAdmin: Bool {
-    platform is Mastodon
+  adminAccountsPageLimit > 0
   }
 
   public func getAdminAccounts(
@@ -19,7 +19,6 @@ extension Session {
   }
 
   private var adminAccountsPageLimit: Int {
-    200
-    // platform?.followersPageLimit ?? 0
+    platform?.followersPageLimit ?? 0
   }
 }

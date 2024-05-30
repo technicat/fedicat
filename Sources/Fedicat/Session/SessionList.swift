@@ -7,10 +7,6 @@ extension Session {
     isAuth && supportsList
   }
 
-  public var supportsList: Bool {
-    platform?.supportsList ?? false
-  }
-
   public var supportsListReplyPolicy: Bool {
     platform?.supportsListReplyPolicy ?? false
   }

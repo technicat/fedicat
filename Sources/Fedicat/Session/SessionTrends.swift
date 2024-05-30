@@ -8,15 +8,15 @@ extension Session {
   }
 
   public var supportsTrendingPosts: Bool {
-    platform?.supportsTrendingPosts ?? false
+    trendingPostsLimit > 0
   }
 
   public var supportsTrendingTags: Bool {
-    platform?.supportsTrendingTags ?? false
+      trendingTagsLimit > 0
   }
 
   public var supportsTrendingLinks: Bool {
-    platform?.supportsTrendingLinks ?? false
+      trendingLinksLimit > 0
   }
 
   public func getTrendingPosts() async throws -> [Post] {
@@ -25,8 +25,8 @@ extension Session {
     return posts
   }
 
-  private var trendingPostsLimit: Int? {
-    platform?.trendingPostsLimit
+  private var trendingPostsLimit: Int {
+    platform?.trendingPostsLimit ?? 0
   }
 
   public func getTrendingTags() async throws -> [Tag] {
@@ -34,15 +34,15 @@ extension Session {
     // cache tags?
   }
 
-  private var trendingTagsLimit: Int? {
-    platform?.trendingTagsLimit
+  private var trendingTagsLimit: Int {
+    platform?.trendingTagsLimit ?? 0
   }
 
   public func getTrendingLinks() async throws -> [TrendingLink] {
     try await client.getTrendingLinks(limit: trendingTagsLimit)
   }
 
-  private var trendingLinksLimit: Int? {
-    platform?.trendingLinksLimit
+  private var trendingLinksLimit: Int {
+    platform?.trendingLinksLimit ?? 0
   }
 }
