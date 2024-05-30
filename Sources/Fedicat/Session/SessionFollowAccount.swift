@@ -25,7 +25,7 @@ extension Session {
     guard let platform else {
       return false
     }
-    return platform.supportsFollowLanguages && platform.hasLanguages
+    return platform.supportsFollowLanguages && supportsPostLanguages
   }
 
   @MainActor public func add(follow account: Account) {
