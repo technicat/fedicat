@@ -2,7 +2,7 @@ import TootSDK
 
 extension Session {
 
-  @MainActor public func setInstance(_ instance: InstanceV1) {
+  @MainActor public func setInstanceV1(_ instance: InstanceV1) {
     self.instance = instance
   }
 
@@ -14,8 +14,10 @@ extension Session {
   @discardableResult
   public func getInstance() async throws -> InstanceV1 {
     let instance = try await client.getInstance()
-    await setInstance(instance)
-    await setPlatform(instance.platform)
+    await setInstanceV1(instance)
+      if let platform = instance.platform {
+          await setPlatform(platform)
+      }
     if let account = instance.contactAccount {
       await addAccount(account)
     }
@@ -25,11 +27,12 @@ extension Session {
   @discardableResult
   public func getInstanceV2() async throws -> InstanceV2 {
     let instance = try await client.getInstanceV2()
-    //      await setInstance(instance)
-    //      await setPlatform(instance.platform)
-    //      if let account = instance.contactAccount {
-    //        await addAccount(account)
-    //      }
+      if let platform = instance.platform {
+          await setPlatform(platform)
+      }
+          if let account = instance.contactAccount {
+            await addAccount(account)
+          }
     return instance
   }
 
