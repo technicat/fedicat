@@ -19,7 +19,12 @@ extension Session {
     return result
   }
 
-  private func getPageLimit(for timeline: Timeline) -> Int? {
-    platform?.getLimit(for: timeline)
+  private func getPageLimit(for timeline: Timeline) -> Int {
+    platform?.getLimit(for: timeline) ?? 0
   }
+    
+    
+    public func supports(_ timeline: Timeline) -> Bool {
+      getPageLimit(for: timeline) > 0
+    }
 }
