@@ -15,9 +15,9 @@ extension Session {
   public func getInstance() async throws -> InstanceV1 {
     let instance = try await client.getInstance()
     await setInstanceV1(instance)
-      if let platform = instance.platform {
-          await setPlatform(platform)
-      }
+    if let platform = instance.platform {
+      await setPlatform(platform)
+    }
     if let account = instance.contactAccount {
       await addAccount(account)
     }
@@ -27,12 +27,12 @@ extension Session {
   @discardableResult
   public func getInstanceV2() async throws -> InstanceV2 {
     let instance = try await client.getInstanceV2()
-      if let platform = instance.platform {
-          await setPlatform(platform)
-      }
-          if let account = instance.contactAccount {
-            await addAccount(account)
-          }
+    if let platform = instance.platform {
+      await setPlatform(platform)
+    }
+    if let account = instance.contactAccount {
+      await addAccount(account)
+    }
     return instance
   }
 

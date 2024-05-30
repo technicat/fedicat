@@ -12,11 +12,11 @@ extension Session {
   }
 
   public var supportsTrendingTags: Bool {
-      trendingTagsLimit > 0
+    trendingTagsLimit > 0
   }
 
   public var supportsTrendingLinks: Bool {
-      trendingLinksLimit > 0
+    trendingLinksLimit > 0
   }
 
   public func getTrendingPosts() async throws -> [Post] {

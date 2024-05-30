@@ -1,4 +1,4 @@
 public let fedibird =
   [
-    "fedibird.com",
+    "fedibird.com"
   ]

@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var supportsFindAccounts: Bool {
-      findAccountsLimit > 0
+    findAccountsLimit > 0
   }
 
   public func findAccounts(
@@ -21,7 +21,7 @@ extension Session {
     return accounts
   }
 
-    private var findAccountsLimit: Int {
-        platform?.findAccountsLimit ?? 0
-    }
+  private var findAccountsLimit: Int {
+    platform?.findAccountsLimit ?? 0
+  }
 }

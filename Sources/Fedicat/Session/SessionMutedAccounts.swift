@@ -15,8 +15,8 @@ extension Session {
   private var mutedAccountsLimit: Int {
     platform?.mutedAccountsLimit ?? 0
   }
-    
-    public var supportsMutedAccounts: Bool {
-      mutedAccountsLimit > 0
-    }
+
+  public var supportsMutedAccounts: Bool {
+    mutedAccountsLimit > 0
+  }
 }

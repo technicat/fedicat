@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var supportsPostLanguages: Bool {
-      !languages.isEmpty
+    !languages.isEmpty
   }
 
   public var supportsPostDefaultLanguage: Bool {

@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var supportsFavers: Bool {
-      faversPageLimit > 0
+    faversPageLimit > 0
   }
 
   public func getFavers(

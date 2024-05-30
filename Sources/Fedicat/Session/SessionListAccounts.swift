@@ -17,9 +17,8 @@ extension Session {
   private var listAccountsPageLimit: Int {
     platform?.listAccountsPageLimit ?? 0
   }
-    
-    
-    public var supportsList: Bool {
-        listAccountsPageLimit > 0
-    }
+
+  public var supportsList: Bool {
+    listAccountsPageLimit > 0
+  }
 }

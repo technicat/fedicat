@@ -7,8 +7,12 @@ extension Session {
   }
 
   public func canBookmark(_ post: Post) -> Bool {
-      // todo - platform.canBookmarkReply
-    isAuth && supportsBookmark && (!(platform is Friendica) || !post.isReply)
+    isAuth && supportsBookmark && (supportsBookmarkReply || !post.isReply)
+  }
+
+  // todo - move to platform
+  public var supportsBookmarkReply: Bool {
+    !(platform is Friendica)
   }
 
   public var supportsBookmark: Bool {

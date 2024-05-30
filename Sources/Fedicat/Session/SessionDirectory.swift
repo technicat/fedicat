@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var supportsDirectory: Bool {
-     directoryLimit > 0
+    directoryLimit > 0
   }
 
   public var supportsPublicDirectory: Bool {

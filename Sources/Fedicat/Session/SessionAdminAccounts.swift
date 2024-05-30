@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var supportsAdmin: Bool {
-  adminAccountsPageLimit > 0
+    adminAccountsPageLimit > 0
   }
 
   public func getAdminAccounts(

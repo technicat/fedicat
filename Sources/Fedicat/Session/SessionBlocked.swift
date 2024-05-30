@@ -15,8 +15,8 @@ extension Session {
   private var blockedAccountsLimit: Int {
     platform?.blockedAccountsLimit ?? 0
   }
-    
-    public var supportsBlockedAccounts: Bool {
-      blockedAccountsLimit > 0
-    }
+
+  public var supportsBlockedAccounts: Bool {
+    blockedAccountsLimit > 0
+  }
 }
