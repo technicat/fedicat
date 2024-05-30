@@ -7,6 +7,7 @@ extension Session {
   }
 
   public func canBookmark(_ post: Post) -> Bool {
+      // todo - platform.canBookmarkReply
     isAuth && supportsBookmark && (!(platform is Friendica) || !post.isReply)
   }
 
