@@ -2,11 +2,11 @@ import TootSDK
 
 extension Session {
 
-  @MainActor func setInstance(_ instance: InstanceV1) {
+  @MainActor public func setInstance(_ instance: InstanceV1) {
     self.instance = instance
   }
 
-  @MainActor func setPlatform(_ platform: Platform) {
+  @MainActor public func setPlatform(_ platform: Platform) {
     self.platform = platform
   }
 
