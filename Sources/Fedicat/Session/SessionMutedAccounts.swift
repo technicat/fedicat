@@ -3,8 +3,9 @@ import TootSDK
 extension Session {
 
   public func getMutedAccounts(_ page: PagedInfo? = nil) async throws
-    -> PagedResult<[Account]>
+    -> PagedResult<[Account]>?
   {
+      guard supportsMutedAccounts else { return nil }
     let result = try await client.getMutedAccounts(
       page,
       limit: mutedAccountsLimit)
