@@ -5,7 +5,8 @@ extension Session {
   public func getAccounts(
     in list: List,
     _ page: PagedInfo? = nil
-  ) async throws -> PagedResult<[Account]> {
+  ) async throws -> PagedResult<[Account]>? {
+      guard supportsList else { return nil }
     let result = try await client.getAccounts(
       in: list,
       page,
