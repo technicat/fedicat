@@ -17,13 +17,13 @@ extension Session {
     }
     return result
   }
-    
-    public var supportsFollowing: Bool {
-        followedAccountsPageLimit > 0
-    }
+
+  public var supportsFollowing: Bool {
+    followedAccountsPageLimit > 0
+  }
 
   private var followedAccountsPageLimit: Int {
-      platform?.followedAccountsPageLimit ?? 0
+    platform?.followedAccountsPageLimit ?? 0
   }
 
   public func getAllFollowedAccounts() async throws {

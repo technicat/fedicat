@@ -6,9 +6,10 @@ extension Session {
     faversPageLimit > 0
   }
 
-  public func getFavers(of post: Post, _ page: PagedInfo? = nil
+  public func getFavers(
+    of post: Post, _ page: PagedInfo? = nil
   ) async throws -> PagedResult<[Account]>? {
-      guard supportsFavers else { return nil }
+    guard supportsFavers else { return nil }
     let result = try await client.getFavers(
       of: post,
       page,
