@@ -17,10 +17,13 @@ extension Session {
     }
     return result
   }
+    
+    public var supportsFollowing: Bool {
+        followedAccountsPageLimit > 0
+    }
 
-  // todo - get from Platform
   private var followedAccountsPageLimit: Int {
-    80
+      platform?.followedAccountsPageLimit ?? 0
   }
 
   public func getAllFollowedAccounts() async throws {
