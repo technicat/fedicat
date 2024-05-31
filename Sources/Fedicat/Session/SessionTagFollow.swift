@@ -50,9 +50,8 @@ extension Session {
   }
 
   /// https://docs.joinmastodon.org/methods/followed_tags/
-  public func getFollowedTags(_ page: PagedInfo? = nil) async throws -> PagedResult<
-    [Tag]
-  > {
+  public func getFollowedTags(_ page: PagedInfo? = nil) async throws -> PagedResult<[Tag]>? {
+      guard supportsTagFollow else { return nil }
     let result = try await client.getFollowedTags(page, limit: followedTagsPageLimit)
     for tag in result.result {
       await add(follow: tag)
