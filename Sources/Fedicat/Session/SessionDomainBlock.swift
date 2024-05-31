@@ -21,7 +21,7 @@ extension Session {
   public func getBlockedDomains(_ page: PagedInfo? = nil) async throws
     -> PagedResult<[String]>?
   {
-      guard supportsBlockedDomains else { return nil }
+    guard supportsBlockedDomains else { return nil }
     return try await client.userGetDomainBlocks(
       page,
       limit: blockedDomainsLimit)

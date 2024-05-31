@@ -6,7 +6,7 @@ extension Session {
     in list: List,
     _ page: PagedInfo? = nil
   ) async throws -> PagedResult<[Account]>? {
-      guard supportsList else { return nil }
+    guard supportsList else { return nil }
     let result = try await client.getAccounts(
       in: list,
       page,

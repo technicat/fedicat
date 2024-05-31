@@ -8,7 +8,7 @@ extension Session {
     //adminAccountsPageLimit > 0
   }
 
-    // move the login stuff
+  // move the login stuff
   public var canLogin: Bool {
     !isAuth && supportsLogin
   }
@@ -17,7 +17,7 @@ extension Session {
     platform != nil && !(platform is BookWyrm)
   }
 
-    // just use v2
+  // just use v2
   public func getAdminAccounts(
     _ origin: AdminAccountOrigin? = nil,
     _ page: PagedInfo? = nil

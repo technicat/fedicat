@@ -31,6 +31,7 @@ extension Session {
   }
 
   // move to platform
-  private var endorsementsPageLimit: Int { 
-      platform?.endorsementsPageLimit ?? 0 }
+  private var endorsementsPageLimit: Int {
+    platform?.endorsementsPageLimit ?? 0
+  }
 }
