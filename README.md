@@ -1,4 +1,4 @@
-This repo started out as a list of all the [Mastodon iOS apps](iosapps.md) I've found, but now it's also the issue tracker for my [fediverse app](https://fedicat.com/) in progress (available on [Testflight](https://testflight.apple.com/join/b6GatWTY)) and a Swift package that currently comprises the middle layer between the UI and a [fork](https://github.com/technicat/TootSDK/blob/main/FORK.md) of [TootSDK](https://github.com/technicat/TootSDK).
+This repo started out as a summary of all the [Mastodon iOS apps](iosapps.md) I've found (see also the [Awesome Mastodon](https://github.com/technicat/awesome-mastodon) list), but now it's also the issue tracker for my [fediverse app](https://fedicat.com/) in progress (available on [Testflight](https://testflight.apple.com/join/b6GatWTY)) and a Swift package that currently comprises the middle layer between the UI and a [fork](https://github.com/technicat/TootSDK/blob/main/FORK.md) of [TootSDK](https://github.com/technicat/TootSDK).
 
 ## Goals
 
