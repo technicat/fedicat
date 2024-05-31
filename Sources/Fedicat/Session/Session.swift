@@ -12,7 +12,7 @@ public class Session {
   @ObservationIgnored
   public let client: TootClient
 
-  public var instance: InstanceV1?
+  public var instance: Instance?
   public var platform: Platform?
   public var account: Account?
   public var timeline: Timeline = .home
