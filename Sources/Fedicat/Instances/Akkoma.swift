@@ -6,7 +6,7 @@ public let akkoma = [
   "mycrowd.ca",
   "outerheaven.club",
   "pleroma.noellabo.jp",
- // "seafoam.space",
+  // "seafoam.space",
   "social.wedistribute.org",
   "turtleisland.rocks",
 ]

@@ -6,7 +6,7 @@ import TootSDK
 extension Session {
 
   public var supportsEndorse: Bool {
-    false
+    endorsementsLimit > 0
   }
 
   @discardableResult
@@ -20,8 +20,9 @@ extension Session {
   }
 
   public func getEndorsements(_ page: PagedInfo? = nil) async throws
-    -> PagedResult<[Account]>
+    -> PagedResult<[Account]>?
   {
+    guard supportsBlockedAccounts else { return nil }
     let result = try await client.getEndorsements(
       page,
       limit: endorsementsLimit)
@@ -29,5 +30,6 @@ extension Session {
     return result
   }
 
-  private var endorsementsLimit: Int { 80 }  // platform
+  // move to platform
+  private var endorsementsLimit: Int { 80 }
 }

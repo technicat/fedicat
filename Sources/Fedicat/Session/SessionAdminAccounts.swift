@@ -7,20 +7,22 @@ extension Session {
     // session.client.scopes.contains("admin:read") {
     //adminAccountsPageLimit > 0
   }
-    
-    public var canLogin: Bool {
-        !isAuth && supportsLogin
-    }
-    
-    public var supportsLogin: Bool {
-        platform != nil &&
-      !(platform is BookWyrm) 
-    }
+
+  public var canLogin: Bool {
+    !isAuth && supportsLogin
+  }
+
+  public var supportsLogin: Bool {
+    platform != nil && !(platform is BookWyrm)
+  }
 
   public func getAdminAccounts(
     _ origin: AdminAccountOrigin? = nil,
     _ page: PagedInfo? = nil
-  ) async throws -> PagedResult<[AdminAccount]> {
+  ) async throws -> PagedResult<[AdminAccount]>? {
+    guard supportsAdmin else {
+      return nil
+    }
     let result = try await client.getAdminAccountsV2(
       params: AdminAccountsV2Params(origin: origin),
       page,
