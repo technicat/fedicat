@@ -3,7 +3,9 @@ import TootSDK
 extension Session {
 
   public var supportsAdmin: Bool {
-    adminAccountsPageLimit > 0
+    platform is Mastodon  // quick hack
+    // session.client.scopes.contains("admin:read") {
+    //adminAccountsPageLimit > 0
   }
 
   public func getAdminAccounts(
