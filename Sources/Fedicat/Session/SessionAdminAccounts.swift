@@ -7,6 +7,15 @@ extension Session {
     // session.client.scopes.contains("admin:read") {
     //adminAccountsPageLimit > 0
   }
+    
+    public var canLogin: Bool {
+        !isAuth && supportsLogin
+    }
+    
+    public var supportsLogin: Bool {
+        platform != nil &&
+      !(platform is BookWyrm) 
+    }
 
   public func getAdminAccounts(
     _ origin: AdminAccountOrigin? = nil,
