@@ -8,6 +8,7 @@ extension Session {
     //adminAccountsPageLimit > 0
   }
 
+    // move the login stuff
   public var canLogin: Bool {
     !isAuth && supportsLogin
   }
@@ -16,6 +17,7 @@ extension Session {
     platform != nil && !(platform is BookWyrm)
   }
 
+    // just use v2
   public func getAdminAccounts(
     _ origin: AdminAccountOrigin? = nil,
     _ page: PagedInfo? = nil
@@ -32,6 +34,6 @@ extension Session {
   }
 
   private var adminAccountsPageLimit: Int {
-    platform?.followersPageLimit ?? 0
+    platform?.adminAccountsV2PageLimit ?? 0
   }
 }
