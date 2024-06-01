@@ -22,8 +22,7 @@ extension Session {
       types: types,
       // for friendica, which only supports exclude_types
       //   without: notificationTypes.subtracting(types)
-      page,
-      limit: notificationsPageLimit)
+      page)
     let notes = result.result
     // assume no boosts
     for note in notes {

@@ -7,12 +7,9 @@ extension Session {
   }
 
   public func getConversations(_ page: PagedInfo? = nil) async throws
-    -> PagedResult<[Conversation]>?
+    -> PagedResult<[Conversation]>
   {
-    guard supportsBlockedAccounts else { return nil }
-    let result = try await client.getConversations(
-      page,
-      limit: conversationsPageLimit)
+    let result = try await client.getConversations(page)
     for convo in result.result {
       await addAccounts(convo.accounts)
     }

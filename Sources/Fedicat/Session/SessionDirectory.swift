@@ -16,8 +16,7 @@ extension Session {
   ) async throws -> [Account] {
     let accounts = try await client.getLocalDirectory(
       order: order,
-      offset: offset,
-      limit: directoryLimit
+      offset: offset
     )
     await addAccounts(accounts)
     return accounts
@@ -29,9 +28,7 @@ extension Session {
   ) async throws -> [Account] {
     let accounts = try await client.getGlobalDirectory(
       order: order,
-      offset: offset,
-      limit: directoryLimit
-    )
+      offset: offset)
     await addAccounts(accounts)
     return accounts
   }

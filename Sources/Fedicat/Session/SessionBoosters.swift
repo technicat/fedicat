@@ -9,11 +9,8 @@ extension Session {
   public func getBoosters(
     of post: Post,
     _ page: PagedInfo? = nil
-  ) async throws -> PagedResult<[Account]>? {
-    guard supportsBoosters else { return nil }
-    let result = try await client.getBoosters(
-      of: post,
-      page, limit: boosterPageLimit)
+  ) async throws -> PagedResult<[Account]> {
+    let result = try await client.getBoosters(of: post)
     await addAccounts(result.result)
     return result
   }

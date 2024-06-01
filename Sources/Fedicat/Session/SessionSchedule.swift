@@ -19,10 +19,9 @@ extension Session {
   }
 
   public func getScheduledPosts(_ page: PagedInfo? = nil) async throws
-    -> PagedResult<[ScheduledPost]>?
+    -> PagedResult<[ScheduledPost]>
   {
-    guard supportsSchedule else { return nil }
-    let result = try await client.getScheduledPosts(page, limit: scheduledPageLimit)
+    let result = try await client.getScheduledPosts(page)
     hasSchedule = !(result.result.isEmpty && page == nil)
     return result
   }

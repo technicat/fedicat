@@ -20,17 +20,13 @@ extension Session {
   }
 
   public func getEndorsements(_ page: PagedInfo? = nil) async throws
-    -> PagedResult<[Account]>?
+    -> PagedResult<[Account]>
   {
-    guard supportsEndorse else { return nil }
-    let result = try await client.getEndorsements(
-      page,
-      limit: endorsementsPageLimit)
+    let result = try await client.getEndorsements(page)
     await addAccounts(result.result)
     return result
   }
 
-  // move to platform
   private var endorsementsPageLimit: Int {
     platform?.endorsementsPageLimit ?? 0
   }

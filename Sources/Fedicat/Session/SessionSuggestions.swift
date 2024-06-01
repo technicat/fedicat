@@ -12,13 +12,13 @@ extension Session {
   }
 
   public func getSuggestions() async throws -> [Suggestion] {
-    let sugg = try await client.getSuggestions(limit: suggestionsLimit)
+    let sugg = try await client.getSuggestions()
     await addAccounts(sugg)
     return sugg
   }
 
-  private var suggestionsLimit: Int? {
-    platform?.suggestionsLimit
+  private var suggestionsLimit: Int {
+    platform?.suggestionsLimit ?? 0
   }
 
   /// https://docs.joinmastodon.org/methods/suggestions/#remove

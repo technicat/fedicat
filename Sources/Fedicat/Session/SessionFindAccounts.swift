@@ -13,7 +13,6 @@ extension Session {
   ) async throws -> [Account] {
     let accounts = try await client.findAccounts(
       with: query,
-      limit: platform?.findAccountsLimit,
       order: order,
       local: local
     )

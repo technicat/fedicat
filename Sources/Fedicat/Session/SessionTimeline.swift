@@ -9,12 +9,9 @@ extension Session {
   public func getTimeline(
     _ timeline: Timeline,
     _ page: PagedInfo? = nil
-  ) async throws -> PagedResult<[Post]>? {
-    guard supports(timeline) else { return nil }
-    let result = try await client.getTimeline(
-      timeline,
-      pageInfo: page,
-      limit: getPageLimit(for: timeline))
+  ) async throws -> PagedResult<[Post]> {
+    let result = try await client.getTimeline(timeline,
+      pageInfo: page)
     let posts = result.result
     await addPostAccounts(posts)
     return result

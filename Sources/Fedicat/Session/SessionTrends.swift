@@ -20,7 +20,7 @@ extension Session {
   }
 
   public func getTrendingPosts() async throws -> [Post] {
-    let posts = try await client.getTrendingPosts(limit: trendingPostsLimit)
+    let posts = try await client.getTrendingPosts()
     await addAccounts(posts)
     return posts
   }
@@ -30,7 +30,7 @@ extension Session {
   }
 
   public func getTrendingTags() async throws -> [Tag] {
-    try await client.getTrendingTags(limit: trendingTagsLimit)
+    try await client.getTrendingTags()
     // cache tags?
   }
 
@@ -39,7 +39,7 @@ extension Session {
   }
 
   public func getTrendingLinks() async throws -> [TrendingLink] {
-    try await client.getTrendingLinks(limit: trendingTagsLimit)
+    try await client.getTrendingLinks()
   }
 
   private var trendingLinksLimit: Int {

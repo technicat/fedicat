@@ -24,8 +24,7 @@ extension Session {
     let result = try await client.search(
       for: query,
       following: following,
-      excludeUnreviewed: excludeUnreviewed,
-      limit: platform?.searchLimit)
+      excludeUnreviewed: excludeUnreviewed)
     await addAccounts(result.accounts)
     await addAccounts(result.posts)
     // maybe cache tags

@@ -3,13 +3,12 @@ import TootSDK
 extension Session {
 
   public func getFollowRequests(_ page: PagedInfo? = nil) async throws
-    -> PagedResult<[Account]>?
-  {
-    guard supportsFollowRequests else { return nil }
-    let result = try await client.getFollowRequests(page, limit: followRequestPageLimit)
+    -> PagedResult<[Account]> {
+    let result = try await client.getFollowRequests(page)
     await addAccounts(result.result)
     return result
   }
+    
   public var supportsFollowRequests: Bool {
     followRequestPageLimit > 0
   }

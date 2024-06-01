@@ -2,11 +2,8 @@ import TootSDK
 
 extension Session {
 
-  public func getBlockedAccounts(_ page: PagedInfo? = nil) async throws -> PagedResult<[Account]>? {
-    guard supportsBlockedAccounts else { return nil }
-    let result = try await client.getBlockedAccounts(
-      page,
-      limit: blockedAccountsLimit)
+  public func getBlockedAccounts(_ page: PagedInfo? = nil) async throws -> PagedResult<[Account]> {
+    let result = try await client.getBlockedAccounts(page)
     await addAccounts(result.result)
     return result
   }

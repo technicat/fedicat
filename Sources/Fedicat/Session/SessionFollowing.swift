@@ -6,10 +6,7 @@ extension Session {
     by account: Account,
     _ page: PagedInfo? = nil
   ) async throws -> PagedResult<[Account]> {
-    let result = try await client.getFollowing(
-      for: account.id,
-      page,
-      limit: followedAccountsPageLimit)
+    let result = try await client.getFollowing(for: account.id, page)
     let accounts = result.result
     await addAccounts(accounts)
     for account in accounts {
