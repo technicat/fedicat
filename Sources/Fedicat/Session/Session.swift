@@ -12,9 +12,15 @@ public class Session {
   @ObservationIgnored
   public let client: TootClient
 
+  /// keep this around so we have access to
+  /// the instance name, thumbnail, rules...
   public var instance: Instance?
+    /// the instance platform type, determines what we can call
   public var platform: Platform?
+    /// the logged in Account
   public var account: Account?
+    /// the currently displayed timeline
+    /// (assumes this is an app with one displayed timeline)
   public var timeline: Timeline = .home
 
   // so we can use for suggestions/completions
