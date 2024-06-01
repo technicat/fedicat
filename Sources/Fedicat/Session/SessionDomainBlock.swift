@@ -19,7 +19,8 @@ extension Session {
   }
 
   public func getBlockedDomains(_ page: PagedInfo? = nil) async throws
-    -> PagedResult<[String]> {
+    -> PagedResult<[String]>
+  {
     try await client.userGetDomainBlocks(page)
   }
 

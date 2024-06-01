@@ -5,7 +5,7 @@ extension Session {
   @MainActor public func setInstance(_ instance: Instance) {
     self.instance = instance
     if needsPlatformUpdate {
-        setPlatform(instance.platform)
+      setPlatform(instance.platform)
     }
     if let account = instance.contactAccount {
       addAccount(account)
@@ -30,13 +30,13 @@ extension Session {
   public var supportsInstanceV2: Bool {
     platform?.supportsInstanceV2 ?? false
   }
-    
-    @discardableResult
-    public func getInstance() async throws -> Instance {
-        if supportsInstanceV2 {
-            try await getInstanceV2()
-        } else {
-            try await getInstanceV1()
-        }
+
+  @discardableResult
+  public func getInstance() async throws -> Instance {
+    if supportsInstanceV2 {
+      try await getInstanceV2()
+    } else {
+      try await getInstanceV1()
     }
+  }
 }

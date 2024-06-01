@@ -9,7 +9,7 @@ extension Session {
   public func getFavers(
     of post: Post, _ page: PagedInfo? = nil
   ) async throws -> PagedResult<[Account]> {
-    let result = try await client.getFavers(of: post,page)
+    let result = try await client.getFavers(of: post, page)
     await addAccounts(result.result)
     return result
   }

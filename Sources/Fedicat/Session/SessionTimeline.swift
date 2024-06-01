@@ -10,7 +10,8 @@ extension Session {
     _ timeline: Timeline,
     _ page: PagedInfo? = nil
   ) async throws -> PagedResult<[Post]> {
-    let result = try await client.getTimeline(timeline,
+    let result = try await client.getTimeline(
+      timeline,
       pageInfo: page)
     let posts = result.result
     await addPostAccounts(posts)
