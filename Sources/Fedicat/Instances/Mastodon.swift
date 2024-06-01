@@ -21,6 +21,7 @@ public let mastodon =
     "feedbeat.me",
     "floss.social",
     "fosstodon.org",
+    "gamerplus.org",
     "growers.social",
     "hachyderm.io",
     "hear-me.social",
