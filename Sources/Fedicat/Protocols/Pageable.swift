@@ -5,4 +5,7 @@ import TootSDK
 public protocol Pageable: Decodable, Identifiable, Equatable {
 }
 
-public typealias PagedQuery<T: Pageable> = (PagedInfo?) async throws -> PagedResult<[T]>
+// move these
+public typealias PageQuery<T: Pageable> = (PagedInfo?) async throws -> PagedResult<[T]>
+
+public typealias ListQuery<T> = () async throws -> [T]
