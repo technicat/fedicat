@@ -3,5 +3,5 @@ public let gotosocial = [
   "goblin.technology",
   "gotosocial.social",
   "gts.scoobysnack.net",
-  "social.browser.org"
+  "social.browser.org",
 ]
