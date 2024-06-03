@@ -1,4 +1,5 @@
 public let akkoma = [
+    "akkomane.social",
   "blob.cat",
   "fe.disroot.org",
   "genserver.social",
