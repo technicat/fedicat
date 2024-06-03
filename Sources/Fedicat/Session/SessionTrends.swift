@@ -45,4 +45,8 @@ extension Session {
   private var trendingLinksLimit: Int {
     platform?.trendingLinksLimit ?? 0
   }
+    
+    public var supportsPublicTrends: Bool {
+      supportsTrends && (platform?.supportsPublicTrends ?? false)
+    }
 }
