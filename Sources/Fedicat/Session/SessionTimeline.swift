@@ -19,7 +19,7 @@ extension Session {
   }
 
   private func getPageLimit(for timeline: Timeline) -> Int {
-    platform?.getLimit(for: timeline) ?? 0
+    platform?.getLimit(for: timeline, isAuth) ?? 0
   }
 
   public func supports(_ timeline: Timeline) -> Bool {
