@@ -7,7 +7,7 @@ extension Session {
   }
 
   public var supportsPublicDirectory: Bool {
-    supportsDirectory && (platform?.supportsPublicDirectory ?? false)
+      (platform?.directoryLimit(false) ?? 0) > 0
   }
 
   public func getLocalDirectory(
@@ -34,6 +34,6 @@ extension Session {
   }
 
   private var directoryLimit: Int {
-    platform?.directoryLimit ?? 0
+    platform?.directoryLimit(isAuth) ?? 0
   }
 }
