@@ -3,7 +3,7 @@ public let mastodon =
     "apobangpo.space",
     "archaeo.social",
     "aus.social",
-    "baudigital.social",
+ //   "baudigital.social",
     "bbq.snoot.com",
     "beekeeping.ninja",
     "beige.party",
