@@ -6,10 +6,6 @@ extension Session {
     directoryLimit > 0
   }
 
-  public var supportsPublicDirectory: Bool {
-      (platform?.directoryLimit(false) ?? 0) > 0
-  }
-
   public func getLocalDirectory(
     offset: Int? = nil,
     order: ProfileDirectoryParams.Order? = nil

@@ -26,7 +26,7 @@ extension Session {
   }
 
   private var trendingPostsLimit: Int {
-    platform?.trendingPostsLimit ?? 0
+    platform?.trendingPostsLimit(isAuth) ?? 0
   }
 
   public func getTrendingTags() async throws -> [Tag] {
@@ -35,7 +35,7 @@ extension Session {
   }
 
   private var trendingTagsLimit: Int {
-    platform?.trendingTagsLimit ?? 0
+    platform?.trendingTagsLimit(isAuth) ?? 0
   }
 
   public func getTrendingLinks() async throws -> [TrendingLink] {
@@ -43,10 +43,6 @@ extension Session {
   }
 
   private var trendingLinksLimit: Int {
-    platform?.trendingLinksLimit ?? 0
+    platform?.trendingLinksLimit(isAuth) ?? 0
   }
-    
-    public var supportsPublicTrends: Bool {
-      supportsTrends && (platform?.supportsPublicTrends ?? false)
-    }
 }
