@@ -6,6 +6,7 @@ public let fediTags = [
   "Elk",
   "Fedibird",
   "Fedicat",
+  "Fedify",
   "Feditext",
   "fediverse",
   "Firefish",
