@@ -14,7 +14,7 @@ extension Session {
   }
 
   public var supportsLogin: Bool {
-    platform != nil && !(platform is BookWyrm)
+      platform?.supportsLogin ?? false
   }
 
   // just use v2
