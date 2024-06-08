@@ -1,5 +1,5 @@
 public let mitra = [
-    "fedi.libresolutions.network",
+  "fedi.libresolutions.network",
   "mitra.076.moe",
   "mitra.0ut0f.space",
   "mitra.anon-kenkai.com",

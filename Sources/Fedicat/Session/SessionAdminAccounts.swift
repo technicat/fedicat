@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var supportsAdmin: Bool {
-      platform?.supportsAdmin ?? false
+    platform?.supportsAdmin ?? false
     // session.client.scopes.contains("admin:read") {
     //adminAccountsPageLimit > 0
   }
@@ -14,7 +14,7 @@ extension Session {
   }
 
   public var supportsLogin: Bool {
-      platform?.supportsLogin ?? false
+    platform?.supportsLogin ?? false
   }
 
   // just use v2
@@ -31,5 +31,15 @@ extension Session {
 
   private var adminAccountsPageLimit: Int {
     platform?.adminAccountsV2PageLimit ?? 0
+  }
+
+  @discardableResult
+  public func approve(_ account: AdminAccount) async throws -> AdminAccount {
+    try await client.approve(account)
+  }
+
+  @discardableResult
+  public func reject(_ account: AdminAccount) async throws -> AdminAccount {
+    try await client.reject(account)
   }
 }

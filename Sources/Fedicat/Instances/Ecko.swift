@@ -1,3 +1,3 @@
 public let ecko = [
-    "red.niboe.info"
+  "red.niboe.info"
 ]

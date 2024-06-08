@@ -1,5 +1,5 @@
 public let iceshrimp = [
-    "bytes.programming.dev",
+  "bytes.programming.dev",
   "fedia.social",
   "iceshrimp.chrt.dev",
   "iceshrimp.social",
