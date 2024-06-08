@@ -42,4 +42,19 @@ extension Session {
   public func reject(_ account: AdminAccount) async throws -> AdminAccount {
     try await client.reject(account)
   }
+
+  @discardableResult
+  public func unsensitive(_ account: AdminAccount) async throws -> AdminAccount {
+    try await client.unsensitive(account)
+  }
+
+  @discardableResult
+  public func unsuspend(_ account: AdminAccount) async throws -> AdminAccount {
+    try await client.unsuspend(account)
+  }
+
+  @discardableResult
+  public func unsilence(_ account: AdminAccount) async throws -> AdminAccount {
+    try await client.unsilence(account)
+  }
 }
