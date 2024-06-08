@@ -4,8 +4,13 @@ import TootSDK
 extension Session {
 
   public var canReadSuggestions: Bool {
-    isAuth && !suggestionSources.isEmpty
+      // todo - move auth check
+    isAuth && supportsSuggestions
   }
+    
+    public var supportsSuggestions: Bool {
+      suggestionsLimit > 0
+    }
 
   public var suggestionSources: SuggestionSources {
     platform?.suggestionSources ?? []
