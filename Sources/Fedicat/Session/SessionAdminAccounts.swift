@@ -20,11 +20,12 @@ extension Session {
   // just use v2
   public func getAdminAccounts(
     _ origin: AdminAccountOrigin? = nil,
-    _ page: PagedInfo? = nil
+    _ page: PagedInfo? = nil,
+    limit: Int? = nil
   ) async throws -> PagedResult<[AdminAccount]> {
     let result = try await client.getAdminAccountsV2(
       params: AdminAccountsV2Params(origin: origin),
-      page)
+      page, limit: limit)
     await addAccounts(result.result)
     return result
   }
