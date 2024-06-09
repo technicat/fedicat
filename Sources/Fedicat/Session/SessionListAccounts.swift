@@ -4,11 +4,13 @@ extension Session {
 
   public func getAccounts(
     in list: List,
-    _ page: PagedInfo? = nil
+    _ page: PagedInfo? = nil,
+    limit: Int? = nil
   ) async throws -> PagedResult<[Account]> {
     let result = try await client.getAccounts(
       in: list,
-      page)
+      page,
+      limit: limit)
     await addAccounts(result.result)
     return result
   }

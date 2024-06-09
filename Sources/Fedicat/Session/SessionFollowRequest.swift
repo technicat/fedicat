@@ -6,7 +6,8 @@ extension Session {
                                 limit: Int? = nil) async throws
     -> PagedResult<[Account]>
   {
-      let result = try await client.getFollowRequests(page, limit: limit)
+      let result = try await client.getFollowRequests(page,
+                                                      limit: limit)
     await addAccounts(result.result)
     return result
   }

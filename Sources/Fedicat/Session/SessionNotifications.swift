@@ -16,13 +16,15 @@ extension Session {
 
   public func getNotifications(
     with types: NotificationTypes,
-    _ page: PagedInfo? = nil
+    _ page: PagedInfo? = nil,
+    limit: Int? = nil
   ) async throws -> PagedResult<[TootNotification]> {
     let result = try await client.getNotifications(
       types: types,
       // for friendica, which only supports exclude_types
       //   without: notificationTypes.subtracting(types)
-      page)
+      page,
+      limit: limit)
     let notes = result.result
     // assume no boosts
     for note in notes {
