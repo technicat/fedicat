@@ -2,11 +2,13 @@ import TootSDK
 
 extension Session {
 
-  public func getMutedAccounts(_ page: PagedInfo? = nil,
-                               limit: Int? = nil) async throws
+  public func getMutedAccounts(
+    _ page: PagedInfo? = nil,
+    limit: Int? = nil
+  ) async throws
     -> PagedResult<[Account]>
   {
-      let result = try await client.getMutedAccounts(page, limit: limit)
+    let result = try await client.getMutedAccounts(page, limit: limit)
     await addAccounts(result.result)
     return result
   }

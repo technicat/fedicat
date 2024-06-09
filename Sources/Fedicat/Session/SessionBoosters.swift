@@ -11,9 +11,10 @@ extension Session {
     _ page: PagedInfo? = nil,
     limit: Int? = nil
   ) async throws -> PagedResult<[Account]> {
-      let result = try await client.getBoosters(of: post, 
-                                                page, 
-                                                limit: limit)
+    let result = try await client.getBoosters(
+      of: post,
+      page,
+      limit: limit)
     await addAccounts(result.result)
     return result
   }

@@ -15,6 +15,7 @@ extension Session {
     !announcements.isEmpty
   }
 
+  /// note getAnnouncements has no limit param
   public func getAnnouncements() async throws -> [Announcement] {
     // can't tell withDismissed param works, ignore it for now
     let list = try await client.getAnnouncements()

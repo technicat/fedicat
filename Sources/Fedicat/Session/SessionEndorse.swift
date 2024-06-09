@@ -22,7 +22,7 @@ extension Session {
   public func getEndorsements(_ page: PagedInfo? = nil, limit: Int? = nil) async throws
     -> PagedResult<[Account]>
   {
-      let result = try await client.getEndorsements(page, limit : limit)
+    let result = try await client.getEndorsements(page, limit: limit)
     await addAccounts(result.result)
     return result
   }

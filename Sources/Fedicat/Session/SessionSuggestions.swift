@@ -4,20 +4,20 @@ import TootSDK
 extension Session {
 
   public var canReadSuggestions: Bool {
-      // todo - move auth check
+    // todo - move auth check
     isAuth && supportsSuggestions
   }
-    
-    public var supportsSuggestions: Bool {
-      suggestionsLimit > 0
-    }
+
+  public var supportsSuggestions: Bool {
+    suggestionsLimit > 0
+  }
 
   public var suggestionSources: SuggestionSources {
     platform?.suggestionSources ?? []
   }
 
   public func getSuggestions(limit: Int? = nil) async throws -> [Suggestion] {
-      let sugg = try await client.getSuggestions(limit: limit)
+    let sugg = try await client.getSuggestions(limit: limit)
     await addAccounts(sugg)
     return sugg
   }
