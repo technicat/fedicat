@@ -6,10 +6,12 @@ extension Session {
     conversationsPageLimit > 0
   }
 
-  public func getConversations(_ page: PagedInfo? = nil) async throws
+  public func getConversations(_ page: PagedInfo? = nil,
+                               limit: Int? = nil) async throws
     -> PagedResult<[Conversation]>
   {
-    let result = try await client.getConversations(page)
+    let result = try await client.getConversations(page, 
+                                                   limit: limit)
     for convo in result.result {
       await addAccounts(convo.accounts)
     }

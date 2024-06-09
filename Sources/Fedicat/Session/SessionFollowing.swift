@@ -4,9 +4,12 @@ extension Session {
 
   public func getFollowedAccounts(
     by account: Account,
-    _ page: PagedInfo? = nil
+    _ page: PagedInfo? = nil,
+    limit: Int? = nil
   ) async throws -> PagedResult<[Account]> {
-    let result = try await client.getFollowing(for: account.id, page)
+    let result = try await client.getFollowing(for: account.id,
+                                               page,
+                                               limit: limit)
     let accounts = result.result
     await addAccounts(accounts)
     for account in accounts {

@@ -19,10 +19,10 @@ extension Session {
     try await client.unEndorse(account)
   }
 
-  public func getEndorsements(_ page: PagedInfo? = nil) async throws
+  public func getEndorsements(_ page: PagedInfo? = nil, limit: Int? = nil) async throws
     -> PagedResult<[Account]>
   {
-    let result = try await client.getEndorsements(page)
+      let result = try await client.getEndorsements(page, limit : limit)
     await addAccounts(result.result)
     return result
   }
