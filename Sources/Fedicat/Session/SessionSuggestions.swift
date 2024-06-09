@@ -16,8 +16,8 @@ extension Session {
     platform?.suggestionSources ?? []
   }
 
-  public func getSuggestions() async throws -> [Suggestion] {
-    let sugg = try await client.getSuggestions()
+  public func getSuggestions(limit: Int? = nil) async throws -> [Suggestion] {
+      let sugg = try await client.getSuggestions(limit: limit)
     await addAccounts(sugg)
     return sugg
   }

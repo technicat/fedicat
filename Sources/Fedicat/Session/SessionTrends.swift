@@ -19,8 +19,8 @@ extension Session {
     trendingLinksLimit > 0
   }
 
-  public func getTrendingPosts() async throws -> [Post] {
-    let posts = try await client.getTrendingPosts()
+  public func getTrendingPosts(limit: Int? = nil) async throws -> [Post] {
+    let posts = try await client.getTrendingPosts(limit: limit)
     await addAccounts(posts)
     return posts
   }

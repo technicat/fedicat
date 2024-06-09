@@ -18,10 +18,11 @@ extension Session {
     try await client.unBlock(domain: domain)
   }
 
-  public func getBlockedDomains(_ page: PagedInfo? = nil) async throws
+  public func getBlockedDomains(_ page: PagedInfo? = nil,
+                                limit: Int? = nil) async throws
     -> PagedResult<[String]>
   {
-    try await client.userGetDomainBlocks(page)
+      try await client.userGetDomainBlocks(page, limit: limit)
   }
 
   private var blockedDomainsLimit: Int {
