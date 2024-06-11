@@ -21,6 +21,7 @@ public let fediTags = [
   "Lemmy",
   "Mammoth",
   "Mastodon",
+  "Mastohost",
   "Megalodon",
   "Metatext",
   "Microdotblog",
