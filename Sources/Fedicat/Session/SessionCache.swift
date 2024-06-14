@@ -30,7 +30,7 @@ extension Session {
     }
     if supportsSchedule {
       Task(priority: priority) {
-          try await getScheduledPosts(limit: 1)
+        try await getScheduledPosts(limit: 1)
       }
     }
     if supportsTranslationLanguages {

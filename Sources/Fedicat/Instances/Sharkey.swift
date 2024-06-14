@@ -8,5 +8,5 @@ public let sharkey = [
   "transfem.social",
   "sharkey.world",
   "transgirl.cafe",
-  "zoner.work"
+  "zoner.work",
 ]
