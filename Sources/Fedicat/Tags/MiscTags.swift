@@ -3,5 +3,5 @@ public let miscTags = [
   "bloomscrolling",
   "introduction",
   "monsterdon",
-  "noreply",
+  "NoReply",
 ]
