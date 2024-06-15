@@ -3,6 +3,7 @@ public let dayTags = [
   "ToeBeansTuesday",
   "TongueOutTuesday",
   "WhiskersWednesday",
+  "ThrowbackThursday",
   "FensterFreitag",
   "FollowFriday",
   "Caturday",
