@@ -1,4 +1,7 @@
-public let foodTags = [
-  "TacoTuesday",
+public let miscTags = [
   "DimSum",
-]
+"bloomscrolling",
+"introduction",
+  "monsterdon",
+"noreply"
+  ]
