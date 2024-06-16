@@ -3,7 +3,7 @@ import TootSDK
 
 extension Tag.History: Identifiable {
 
-  public var id: String {
+  public var id: Date {
     day
   }
 }
