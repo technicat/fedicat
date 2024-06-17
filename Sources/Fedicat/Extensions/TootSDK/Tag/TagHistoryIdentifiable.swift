@@ -1,7 +1,7 @@
 import Foundation
 import TootSDK
 
-extension Tag.History: Identifiable {
+extension TagHistory: Identifiable {
 
   public var id: Date {
     day
