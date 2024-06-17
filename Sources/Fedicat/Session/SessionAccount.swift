@@ -2,7 +2,7 @@ import TootSDK
 
 extension Session {
 
-  @MainActor public func setAccount(_ account: Account) {
+  @MainActor public func setAccount(_ account: CredentialAccount) {
     self.account = account
     addAccount(account)
   }

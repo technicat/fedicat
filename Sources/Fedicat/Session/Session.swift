@@ -18,7 +18,7 @@ public class Session {
   /// the instance platform type, determines what we can call
   public var platform: Platform?
   /// the logged in Account
-  public var account: Account?
+  public var account: CredentialAccount?
   /// the currently displayed timeline
   /// (assumes this is an app with one displayed timeline)
   public var timeline: Timeline = .home

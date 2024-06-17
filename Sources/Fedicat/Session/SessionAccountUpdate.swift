@@ -19,7 +19,7 @@ extension Session {
   }
 
   @discardableResult
-  public func updatePixelfed(_ settings: DraftAccountSettings) async throws -> Account {
+  public func updatePixelfed(_ settings: DraftAccountSettings) async throws -> CredentialAccount {
     let account = try await client.updatePixelfedAccountSettings(
       locked: settings.locked)
     await setAccount(account)
@@ -27,7 +27,7 @@ extension Session {
   }
 
   @discardableResult
-  public func update(_ profile: DraftProfile) async throws -> Account {
+  public func update(_ profile: DraftProfile) async throws -> CredentialAccount {
     let account = try await client.updateProfile(
       displayName: profile.displayName,
       note: profile.note,
@@ -42,7 +42,7 @@ extension Session {
 
   // todo - use DraftPixelfedProfile
   @discardableResult
-  public func updatePixelfed(_ profile: DraftProfile) async throws -> Account {
+  public func updatePixelfed(_ profile: DraftProfile) async throws -> CredentialAccount {
     let account = try await client.updateProfilePixelfed(
       displayName: profile.displayName,
       note: profile.note,
@@ -52,7 +52,7 @@ extension Session {
     return account
   }
 
-  public func updateFields(_ profile: DraftProfile) async throws -> Account {
+  public func updateFields(_ profile: DraftProfile) async throws -> CredentialAccount {
     var map = [String: UpdateCredentialsParams.Field]()
     for index in 0..<profile.fields.filter({ !$0.isEmpty }).count {
       map[String(index)] = UpdateCredentialsParams.Field(
@@ -65,7 +65,7 @@ extension Session {
     return account
   }
 
-  public func update(_ defs: DraftPostDefaults) async throws -> Account {
+  public func update(_ defs: DraftPostDefaults) async throws -> CredentialAccount {
     let account = try await client.updatePostDefaults(
       privacy: defs.visibility,
       sensitive: defs.sensitive,
@@ -75,14 +75,14 @@ extension Session {
   }
 
   @discardableResult
-  public func deleteAvatar() async throws -> Account {
+  public func deleteAvatar() async throws -> CredentialAccount {
     let account = try await client.deleteAvatar()
     await setAccount(account)
     return account
   }
 
   @discardableResult
-  public func deleteHeader() async throws -> Account {
+  public func deleteHeader() async throws -> CredentialAccount {
     let account = try await client.deleteHeader()
     await setAccount(account)
     return account

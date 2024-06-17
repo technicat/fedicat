@@ -19,7 +19,7 @@ extension Session {
   }
 
   @discardableResult
-  public func getAccount() async throws -> Account {
+  public func getAccount() async throws -> CredentialAccount {
     let account = try await client.getAccount()
     await setAccount(account)
     return account
