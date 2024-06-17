@@ -6,8 +6,8 @@ extension Session {
   public func getRules() async throws -> [InstanceRule] {
     try await client.getInstanceRules()
   }
-    
-    public var supportsRules: Bool {
-        platform?.supportsInstanceRules ?? false
-    }
+
+  public var supportsRules: Bool {
+    platform?.supportsInstanceRules ?? false
+  }
 }

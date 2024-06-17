@@ -88,10 +88,10 @@ extension Post {
     content =
       "<p><em>translated from \(translation.detectedLanguage.localizedLanguageName)</em></p><p>\(translation.text)</p>"
   }
-    
-    public func copy(from translation: String) {
-      content =
-        "<p><em>translated by Apple</em></p><p>\(translation)</p>"
-    }
+
+  public func copy(from translation: String) {
+    content =
+      "<p><em>translated by Apple</em></p><p>\(translation)</p>"
+  }
 
 }

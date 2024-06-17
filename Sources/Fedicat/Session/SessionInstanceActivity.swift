@@ -6,8 +6,8 @@ extension Session {
   public func getActivity() async throws -> [Activity] {
     try await client.getInstanceActivity()
   }
-    
-    public var supportsActivity: Bool {
-        platform?.supportsInstanceActivity ?? false
-    }
+
+  public var supportsActivity: Bool {
+    platform?.supportsInstanceActivity ?? false
+  }
 }
