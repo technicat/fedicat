@@ -10,6 +10,15 @@ extension Session {
   public var canMuteAccounts: Bool {
     isAuth && supportsMutedAccounts
   }
+    
+    
+    public var supportsMuteExpire: Bool {
+        platform?.supportsMuteExpire ?? false
+    }
+    
+    public var supportsMuteNotifications: Bool {
+        platform?.supportsMuteNotifications ?? false
+    }
 
   @discardableResult
   public func mute(
