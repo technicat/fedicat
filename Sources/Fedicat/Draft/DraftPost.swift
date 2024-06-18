@@ -40,7 +40,7 @@ public class DraftPost {
     uploads.removeAll()
   }
 
-  @MainActor public func copyDefaults(from account: Account) {
+  @MainActor public func copyDefaults(from account: CredentialAccount) {
     isSensitive = account.defaultSensitive
     visibility = account.defaultVisibility
     lang = account.defaultLanguage

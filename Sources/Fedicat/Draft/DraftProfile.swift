@@ -19,7 +19,7 @@ public class DraftProfile {
     header != nil
   }
 
-  @MainActor public func copy(from account: Account) {
+  @MainActor public func copy(from account: CredentialAccount) {
     displayName = account.userName
     if let note = account.source?.note {
       self.note = note

@@ -12,7 +12,7 @@ public class DraftAccountSettings {
   public var hideCollections: Bool = false
   public var indexable: Bool = false
 
-  @MainActor public func copy(from account: Account) {
+  @MainActor public func copy(from account: CredentialAccount) {
     locked = account.locked
     bot = account.isBot
     discoverable = account.isDiscoverable

@@ -7,7 +7,7 @@ extension Session {
   }
 
   @discardableResult
-  public func update(_ settings: DraftAccountSettings) async throws -> Account {
+  public func update(_ settings: DraftAccountSettings) async throws -> CredentialAccount {
     let account = try await client.updateAccountSettings(
       locked: settings.locked,
       bot: settings.bot,

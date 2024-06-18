@@ -8,7 +8,7 @@ public class DraftPostDefaults {
   public var visibility: PostVisibility = .public
   public var sensitive: Bool = false
 
-  @MainActor public func copy(from account: Account) {
+  @MainActor public func copy(from account: CredentialAccount) {
     lang = account.defaultLanguage
     sensitive = account.defaultSensitive
     visibility = account.defaultVisibility
