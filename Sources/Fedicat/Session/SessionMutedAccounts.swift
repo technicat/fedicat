@@ -6,7 +6,7 @@ extension Session {
     _ page: PagedInfo? = nil,
     limit: Int? = nil
   ) async throws
-    -> PagedResult<[Account]>
+    -> PagedResult<[MutedAccount]>
   {
     let result = try await client.getMutedAccounts(page, limit: limit)
     await addAccounts(result.result)
