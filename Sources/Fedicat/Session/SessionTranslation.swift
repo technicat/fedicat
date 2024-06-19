@@ -69,14 +69,23 @@ extension Session {
 
 extension Post {
 
-  func copy(from translation: Translation) {
-    content =
-      "<p><em>\(translation.detectedSourceLanguage.localizedLanguageName) to \(translation.language.localizedLanguageName) by \(translation.provider)</em></p><p>\(translation.content)</p>"
-    spoilerText = translation.spoilerText
+  func copy(from translation: Translated) {
+    var translated = "<p><em>"
+      if let source = translation.sourceLanguage?.localizedLanguageName {
+          translated += source
+      }
+      if let target = translation.targetLanguage?.localizedLanguageName {
+          translated += "to \(target)"
+      }
+      translated += " by \(translation.translator)</em></p>"
+      translated += "<p>\(translation.html)</p>"
+      if let spoiler = translation.spoiler {
+          spoilerText = spoiler
+      }
     for index in mediaAttachments.indices {
-      mediaAttachments[index].description = translation.mediaAttachments[index].description
+      mediaAttachments[index].description = translation.translatedAttachments[index].description
     }
-    if var poll = poll, let tp = translation.poll {
+    if var poll = poll, let tp = translation.translatedPoll {
       for index in poll.options.indices {
         poll.options[index].title = tp.options[index].title
       }
@@ -84,10 +93,10 @@ extension Post {
     }
   }
 
-  func copy(from translation: TranslationAkkoma) {
-    content =
-      "<p><em>translated from \(translation.detectedLanguage.localizedLanguageName)</em></p><p>\(translation.text)</p>"
-  }
+//  func copy(from translation: TranslationAkkoma) {
+//    content =
+//      "<p><em>translated from \(translation.detectedLanguage.localizedLanguageName)</em></p><p>\(translation.text)</p>"
+//  }
 
   public func copy(from translation: String) {
     content =
