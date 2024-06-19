@@ -47,8 +47,8 @@ public class DraftPost {
   }
 
   @MainActor public func copy(from post: Post) {
-    if let language = post.language, let code = ISOCode(rawValue: language) {
-      lang = code
+    if let language = post.language {
+      lang = language
     }
     isSensitive = post.isSensitive
     visibility = post.visibility

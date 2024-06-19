@@ -18,7 +18,7 @@ extension Session {
       post, text: draft.text,
       spoiler: draft.spoiler,
       sensitive: orNil(draft.isSensitive, false),
-      language: draft.lang.rawValue,
+      language: draft.lang,
       media: post.attachments.orNil)
     //  media: draft.uploaded)
   }
