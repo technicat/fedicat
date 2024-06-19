@@ -5,4 +5,5 @@ public let gotosocial = [
   "gotosocial.social",
   "gts.scoobysnack.net",
   "social.browser.org",
+  "social.nlnet.nl"
 ]
