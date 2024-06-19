@@ -42,48 +42,8 @@ extension Session {
     }
   }
 
-  public func getTranslated(of post: Post, from translation: Translated) -> Post {
-    let newPost = Post(from: post)
-    newPost.copy(from: translation)
-    return newPost
-  }
-
   public func getTranslationTargets(of post: Post) -> [ISOCode] {
     translations[post.languageCode] ?? []
   }
 }
 
-// need to localize
-extension Post {
-
-  func copy(from translation: Translated) {
-    var translated = "<p><em>"
-    if let source = translation.sourceLanguage?.localizedLanguageName {
-      translated += source
-    }
-    if let target = translation.targetLanguage?.localizedLanguageName {
-      translated += " to \(target)"
-    }
-      if let translator = translation.translator {
-          translated += " (translated by \(translator))"
-      }
-      translated += "</em></p>"
-      if let html = translation.html {
-          translated += "<p>\(html)</p>"
-      }
-    content = translated
-    if let spoiler = translation.spoiler {
-      spoilerText = spoiler
-    }
-    for index in mediaAttachments.indices {
-      mediaAttachments[index].description = translation.translatedAttachments[index].description
-    }
-    if var poll = poll, let tp = translation.translatedPoll {
-      for index in poll.options.indices {
-        poll.options[index].title = tp.options[index].title
-      }
-      self.poll = poll
-    }
-  }
-
-}
