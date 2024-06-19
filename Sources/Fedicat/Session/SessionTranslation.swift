@@ -46,21 +46,19 @@ extension Session {
     -> Post
   {
     let translation = try await client.getTranslation(of: post, to: language)
-    // todo - handle 403 error, no translation available
-    // if we get this to work, we don't need copy (and don't need inits)
-    //      post.copy(from: translation)
-    //      return post
-    let newPost = Post(from: post)
-    newPost.copy(from: translation)
-    return newPost
+      return getTranslation(of: post, from: translation)
   }
 
   public func getTranslationAkkoma(of post: Post, to language: ISOCode) async throws -> Post {
     let translation = try await client.getTranslationAkkoma(of: post, to: language)
-    let newPost = Post(from: post)
-    newPost.copy(from: translation)
-    return newPost
+      return getTranslation(of: post, from: translation)
   }
+    
+    public func getTranslation(of post: Post, from translation: Translated) -> Post {
+      let newPost = Post(from: post)
+      newPost.copy(from: translation)
+      return newPost
+    }
 
   public func getTranslationTargets(of post: Post) -> [ISOCode] {
     translations[post.languageCode] ?? []
@@ -74,11 +72,13 @@ extension Post {
       if let source = translation.sourceLanguage?.localizedLanguageName {
           translated += source
       }
+      // todo - localize
       if let target = translation.targetLanguage?.localizedLanguageName {
           translated += "to \(target)"
       }
       translated += " by \(translation.translator)</em></p>"
       translated += "<p>\(translation.html)</p>"
+      content = translated
       if let spoiler = translation.spoiler {
           spoilerText = spoiler
       }
@@ -92,11 +92,6 @@ extension Post {
       self.poll = poll
     }
   }
-
-//  func copy(from translation: TranslationAkkoma) {
-//    content =
-//      "<p><em>translated from \(translation.detectedLanguage.localizedLanguageName)</em></p><p>\(translation.text)</p>"
-//  }
 
   public func copy(from translation: String) {
     content =
