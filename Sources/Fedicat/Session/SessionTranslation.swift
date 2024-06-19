@@ -34,13 +34,11 @@ extension Session {
     platform?.supportsTranslate ?? false
   }
 
-  public func getTranslation(of post: Post, to language: ISOCode? = nil) async throws -> Post {
+  public func getTranslation(of post: Post, to language: ISOCode? = nil) async throws -> Translated {
     if platform is Akkoma {
-      let translation = try await client.getTranslationAkkoma(of: post, to: language ?? .en)
-      return getTranslated(of: post, from: translation)
+      return try await client.getTranslationAkkoma(of: post, to: language ?? .en)
     } else {
-      let translation = try await client.getTranslation(of: post, to: language)
-      return getTranslated(of: post, from: translation)
+      return try await client.getTranslation(of: post, to: language)
     }
   }
 
@@ -86,11 +84,6 @@ extension Post {
       }
       self.poll = poll
     }
-  }
-
-  public func copy(from translation: String) {
-    content =
-      "<p><em>translated by Apple</em></p><p>\(translation)</p>"
   }
 
 }
