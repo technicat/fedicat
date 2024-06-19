@@ -67,7 +67,7 @@ extension Post {
       translated += " to \(target)"
     }
       if let translator = translation.translator {
-          translated += " by \(translator)"
+          translated += " (translated by \(translator))"
       }
       translated += "</em></p>"
       if let html = translation.html {
