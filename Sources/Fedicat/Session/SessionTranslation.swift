@@ -36,22 +36,12 @@ extension Session {
 
   public func getTranslation(of post: Post, to language: ISOCode? = nil) async throws -> Post {
     if platform is Akkoma {
-      return try await getTranslationAkkoma(of: post, to: language ?? .en)
+      let translation = try await client.getTranslationAkkoma(of: post, to: language ?? .en)
+      return getTranslation(of: post, from: translation)
     } else {
-      return try await getTranslationMastodon(of: post, to: language)
+      let translation = try await client.getTranslation(of: post, to: language)
+      return getTranslation(of: post, from: translation)
     }
-  }
-
-  public func getTranslationMastodon(of post: Post, to language: ISOCode? = nil) async throws
-    -> Post
-  {
-    let translation = try await client.getTranslation(of: post, to: language)
-    return getTranslation(of: post, from: translation)
-  }
-
-  public func getTranslationAkkoma(of post: Post, to language: ISOCode) async throws -> Post {
-    let translation = try await client.getTranslationAkkoma(of: post, to: language)
-    return getTranslation(of: post, from: translation)
   }
 
   public func getTranslation(of post: Post, from translation: Translated) -> Post {
