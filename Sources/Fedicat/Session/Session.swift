@@ -7,7 +7,7 @@ import TootSDK
 /// ideally the UI should not deal with TootClient directly
 /// but instead go through Session for all queries
 @Observable
-public class Session {
+final public class Session {
 
   @ObservationIgnored
   public let client: TootClient
