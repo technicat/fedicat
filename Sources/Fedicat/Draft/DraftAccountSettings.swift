@@ -4,7 +4,7 @@ import SwiftUI
 import TootSDK
 
 @Observable
-public class DraftAccountSettings {
+final public class DraftAccountSettings {
 
   public var locked: Bool = false
   public var bot: Bool = false

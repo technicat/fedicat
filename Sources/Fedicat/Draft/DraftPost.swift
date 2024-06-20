@@ -3,7 +3,7 @@ import TootSDK
 
 // add protocols?
 @Observable
-public class DraftPost {
+final public class DraftPost {
 
   public var uploads: [UploadedMediaAttachment] = []
   public var text: String = ""

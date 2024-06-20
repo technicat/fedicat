@@ -1,7 +1,7 @@
 import Foundation
 import TootSDK
-
-public class ProfileField: Identifiable {
+// struct?
+final public class ProfileField: Identifiable {
 
   public var name: String = ""
   public var value: String = ""

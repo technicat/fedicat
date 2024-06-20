@@ -6,7 +6,7 @@ import TootSDK
 ///  define DraftVideoAttachment
 ///   define DraftAudioAttachment
 @Observable
-public class DraftAttachment: Identifiable, Equatable {
+final public class DraftAttachment: Identifiable, Equatable {
 
   public var id: UIImage {
     image  // .image

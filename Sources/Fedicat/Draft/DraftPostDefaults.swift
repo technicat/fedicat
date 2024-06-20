@@ -2,7 +2,7 @@ import Foundation
 import TootSDK
 
 @Observable
-public class DraftPostDefaults {
+final public class DraftPostDefaults {
 
   public var lang: ISOCode = .en
   public var visibility: PostVisibility = .public

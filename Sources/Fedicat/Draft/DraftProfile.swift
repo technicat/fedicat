@@ -3,7 +3,7 @@ import SwiftUI
 import TootSDK
 
 @Observable
-public class DraftProfile {
+final public class DraftProfile {
 
   public var displayName: String = ""
   public var note: String = ""
