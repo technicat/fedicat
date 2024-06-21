@@ -32,9 +32,9 @@ extension Session {
       displayName: profile.displayName,
       note: profile.note,
       avatar: profile.avatar?.jpeg(),
-      avatarMimeType: .jpeg,
+      avatarMimeType: .imageJpeg,
       header: profile.header?.jpeg(),
-      headerMimeType: .jpeg
+      headerMimeType: .imageJpeg
     )
     await setAccount(account)
     return account

@@ -19,7 +19,7 @@ final public class DraftAttachment: Identifiable, Equatable {
   public var image: UIImage
   public var compress = 0.0
 
-  public let type: MIMEType = .jpeg
+  public let type: MIMEType = .imageJpeg
 
   public var data: Data? {
     switch type {
