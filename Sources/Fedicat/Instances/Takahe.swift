@@ -3,5 +3,5 @@ public let takahe = [
   "fedi.vision",
   "nexific.social",
   "takahe.mercadosocial.madrid",
-  "takahe.staging.django-cast.com",
+ // "takahe.staging.django-cast.com",
 ]
