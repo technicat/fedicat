@@ -52,6 +52,7 @@ public let mastodon =
     "mastodonapp.uk",
     "masto.ai",
     "masto.nu",
+    "masto.nyc",
     "mathstodon.xyz",
     "mato.social",
     "mcr.wtf",
