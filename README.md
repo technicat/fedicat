@@ -10,7 +10,7 @@ The forked and non-forked [Swift](https://swift.org/) packages used by Fedicat (
 
 ## Graphics
 
-The icons are a mix of [SF Symbols](https://developer.apple.com/sf-symbols/), [Arcticons](https://github.com/Arcticons-Team/Arcticons), and [Simple Icons](https://simpleicons.org/), and [my icons](https://github.com/technicat/icons). The technicat logo was designed by Dakota Snow.
+The app icon is from my attempt at handcoding an SVG [icon library](https://github.com/technicat/icons), fediverse icons are from [Arcticons](https://github.com/Arcticons-Team/Arcticons) under the [Creative Commons CC-BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/),  profile field icons are from [Simple Icons](https://simpleicons.org/), and all other icons are from Apple's [SF Symbols](https://developer.apple.com/sf-symbols/). The technicat logo was designed by Dakota Snow.
 
 ## Code Style
 
