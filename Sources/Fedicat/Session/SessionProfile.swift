@@ -29,5 +29,9 @@ extension Session {
   public var canDeleteProfileImage: Bool {
     isAuth && supportsProfileImageDelete
   }
+    
+    public var maxProfileFields: Int {
+        return 4 // todo - move to platform
+    }
 
 }
