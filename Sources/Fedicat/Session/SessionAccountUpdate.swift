@@ -52,20 +52,20 @@ extension Session {
     return account
   }
 
+    @discardableResult
   public func updateFields(_ profile: DraftProfile) async throws -> CredentialAccount {
-    var map = [String: UpdateCredentialsParams.Field]()
-    let fields = profile.fields.filter({ !$0.isEmpty }) 
-    for index in 0..<fields.count {
-      map[String(index)] = UpdateCredentialsParams.Field(
-        name: fields[index].name.trimWS,
-        value: fields[index].value.trimWS)
+      let fields = profile.fields.filter({ !$0.isEmpty }).enumerated().map { (index, field) in UpdateCredentialsParams.Field(
+        key: String(index),
+        name: field.name.trimWS,
+        value: field.value.trimWS)
     }
     let account = try await client.updateProfile(
-      fields: map.isEmpty ? nil : map)
+      fields: fields.isEmpty ? nil : fields)
     await setAccount(account)
     return account
   }
 
+    @discardableResult
   public func update(_ defs: DraftPostDefaults) async throws -> CredentialAccount {
     let account = try await client.updatePostDefaults(
       privacy: defs.visibility,
