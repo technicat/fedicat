@@ -8,10 +8,6 @@ import TootSDK
 @Observable
 final public class DraftAttachment: Identifiable, Equatable {
 
-  public var id: UIImage {
-    image  // .image
-  }
-
   public static func == (lhs: DraftAttachment, rhs: DraftAttachment) -> Bool {
     lhs.id == rhs.id && lhs.text == rhs.text
   }
