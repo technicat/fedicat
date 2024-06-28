@@ -7,7 +7,7 @@ final public class DraftProfile {
 
   public var displayName: String = ""
   public var note: String = ""
-  public var fields: [ProfileField] = []  // TootField?
+  public var fields: [ProfileField] = []
   public var avatar: UIImage? = nil
   public var header: UIImage? = nil
 
@@ -24,12 +24,9 @@ final public class DraftProfile {
     if let note = account.source?.note {
       self.note = note
     }
-    if let source = account.source {
-      for field in source.fields {
-          let pfield = ProfileField(name: field.name, value: field.value)
-        fields.append(pfield)
+      if let source = account.source {
+          fields = source.fields.map { ProfileField(name: $0.name, value: $0.value) }
       }
-    }
   }
 
   public init() {}
