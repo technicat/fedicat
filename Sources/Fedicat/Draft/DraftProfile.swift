@@ -24,9 +24,9 @@ final public class DraftProfile {
     if let note = account.source?.note {
       self.note = note
     }
-      if let source = account.source {
-          fields = source.fields.map { ProfileField(name: $0.name, value: $0.value) }
-      }
+    if let source = account.source {
+      fields = source.fields.map { ProfileField(name: $0.name, value: $0.value) }
+    }
   }
 
   public init() {}
