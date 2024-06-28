@@ -7,6 +7,7 @@ public let pixelfed = [
   "photofed.world",
   "pix.toot.wales",
   "pixel.tchncs.de",
+  "pixel.infosec.exchange",
   "pixelfed.art",
   "pixelfed.au",
   "pixelfed.cz",
