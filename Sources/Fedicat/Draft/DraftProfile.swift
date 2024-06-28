@@ -26,9 +26,7 @@ final public class DraftProfile {
     }
     if let source = account.source {
       for field in source.fields {
-        let pfield = ProfileField()
-        pfield.name = field.name
-        pfield.value = field.value
+          let pfield = ProfileField(name: field.name, value: field.value)
         fields.append(pfield)
       }
     }
