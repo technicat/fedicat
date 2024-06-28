@@ -13,6 +13,7 @@ public let hometown = [
   "post.lurk.org",
   "rage.love",
   "reallife.social",
+  "recurse.social",
   "simian.rodeo",
   "weirder.earth",
 ]
