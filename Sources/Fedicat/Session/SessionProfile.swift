@@ -31,7 +31,7 @@ extension Session {
   }
 
   public var maxProfileFields: Int {
-    return 4  // todo - move to platform
+      instance?.profileFieldsLimit ?? 4 // default to Mastodon
   }
 
 }
