@@ -19,7 +19,7 @@ extension Session {
   }
 
   public var supportsProfileFields: Bool {
-    platform?.supportsProfileFields ?? false
+      profileFieldsLimit > 0
   }
 
   public var supportsProfileImageDelete: Bool {
@@ -30,8 +30,9 @@ extension Session {
     isAuth && supportsProfileImageDelete
   }
 
-  public var maxProfileFields: Int {
-    instance?.profileFieldsLimit ?? 4  // default to Mastodon
+  public var profileFieldsLimit: Int {
+      instance?.profileFieldsLimit ?? 
+       platform?.profileFieldsLimit ?? 0
   }
 
 }
