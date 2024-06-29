@@ -31,7 +31,7 @@ extension Session {
   }
 
   public var maxProfileFields: Int {
-      instance?.profileFieldsLimit ?? 4 // default to Mastodon
+    instance?.profileFieldsLimit ?? 4  // default to Mastodon
   }
 
 }
