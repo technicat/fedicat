@@ -17,4 +17,12 @@ extension Session {
   public var minAttachments: Int? {
     platform?.minAttachments
   }
+    
+    public var charsPerURL: Int? {
+      instance?.charsPerURL
+    }
+    
+    public var maxPins: Int? {
+      instance?.maxPins
+    }
 }
