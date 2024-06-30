@@ -8,6 +8,7 @@ public let friendica = [
   "poliverso.org",
   "social.trom.tf",
   "social.gibiris.org",
+  "social.outsourcedmath.com",
   "squeet.me",
   "venera.social",
 ]
