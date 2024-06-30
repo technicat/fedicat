@@ -20,7 +20,7 @@ extension Session {
   }
 
   public var featuredTagsLimit: Int {
-    instance?.maxFeaturedTags ?? 0 // 10
+    instance?.maxFeaturedTags ?? 0  // 10
   }
 
   public var hasMaxFeaturedTags: Bool {

@@ -19,7 +19,7 @@ extension Session {
   }
 
   public var supportsProfileFields: Bool {
-      profileFieldsLimit > 0
+    profileFieldsLimit > 0
   }
 
   public var supportsProfileImageDelete: Bool {
@@ -31,8 +31,7 @@ extension Session {
   }
 
   public var profileFieldsLimit: Int {
-      instance?.profileFieldsLimit ?? 
-       platform?.profileFieldsLimit ?? 0
+    instance?.profileFieldsLimit ?? platform?.profileFieldsLimit ?? 0
   }
 
 }
