@@ -12,6 +12,5 @@ public let akkoma = [
   "pleroma.noellabo.jp",
   "seafoam.space",
   "social.wedistribute.org",
-  "triangle.social",
-  "turtleisland.rocks",
+  "triangle.social"
 ]
