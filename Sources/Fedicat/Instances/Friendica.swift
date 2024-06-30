@@ -3,7 +3,7 @@ public let friendica = [
   "friendica.a-zwenkau.de",
   "friendica.opensocial.space",
   "libranet.de",
- // "loma.ml",
+  // "loma.ml",
   "nerdica.net",
   "poliverso.org",
   "social.trom.tf",
