@@ -19,17 +19,16 @@ extension Session {
     featuredTags = tags
   }
 
-  // is this default ok? remove?
-  public var maxFeaturedTags: Int {
-    instance?.maxFeaturedTags ?? 10
+  public var featuredTagsLimit: Int {
+    instance?.maxFeaturedTags ?? 0 // 10
   }
 
   public var hasMaxFeaturedTags: Bool {
-    featuredTags.count == maxFeaturedTags
+    featuredTags.count == featuredTagsLimit
   }
 
   public var featuredTagsAvailable: Int {
-    maxFeaturedTags - featuredTags.count
+    featuredTagsLimit - featuredTags.count
   }
 
   public func isFeaturedTag(_ tag: Tag) -> Bool {
