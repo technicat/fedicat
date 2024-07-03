@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var maxAltChars: Int {
-      instance?.descriptionLimit ?? platform?.maxAltText ?? 1500  // harcoded mastodon limit
+      instance?.descriptionLimit ?? platform?.maxAltText ?? 1500  // harcoded mastodon limit - move to MastoAPI?
   }
 
   public var maxPostChars: Int? {
