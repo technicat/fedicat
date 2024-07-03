@@ -25,40 +25,44 @@ extension Session {
   public var maxPins: Int? {
     instance?.maxPins
   }
-    
-    public var maxPollOptions: Int? {
-      instance?.maxPollOptions
-    }
-    
-    public var maxPollChars: Int? {
-      instance?.maxPollChars
-    }
-    
-    public var minPollExpiration: Int? {
-      instance?.minPollExpiration
-    }
-    
-    public var maxPollExpiration: Int? {
-      instance?.maxPollExpiration
-    }
-    
-    public var imageSizeLimit: Int? {
-        instance?.configuration?.mediaAttachments?.imageSizeLimit
-    }
-    
-    public var imageMatrixLimit: Int? {
-        instance?.configuration?.mediaAttachments?.imageMatrixLimit
-    }
-    
-    public var videoSizeLimit: Int? {
-        instance?.configuration?.mediaAttachments?.videoSizeLimit
-    }
-    
-    public var videoMatrixLimit: Int? {
-        instance?.configuration?.mediaAttachments?.videoMatrixLimit
-    }
-    
-    public var videoFrameRateLimit: Int? {
-        instance?.configuration?.mediaAttachments?.videoFrameRateLimit
-    }
+
+  public var maxPollOptions: Int? {
+    instance?.maxPollOptions
+  }
+
+  public var maxPollChars: Int? {
+    instance?.maxPollChars
+  }
+
+  public var minPollExpiration: Int? {
+    instance?.minPollExpiration
+  }
+
+  public var maxPollExpiration: Int? {
+    instance?.maxPollExpiration
+  }
+
+  public var imageSizeLimit: Int? {
+    instance?.configuration?.mediaAttachments?.imageSizeLimit
+  }
+
+  public var imageMatrixLimit: Int? {
+    instance?.configuration?.mediaAttachments?.imageMatrixLimit
+  }
+
+  public var videoSizeLimit: Int? {
+    instance?.configuration?.mediaAttachments?.videoSizeLimit
+  }
+
+  public var videoMatrixLimit: Int? {
+    instance?.configuration?.mediaAttachments?.videoMatrixLimit
+  }
+
+  public var videoFrameRateLimit: Int? {
+    instance?.configuration?.mediaAttachments?.videoFrameRateLimit
+  }
+
+  public var supportedMIMETypes: [MIMEType]? {
+    instance?.configuration?.mediaAttachments?.supportedMimeTypes
+  }
 }
