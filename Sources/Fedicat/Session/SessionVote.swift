@@ -3,11 +3,12 @@ import TootSDK
 extension Session {
 
   public var canVote: Bool {
-    isAuth && supportsVote
+    isAuth && supportsPoll
   }
 
-  public var supportsVote: Bool {
-    isAuth && platform?.supportsPollVote ?? false
+    
+  public var supportsPoll: Bool {
+    platform?.supportsPoll ?? false
   }
 
   @discardableResult
