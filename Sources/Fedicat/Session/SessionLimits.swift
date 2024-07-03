@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var maxAltChars: Int {
-    platform?.maxAltText ?? 1500  // harcoded mastodon limit
+      instance?.descriptionLimit ?? platform?.maxAltText ?? 1500  // harcoded mastodon limit
   }
 
   public var maxPostChars: Int? {
@@ -43,7 +43,7 @@ extension Session {
   }
 
   public var imageSizeLimit: Int? {
-    instance?.configuration?.mediaAttachments?.imageSizeLimit
+    instance?.imageSizeLimit
   }
 
   public var imageMatrixLimit: Int? {
@@ -51,7 +51,7 @@ extension Session {
   }
 
   public var videoSizeLimit: Int? {
-    instance?.configuration?.mediaAttachments?.videoSizeLimit
+    instance?.videoSizeLimit
   }
 
   public var videoMatrixLimit: Int? {
