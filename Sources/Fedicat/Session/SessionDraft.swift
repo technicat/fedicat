@@ -29,6 +29,9 @@ extension Session {
   }
 
   public func isValid(_ attach: DraftAttachment) -> Bool {
-    attach.text.count <= maxAltChars
+      guard let maxAltChars else {
+          return true
+      }
+    return attach.text.count <= maxAltChars
   }
 }
