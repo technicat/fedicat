@@ -31,6 +31,7 @@ public let fediTags = [
   "Pixelfed",
   "Pleroma",
   "Sharkey",
+  "Smithereen",
   "Snac",
   "TootSDK",
   "W3C",
