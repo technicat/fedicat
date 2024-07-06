@@ -33,6 +33,7 @@ public let fediTags = [
   "Sharkey",
   "Smithereen",
   "Snac",
+  "Takahe",
   "TootSDK",
   "W3C",
   "WriteFreely",
