@@ -132,6 +132,12 @@ On the [App Store](https://apps.apple.com/us/app/mona-for-mastodon/id1659154653)
 
 Features: communities browser allows viewing local and federated feeds on other instances
 
+## [OpenVibe](https://openvibe.social/) by [@openvibe@mastodon.social](https://mastodon.social/@openvibe)
+
+On the [App Store](https://apps.apple.com/cz/app/openvibe-mastodon-nostr-app/id1666230916).
+
+Features: combines feeds from multiple platforms. Clean, simple interface.
+
 ## [Pipilo](https://www.craft.me/s/YFawOVHfVzGfml) by [@pipilo@indieapps.space](https://indieapps.space/@pipilo)
 
 On the [App Store](https://apps.apple.com/pl/app/pipilo/id1584544719). Subscription required for features beyond browsing. Built with TootSDK
