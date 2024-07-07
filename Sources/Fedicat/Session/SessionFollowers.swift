@@ -18,6 +18,10 @@ extension Session {
   public var supportsFollowers: Bool {
     followersPageLimit > 0
   }
+        
+        public var isHidingFollowLists: Bool {
+            account?.isHidingFollowLists ?? true
+        }
 
   private var followersPageLimit: Int {
     platform?.followersPageLimit ?? 0
