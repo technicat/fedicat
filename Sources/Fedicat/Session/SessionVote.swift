@@ -6,7 +6,6 @@ extension Session {
     isAuth && supportsPoll
   }
 
-    
   public var supportsPoll: Bool {
     platform?.supportsPoll ?? false
   }

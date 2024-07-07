@@ -3,7 +3,7 @@ import TootSDK
 extension Session {
 
   public var maxAltChars: Int? {
-      instance?.descriptionLimit ?? platform?.maxAltText
+    instance?.descriptionLimit ?? platform?.maxAltText
   }
 
   public var maxPostChars: Int? {
