@@ -8,6 +8,7 @@ public let hometown = [
   "flipping.rocks",
   "giantheart.social",
   "hcommons.social",
+  "mastodon.publicinterest.town",
   "merveilles.town",
   "pagan.plus",
   "post.lurk.org",
