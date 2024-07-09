@@ -28,36 +28,36 @@ extension Session {
 
   @discardableResult
   public func update(_ profile: DraftProfile) async throws -> CredentialAccount {
-      if platform is Pixelfed {
-          try await updatePixelfed(profile)
-      } else {
-          try await updateMasto(profile)
-      }
-//    let account = try await client.updateProfile(
-//      displayName: profile.displayName,
-//      note: profile.note,
-//      avatar: profile.avatar?.jpeg(),
-//      avatarMimeType: .imageJpeg,
-//      header: profile.header?.jpeg(),
-//      headerMimeType: .imageJpeg
-//    )
-//    await setAccount(account)
-//    return account
-  }
-    
-    @discardableResult
-    public func updateMasto(_ profile: DraftProfile) async throws -> CredentialAccount {
-      let account = try await client.updateProfile(
-        displayName: profile.displayName,
-        note: profile.note,
-        avatar: profile.avatar?.jpeg(),
-        avatarMimeType: .imageJpeg,
-        header: profile.header?.jpeg(),
-        headerMimeType: .imageJpeg
-      )
-      await setAccount(account)
-      return account
+    if platform is Pixelfed {
+      try await updatePixelfed(profile)
+    } else {
+      try await updateMasto(profile)
     }
+    //    let account = try await client.updateProfile(
+    //      displayName: profile.displayName,
+    //      note: profile.note,
+    //      avatar: profile.avatar?.jpeg(),
+    //      avatarMimeType: .imageJpeg,
+    //      header: profile.header?.jpeg(),
+    //      headerMimeType: .imageJpeg
+    //    )
+    //    await setAccount(account)
+    //    return account
+  }
+
+  @discardableResult
+  public func updateMasto(_ profile: DraftProfile) async throws -> CredentialAccount {
+    let account = try await client.updateProfile(
+      displayName: profile.displayName,
+      note: profile.note,
+      avatar: profile.avatar?.jpeg(),
+      avatarMimeType: .imageJpeg,
+      header: profile.header?.jpeg(),
+      headerMimeType: .imageJpeg
+    )
+    await setAccount(account)
+    return account
+  }
 
   // todo - use DraftPixelfedProfile?
   @discardableResult

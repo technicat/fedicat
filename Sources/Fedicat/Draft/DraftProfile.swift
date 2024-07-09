@@ -10,6 +10,8 @@ final public class DraftProfile {
   public var fields: [ProfileField] = []
   public var avatar: UIImage? = nil
   public var header: UIImage? = nil
+  public var avatarText: String? = nil
+  public var headerText: String? = nil
 
   public var hasAvatar: Bool {
     avatar != nil
