@@ -21,6 +21,14 @@ extension Session {
   public var supportsProfileFields: Bool {
     profileFieldsLimit > 0
   }
+    
+    public var supportsProfileAltText: Bool {
+      platform?.supportsProfileAltText ?? false
+    }
+    
+    public var supportsProfileHeader: Bool {
+      platform?.supportsProfileHeader ?? false
+    }
 
   public var supportsProfileImageDelete: Bool {
     platform?.supportsProfileImageDelete ?? false
