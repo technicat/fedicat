@@ -52,14 +52,15 @@ extension Session {
       note: profile.note,
       avatar: profile.avatar?.jpeg(),
       avatarMimeType: .imageJpeg,
+      avatarText: profile.avatarText,
       header: profile.header?.jpeg(),
-      headerMimeType: .imageJpeg
+      headerMimeType: .imageJpeg,
+      headerText: profile.headerText
     )
     await setAccount(account)
     return account
   }
 
-  // todo - use DraftPixelfedProfile?
   @discardableResult
   public func updatePixelfed(_ profile: DraftProfile) async throws -> CredentialAccount {
     let account = try await client.updateProfilePixelfed(
